@@ -1,11 +1,11 @@
 .botao {
-    padding: 20px 10px;
+    padding: 25px 15px;
     background: linear-gradient(#ffbf00, #f2a50c);
     display: inline-block;
     border-radius: 4px;
     box-shadow: 0 0 2px orange;
     text-transform: uppercase;
-    color: #332200;
+    color: var(--color-p5);
     font-size: 1.125rem;
     font-family: "Poppins";
     font-weight: 600;

@@ -1,5 +1,5 @@
 .header-bg {
-    background-color: black;
+    background-color: var(--color-12);
   }
   
   .header {
@@ -20,9 +20,9 @@
   }
   
   .header-menu a {
+    color: var(--color-0);
     display: inline-block;
     padding-block: 16px;
-    color: white;
     font-size: 1.125rem;
     position: relative;
     font-family: "Poppins";
@@ -34,7 +34,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background: white;
+    background: var(--color-0);
     margin-top: 13px;
     position: absolute;
   }
@@ -50,14 +50,14 @@
     }
   
     .header-menu a {
-      background: #111111;
+      background: var(--color-11);
       padding: 20px 12px;
       border-radius: 4px;
       font-size: 17px;
     }
   
     .header-menu a:hover {
-      background-color: #2e2e2e;
+      background-color: var(--color-10);
     }
   
     .header-menu a::after {

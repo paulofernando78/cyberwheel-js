@@ -1,9 +1,7 @@
-/* reset */
-@import "./base/reset.css";
-
 /* base */
-@import "./base/tipografia.css";
-@import "./base//cor.css";
+@import "./base/reset.css";
+@import "./base/tipography.css";
+@import "./base//colors.css";
 
 /* components */
 @import "./components/button.css";
