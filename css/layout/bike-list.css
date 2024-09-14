@@ -1,13 +1,13 @@
-article {
-  padding-inline: 50px;
+.bike-list {
+  padding: 50px 20px;
 }
 
-article ul {
+.bike-list ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-article img {
+.bike-list img {
     border-radius: 5px;
 }
