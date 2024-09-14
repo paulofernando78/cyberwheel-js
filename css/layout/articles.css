@@ -1,0 +1,12 @@
+article {
+  padding-inline: 50px;
+}
+
+article ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+article img {
+}

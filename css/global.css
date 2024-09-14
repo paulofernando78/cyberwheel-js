@@ -8,4 +8,5 @@
 
 /* layouts */
 @import "./layout/header.css";
+@import "./layout/articles.css";
 @import "./layout/introducao.css";
