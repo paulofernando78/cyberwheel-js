@@ -7,7 +7,7 @@
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0 40px;
+  gap: 10px;
   padding-inline: 20px;
   margin: auto;
   height: 340px;
@@ -31,6 +31,7 @@
   object-fit: cover;
   border-radius: 4px;
   margin: 0 auto;
+  box-shadow: 0 0 2px .3px white;
 }
 
 .introducao h1 {
@@ -45,7 +46,7 @@
 .introducao p {
   font-family: "Roboto";
   font-weight: 400;
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
   line-height: 1.5;
   color: var(--gray-4);
 }

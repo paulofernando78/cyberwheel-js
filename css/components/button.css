@@ -1,5 +1,5 @@
-.botao {
-    padding: 13px 15px;
+.button {
+    padding: 10px 15px;
     background: linear-gradient(var(--orange-2), var(--orange-4));
     display: inline-block;
     border-radius: 4px;
@@ -11,11 +11,11 @@
     font-weight: 600;
   }
 
-  .botao:hover {
+  .button:hover {
     background: linear-gradient(#ffb60d, #e59317);
   }
 
-  @media (width <= 600px) {
+  @media (width <= 768px) {
     .botao {
       padding: 18px 10px;
       font-size: 0.9rem;

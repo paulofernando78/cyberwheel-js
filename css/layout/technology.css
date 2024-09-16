@@ -1,7 +1,6 @@
 .technology-bg {
   background: var(--gray-10);
   border-radius: 5px;
-
 }
 
 .technology {
@@ -16,7 +15,7 @@
 
 .technology span {
   color: var(--gray-4);
-  font-size: var(--text-1xl);
+  font-size: var(--text-xl);
   text-transform: uppercase;
 }
 
@@ -35,11 +34,16 @@
 
 .technology p {
   color: var(--gray-4);
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
 }
 
 .technology h3 {
   color: white;
+}
+
+.technology-eletric-tracking {
+  display: flex;
+  gap: 30px;
 }
 
 .technology a {

@@ -50,7 +50,7 @@
   
     .header-menu a {
       background: var(--gray-9);
-      padding: 20px 12px;
+      padding: 12px 12px;
       border-radius: 4px;
       font-size: 17px;
     }
