@@ -1,13 +1,70 @@
 .bike-list {
-  padding: 50px 20px;
+  padding: 90px 20px 0 20px;
+  overflow-x: auto;
+}
+
+.bike-list h2 {
+  font: 600 var(--text-5xl) / 1.125 "Poppins", sans-serif;
+  margin-bottom: 40px;
+}
+
+.bike-list h2 span {
+  color: var(--orange-4);
 }
 
 .bike-list ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 40px;
+  max-width: 1200px;
 }
 
 .bike-list img {
-    border-radius: 5px;
+  padding-bottom: 16px;
+}
+
+.bike-list h3 {
+  font-size: var(--text-3xl);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bike-list h3::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: var(--orange-3);
+  transition: .2s;
+}
+
+.bike-list a:hover h3::before {
+  width: 24px;
+}
+
+.bike-list li {
+  min-width: 280px;
+}
+
+.bike-list li p {
+  padding-left: 20px;
+}
+
+@media (width <= 768px) {
+  /* .bike-list {
+    padding-bottom: 60px;
+  } */
+
+  .bike-list h2 {
+    font-size: 2rem;
+    font-size: var(--text-4xl);
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .bike-list ul {
+    gap: 20px;;
+  }
 }

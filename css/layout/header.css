@@ -3,7 +3,6 @@
   }
   
   .header {
-    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -35,7 +34,7 @@
     width: 0;
     height: 2px;
     background: white;
-    margin-top: 13px;
+    /* margin-top: 13px; */
     position: absolute;
   }
   

@@ -8,7 +8,7 @@
       content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft."
     />
     <link rel="stylesheet" href="./css/global.css" />
-    <title>Bikcraft - Bicicletas Elétricas</title>
+    <title>Bikcraft - Eletric bikes</title>
   </head>
   <body>
     <header class="header-bg">
@@ -16,62 +16,105 @@
         <a href="./"><img src="./img/bikcraft.svg" alt="Bikcraft" /></a>
         <nav aria-label="primaria">
           <ul class="header-menu">
-            <li><a href="./biciletas.html">Bicicletas</a></li>
-            <li><a href="./seguros.html">Seguros</a></li>
-            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="./bicycles.html">Bicycles</a></li>
+            <li><a href="./insurance.html">Insurance</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="introducao-bg">
-      <div class="introducao">
-        <div class="introducao-conteudo">
-          <h1 class="title">Bicicletas feitas sob medida<span>.</span></h1>
-          <p class="subtitle">
-            Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
-            para você. Explore o mundo na sua velocidade com a Bikcraft.
-          </p>
-          <a href="./bicicletas.html" class="botao">Escolha a sua</a>
+
+    <!-- Introduction -->
+    <div class="line-break">
+      <main class="introducao-bg">
+        <div class="introducao">
+          <div class="introducao-conteudo">
+            <h1>Custom made bikes<span>.</span></h1>
+            <p>
+              High-precision, high-quality electric bikes, tailor-made for you.
+              Explore the world at your own speed with Bikcraft.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./img/fotos/introducao.jpg"
+              alt="Electric black bike ready for use"
+            />
+          </div>
         </div>
-        <div>
-          <img
-            src="./img/fotos/introducao.jpg"
-            alt="Bicicleta elétrica preta."
-          />
+      </main>
+
+      <!-- Bike List -->
+      <article class="bike-list">
+        <h2>Models<span>.</span></h2>
+        <ul>
+          <li>
+            <a href="./bicicletas/magic.html">
+              <img src="./img/bicicletas/magic-home.jpg" alt="Magic bike" />
+              <h3>Magic Might</h3>
+              <p>$ 499</p>
+            </a>
+          </li>
+          <li>
+            <a href="./bicicletas/nimbus.html">
+              <img src="./img/bicicletas/nimbus-home.jpg" alt="Nimbus bike" />
+              <h3>Nebula Cosmic</h3>
+              <p>$ 899</p>
+            </a>
+          </li>
+          <li>
+            <a href="./bicicletas/nebula.html">
+              <img src="./img/bicicletas/nebula-home.jpg" alt="Nebula bike" />
+              <h3>Nebula Cosmic</h3>
+              <p>$ 710</p>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Technology -->
+      <article class="technology-bg">
+        <div class="technology">
+          <!-- Content -->
+          <div class="technology-content line-break">
+            <span>Advance technology</span>
+            <h2>Choose your colors and components<span>.</span></h2>
+            <p>
+              Each Bikcraft is unique and has its own identity. The measurements
+              will be exact for your body and height, ensuring greater comfort
+              and ergonomics when pedaling. You can also completely customize
+              its colors.
+            </p>
+
+            <!-- Eletric motor -->
+            <div>
+              <img src="./img/icones/eletrica.svg" alt="Electric" />
+              <h3>Eletric motor</h3>
+              <p>
+                Every Bikcraft is equipped with an electric motor that lasts up
+                to 120 hours. The battery is recharged with the energy you use
+                while pedaling.
+              </p>
+            </div>
+            <!-- Tracking -->
+            <div>
+              <img src="./img/icones/rastreador.svg" alt="Tracking" />
+              <h3>Tracking</h3>
+              <p>
+                We know how precious your Bikcraft is, so we have added trackers
+                and anti-theft systems to ensure your peace of mind.
+              </p>
+            </div>
+
+            <!-- Choose a model -->
+            <a href="./bicicleta.html" class="botao">Choose a model</a>
+          </div>
+
+          <!-- Img Tool -->
+          <img src="/img/fotos/tecnologia.jpg" alt="Tools" class="technology-img-tool"/>
+
         </div>
-      </div>
-    </main>
-    <article class="bike-list">
-      <h2 class="title">Escolha a sua<span>.</span></h2>
-      <ul>
-        <li>
-         <a href="./bicicletas/magic.html">
-            <img src="./img/bicicletas/magic-home.jpg" alt="Msgic bike">
-              <h3>Magic Might
-              </h3>
-              <p>R$ 2499</p>
-            </img>
-         </a>
-        </li>
-        <li>
-         <a href="./bicicletas/nimbus.html">
-            <img src="./img/bicicletas/nimbus-home.jpg" alt="Msgic bike">
-              <h3>Nebula Cosmic
-              </h3>
-              <p>R$ 4999</p>
-            </img>
-         </a>
-        </li>
-        <li>
-         <a href="./bicicletas/nebula.html">
-            <img src="./img/bicicletas/nebula-home.jpg" alt="Msgic bike">
-              <h3>Nebula Cosmic
-              </h3>
-              <p>R$ 3999</p>
-            </img>
-         </a>
-        </li>
-      </ul>
-    </article>
+      </article>
+    </div>
   </body>
 </html>
