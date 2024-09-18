@@ -1,0 +1,48 @@
+.testimonial {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--orange-3);
+}
+
+.testimonial-content {
+  padding: 40px 80px;
+  align-self: end;
+}
+
+.testimonial div img {
+  border-radius: 0;
+}
+
+.testimonial-content p {
+  font-size: var(--text-2xl);
+  font-weight: bold;
+  font-style: italic;
+  font-family: Poppins;
+  margin-bottom: 30px;
+  font-family: "Merriweather", serif;
+  position: relative;
+}
+
+.testimonial p::before,
+.testimonial p::after {
+    font-size: 5rem;
+    color: var(--yellow-3);
+    position: absolute;
+  }
+
+.testimonial p::before {
+  content: '“';
+  left: -50px;
+  top: -20px;
+}
+
+.testimonial p::after {
+  content: '”';
+}
+
+.testimonial-content span {
+  font-size: var(--text-lg);
+  font-weight: bold;
+  font-family: "Roboto", serif;
+  font-style: normal;
+}

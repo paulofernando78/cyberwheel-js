@@ -12,6 +12,7 @@
 @import "./layout/introduction.css";
 @import "./layout/technology.css";
 @import "./layout/partners.css";
+@import "./layout/testimonial.css";
 
 body {
   max-width: 1100px;
