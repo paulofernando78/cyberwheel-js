@@ -52,9 +52,9 @@
   padding: 0 0 10px 20px;
 }
 
-@media (width <= 768px) {
+@media (width <= 950px) {
   .bike-list {
-    padding-top: 95px;
+    /* padding-top: 95px; */
   }
 
   .bike-list h2 {
@@ -68,3 +68,9 @@
     gap: 20px;;
   }
 }
+
+/* @media (width <= 463px) {
+  .bike-list {
+    padding-top: 120px;
+  }
+} */

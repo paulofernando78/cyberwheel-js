@@ -68,7 +68,7 @@
   object-position: left;
 }
 
-@media (width <= 768px) {
+@media (width <= 950px) {
   .technology {
     grid-template-columns: 1fr;
   }

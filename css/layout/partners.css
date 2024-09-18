@@ -35,9 +35,10 @@
   height: 40px;
 }
 
-@media (width <= 768px) {
-  .partners ul {
-    grid-template-columns: repeat(2, 1fr);
+@media (width <= 950px) {
+
+  .partners h2 {
+    font: 600 var(--text-4xl) / 1.125 "Poppins", sans-serif;
   }
 
   .partners li:nth-child(n + 3) {
@@ -46,5 +47,11 @@
 
   .partners li:nth-child(odd) {
     border-left: none;
+  }
+}
+
+@media (width <= 768px) {
+  .partners ul {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
