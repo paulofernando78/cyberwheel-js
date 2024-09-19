@@ -1,28 +1,12 @@
 .technology-bg {
   background: var(--gray-10);
-  border-radius: 5px;
-  box-shadow: inset 0 100px 0 white, inset 0 -100px 0 white;
-}
-
-.technology {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 40px;
 }
 
 .technology-content {
-  padding: 20px;
-}
-
-.technology span {
-  color: var(--gray-4);
-  font-size: var(--text-xl);
-  text-transform: uppercase;
-}
-
-.technology h2 span {
-  color: var(--orange-4);
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px;
 }
 
 .technology h2 {
@@ -34,43 +18,48 @@
   font-family: "Poppins";
 }
 
+.technology-content span {
+  color: var(--gray-4);
+  text-transform: uppercase;
+  font-size: var(--text-xl);
+}
+
+.technology-content h2 span{
+  color: var(--orange-4);
+}
+
 .technology p {
   color: var(--gray-4);
   font-size: var(--text-xl);
+}
+
+.flex-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 .technology h3 {
   color: white;
 }
 
-.technology-eletric-tracking {
-  display: flex;
-  gap: 30px;
-}
-
-.technology-eletric-tracking img {
+.technology-icons img {
   width: 24px;
 }
 
-.technology-eletric-tracking img,
-.technology-eletric-tracking h3 {
-  padding-bottom: 10px;
-}
-
-.technology a {
-  width: fit-content;
+.technology-icons img,
+.technology-icons h3 {
+  padding-bottom: 15px;
 }
 
 .technology-img-tool {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: left;
 }
 
-@media (width <= 950px) {
-  .technology {
+@media (width <= 768px) {
+  .technology-content {
     grid-template-columns: 1fr;
+    padding: 20px;
   }
 
   .technology span {
@@ -83,19 +72,5 @@
 
   .technology p {
     font-size: var(--text-lg);
-  }
-
-  .technology-img-tool {
-    display: none;
-  }
-}
-
-@media (width <=1100px) {
-  .technology-bg {
-    box-shadow: inset 0 80px 0 black, inset 0 -80px 0 black;
-  }
-
-  .technology-eletric-tracking {
-    flex-direction: column;
   }
 }

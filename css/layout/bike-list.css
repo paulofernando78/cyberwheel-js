@@ -1,11 +1,11 @@
 .bike-list {
-  padding: 0 20px 0 20px;
+  padding: 20px;
   overflow-x: auto;
 }
 
 .bike-list h2 {
   font: 600 var(--text-5xl) / 1.125 "Poppins", sans-serif;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .bike-list h2 span {
