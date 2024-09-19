@@ -25,9 +25,9 @@
 }
 
 .introduction img {
-  width: 100%;
-  object-fit: cover;
-  margin: 0 auto;
+  max-width: 45%;
+  position: absolute;
+  top: 250px;
 }
 
 .introduction h1 span {
@@ -63,6 +63,8 @@
   }
 
   .introduction img {
+    position: static;
+    /* margin: 0 auto; */
     width: 100%;
   }
 }
