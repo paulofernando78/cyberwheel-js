@@ -1,6 +1,7 @@
 .bike-list {
   padding: 20px;
   overflow-x: auto;
+  background: white;
 }
 
 .bike-list h2 {

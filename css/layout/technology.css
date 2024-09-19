@@ -1,5 +1,7 @@
-.technology-bg {
-  background: var(--gray-10);
+.technology-repair {
+  width: 90%;
+  margin: 30px auto;
+  box-shadow: 0 0 2px 0.3px white;
 }
 
 .technology-content {
@@ -37,6 +39,7 @@
   display: flex;
   gap: 12px;
   align-items: center;
+  width: fit-content;
 }
 
 .technology h3 {
@@ -50,13 +53,14 @@
 .technology-icons img,
 .technology-icons h3 {
   padding-bottom: 15px;
-}
-
-.technology-img-tool {
-  width: 100%;
+  
 }
 
 @media (width <= 768px) {
+.technology img {
+  margin: 20px;
+}
+
   .technology-content {
     grid-template-columns: 1fr;
     padding: 20px;
