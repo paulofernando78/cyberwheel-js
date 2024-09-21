@@ -52,10 +52,10 @@ img[src$=".svg"] {
   gap: 2rem;
 }
 
-.relative {
+/* .relative {
   position: relative;
-  bottom: 200px;
-}
+  top: 130px;
+} */
 
 @media (width <= 768px) {
   .relative {
