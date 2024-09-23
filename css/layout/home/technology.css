@@ -100,6 +100,17 @@
   background: white;
 }
 
+@media (width <=1100px) {
+
+  .technology h1 {
+    font-size: var(--text-4xl);
+  }
+
+  .technology p {
+    font-size: var(--text-lg);
+  }
+}
+
 @media (width >= 768px) {
   .tech-grid {
     display: none;
@@ -131,10 +142,6 @@
 
   .technology span {
     font-size: var(--text-xl);
-  }
-
-  .technology h1 {
-    font-size: var(--text-4xl);
   }
 
   .technology p {
