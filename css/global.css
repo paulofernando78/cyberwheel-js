@@ -7,12 +7,12 @@
 @import "./components/button.css";
 
 /* home */
-@import "./layout/header.css";
-@import "./layout/bike-list.css";
-@import "./layout/introduction.css";
-@import "./layout/technology.css";
-@import "./layout/partners.css";
-@import "./layout/testimonial.css";
+@import "./layout/home/header.css";
+@import "./layout/home/bike-list.css";
+@import "./layout/home/introduction.css";
+@import "./layout/home/technology.css";
+@import "./layout/home/partners.css";
+@import "./layout/home/testimonial.css";
 
 /* pages */
 @import "./pages/insurance.css";
