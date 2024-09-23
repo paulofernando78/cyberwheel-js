@@ -1,3 +1,11 @@
+.technology h1 {
+  padding: 30px;
+}
+
+.technology h1 span {
+  color: var(--orange-4);
+}
+
 .technology-imgs {
   position: relative;
 }
@@ -45,16 +53,6 @@
   bottom: -120px; */
 }
 
-.technology h2 {
-  color: white;
-  font-weight: 600;
-  font-size: 4rem;
-  font-size: var(--text-5xl);
-  line-height: 1.125;
-  font-family: "Poppins";
-  padding: 20px;
-}
-
 .technology-content span {
   color: var(--gray-4);
   text-transform: uppercase;
@@ -87,7 +85,7 @@
 }
 
 .technology-icons img,
-.technology-icons h3 {
+.technology-icons h4 {
   padding-bottom: 15px;
 }
 
@@ -119,12 +117,6 @@
     display: none;
   }
 
-  .technology-colors-media {
-    display: block;
-    width: 58%;
-    margin: 0 auto;
-  }
-
   .technology-content {
     grid-template-columns: 1fr;
     padding: 20px;
@@ -135,7 +127,7 @@
     font-size: var(--text-xl);
   }
 
-  .technology h2 {
+  .technology h1 {
     font-size: var(--text-4xl);
   }
 

@@ -2,15 +2,6 @@
   padding: 30px;
 }
 
-.partners h2 {
-  font: 600 var(--text-5xl) / 1.125 "Poppins", sans-serif;
-  margin-bottom: 40px;
-}
-
-.partners span {
-  color: var(--orange-4);
-}
-
 .partners ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

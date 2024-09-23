@@ -6,7 +6,7 @@
 /* components */
 @import "./components/button.css";
 
-/* layouts */
+/* home */
 @import "./layout/header.css";
 @import "./layout/bike-list.css";
 @import "./layout/introduction.css";
@@ -14,6 +14,7 @@
 @import "./layout/partners.css";
 @import "./layout/testimonial.css";
 
+/* pages */
 @import "./pages/insurance.css";
 
 body {
@@ -26,18 +27,28 @@ body {
 
 h1 {
   font-size: var(--text-5xl);
+}
+
+h2 {
+  font-size: var(--text-4xl);
+}
+
+h3 {
+  font-size: var(--text-3xl);
+}
+
+h4 {
+  font-size: var(--text-2xl);
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-weight: 600;
   font-family: "Poppins";
   color: white;
   line-height: 1.125;
-}
-
-h2 {
-
-}
-
-h3 {
-
 }
 
 p {
