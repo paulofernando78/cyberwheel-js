@@ -1,0 +1,48 @@
+.insurance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 0 30px;
+}
+
+.insurance-items {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background: black;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.insurance h1 {
+  font-size: var(--text-4xl);
+  font-family: "Poppins";
+  font-weight: 600;
+  color: white;
+  line-height: 1.125;
+  text-transform: uppercase;
+}
+
+.insurance h2 {
+  font-size: var(--text-3xl);
+  font-family: "Poppins";
+  font-weight: 600;
+  color: var(--gray-4);
+  line-height: 1.125;
+  text-transform: uppercase;
+}
+
+.insurance p {
+  font-size: var(--text-xl);
+  font-family: "Roboto";
+  font-weight: 400;
+  color: white;
+  line-height: 1.5;
+}
+
+.insurance-items .monthly {
+  font-size: var(--text-sm);
+  font-style: italic;
+}
+
+.tick::before {
+}

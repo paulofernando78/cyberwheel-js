@@ -6,12 +6,20 @@
   padding: 30px;
 }
 
+.introduction h1 {
+  color: white;
+  font-size: var(--text-5xl);
+  font-family: "Poppins";
+}
+
 .introduction h1 span {
   color: var(--orange-4);
 }
 
 .introduction p {
   color: var(--gray-4);
+  font-size: var(--text-xl);
+  font-family: "Roboto";
 }
 
 @media (width <= 768px) {

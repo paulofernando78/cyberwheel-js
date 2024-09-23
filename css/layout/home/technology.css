@@ -1,5 +1,8 @@
 .technology h1 {
   padding: 30px;
+  color: white;
+  font-size: var(--text-5xl);
+  font-family: "Poppins";
 }
 
 .technology h1 span {
@@ -92,6 +95,7 @@
 .technology-frame {
   width: 70%;
   margin: 10px auto 30px auto;
+  background: white;
 }
 
 @media (width >= 768px) {
