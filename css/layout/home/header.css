@@ -8,8 +8,7 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  padding-top: 3px;
-  margin: auto;
+  margin-bottom: 30px;
 }
 
 .header-menu {
@@ -21,7 +20,6 @@
 .header-menu a {
   color: white;
   display: inline-block;
-  padding-block: 16px;
   font-size: 1.125rem;
   position: relative;
   font-family: "Poppins";
@@ -44,17 +42,12 @@
 }
 
 @media (width <= 768px) {
-  .header {
-    padding-top: 8px;
-  }
-  
   .header-menu {
     gap: 15px;
   }
 
   .header-menu a {
     background: var(--gray-9);
-    padding: 12px 12px;
     border-radius: 4px;
     font-size: 17px;
   }

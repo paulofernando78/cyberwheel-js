@@ -3,7 +3,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   align-items: center;
-  padding: 30px;
 }
 
 .introduction h1 {
