@@ -14,12 +14,38 @@
 @import "./layout/partners.css";
 @import "./layout/testimonial.css";
 
+@import "./pages/insurance.css";
+
 body {
   max-width: 1100px;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   background: black;
   border: 1px solid white;
+}
+
+h1 {
+  font-size: var(--text-5xl);
+  font-weight: 600;
+  font-family: "Poppins";
+  color: white;
+  line-height: 1.125;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: var(--text-xl);
+  line-height: 1.5;
+  color: white;
 }
 
 ul {
@@ -51,11 +77,6 @@ img[src$=".svg"] {
   flex-direction: column;
   gap: 2rem;
 }
-
-/* .relative {
-  position: relative;
-  top: 130px;
-} */
 
 @media (width <= 768px) {
   .relative {

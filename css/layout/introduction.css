@@ -6,25 +6,11 @@
   padding: 30px;
 }
 
-.introduction h1 {
-  font-weight: 600;
-  font-size: 4rem;
-  font-size: var(--text-5xl);
-  line-height: 1.125;
-  font-family: "Poppins";
-  color: white;
-  margin-bottom: 32px;
-}
-
 .introduction h1 span {
   color: var(--orange-4);
 }
 
 .introduction p {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: var(--text-xl);
-  line-height: 1.5;
   color: var(--gray-4);
 }
 
