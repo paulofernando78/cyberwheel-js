@@ -1,5 +1,8 @@
+.technology {
+  padding-inline: 20px;
+}
+
 .technology h1 {
-  color: white;
   font-size: var(--text-5xl);
   font-family: "Poppins";
 }
@@ -50,7 +53,7 @@
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
-  padding: 30px;
+  padding-inline: 30px;
   /* position: relative;
   bottom: -120px; */
 }
