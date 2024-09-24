@@ -20,6 +20,14 @@
   position: relative;
 }
 
+footer li {
+  margin-bottom: 5px;
+}
+
+footer a:hover {
+color: var(--gray-4);
+}
+
 .footer-items::before {
   content: "";
   width: 7px;
