@@ -33,7 +33,7 @@
 .header-menu a {
   color: white;
   display: inline-block;
-  font-size: 1.125rem;
+  font-size: var(--text-lg);
   position: relative;
   font-family: "Poppins";
   font-weight: 400;
@@ -65,7 +65,7 @@
   .header-menu a {
     background: var(--gray-9);
     border-radius: 4px;
-    font-size: 17px;
+    font-size: var(--text-md);
     padding: 10px;
   }
 
@@ -79,8 +79,13 @@
 }
 
 @media (width <= 541px) {
+  .header-menu a {
+    font-size: var(--text-sm);
+  }
+}
+
+@media (width <= 500px) {
   .header {
-    padding-top: 30px;
     justify-content: center;
   }
 }
