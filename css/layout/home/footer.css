@@ -1,0 +1,46 @@
+.footer-bg {
+  background: #111111;
+}
+
+.footer-container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  font-family: "Roboto";
+  color: white;
+  align-items: start;
+}
+
+.footer-items {
+  font-family: "Roboto";
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.footer-items::before {
+  content: "";
+  width: 7px;
+  height: 13px;
+  background: red;
+  position: absolute;
+  left: -15px;
+  top: 2px;
+}
+
+.social-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.rights {
+  padding: 20px;
+}
+
+@media (width <= 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}

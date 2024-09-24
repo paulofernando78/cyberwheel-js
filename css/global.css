@@ -13,6 +13,7 @@
 @import "./layout/home/technology.css";
 @import "./layout/home/partners.css";
 @import "./layout/home/testimonial.css";
+@import "./layout/home/footer.css";
 
 /* pages */
 @import "./layout/pages/insurance.css";
@@ -21,7 +22,6 @@ body {
   max-width: 1100px;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
-  /* background: #111111; */
   border: 1px solid black;
 }
 
@@ -36,6 +36,7 @@ a {
 
 img {
   max-width: 100%;
+  height: fit-content;
   display: block;
 }
 
@@ -55,6 +56,22 @@ img[src$=".svg"] {
   gap: 2rem;
 }
 
-.bg-black {
-  background: black;
+.title {
+
+}
+
+.subtitle {
+
+}
+
+.white {
+  color: white;
+}
+
+.gray {
+  color: var(--gray-4);
+}
+
+.uppercase {
+  text-transform: uppercase;
 }

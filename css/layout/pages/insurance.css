@@ -1,48 +1,94 @@
+.insurance-bg {
+  background: #111111;
+  height: 100vh;
+}
+
 .insurance-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content:center;
   gap: 30px;
-  margin: 0 30px;
 }
 
 .insurance-items {
-  display: grid;
-  grid-template-columns: 1fr auto;
   background: black;
-  padding: 30px;
+  padding: 20px 20px 20px 40px;
   border-radius: 5px;
+  box-shadow: 0 0 3px lightgray;
+  width: 350px;
+}
+
+.category-price {
+  display: flex;
+  justify-content: space-between;
 }
 
 .insurance h1 {
-  font-size: var(--text-4xl);
+  font-size: var(--text-5xl);
   font-family: "Poppins";
-  font-weight: 600;
+  padding: 50px 20px 30px 20px;
   color: white;
-  line-height: 1.125;
-  text-transform: uppercase;
 }
 
 .insurance h2 {
   font-size: var(--text-3xl);
   font-family: "Poppins";
-  font-weight: 600;
-  color: var(--gray-4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   line-height: 1.125;
   text-transform: uppercase;
 }
 
-.insurance p {
+.silver {
+  background: linear-gradient(gray, white);
+}
+
+.gold {
+  background: linear-gradient(orange, white);
+}
+
+.insurance li {
+  position: relative;
+}
+
+.insurance li:before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url(../../../img/icones/lista.svg);
+  position: absolute;
+  left: -20px;
+  top: 8px;
+}
+
+.insurance li {
   font-size: var(--text-xl);
   font-family: "Roboto";
   font-weight: 400;
   color: white;
-  line-height: 1.5;
+  padding-bottom: 10px;
+}
+
+.insurance-item li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .insurance-items .monthly {
   font-size: var(--text-sm);
   font-style: italic;
+  color: white;
 }
 
-.tick::before {
+@media (width <= 768px) {
+  .insurance-grid {
+    flex-direction: column;
+  }
+
+  .insurance-items {
+    width: 320px;
+    margin: 0 auto;
+  }
 }

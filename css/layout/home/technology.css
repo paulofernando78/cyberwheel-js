@@ -7,10 +7,6 @@
   font-family: "Poppins";
 }
 
-.technology h1 span {
-  color: var(--orange-4);
-}
-
 .technology-imgs {
   position: relative;
 }
@@ -53,9 +49,7 @@
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
-  padding-inline: 30px;
-  /* position: relative;
-  bottom: -120px; */
+  padding: 30px 30px 0 30px;
 }
 
 .technology-content span {
@@ -86,7 +80,7 @@
 }
 
 .technology-icons img {
-  width: 24px;
+  width: 32px;
 }
 
 .technology-icons img,
@@ -101,7 +95,6 @@
 }
 
 @media (width <=1100px) {
-
   .technology h1 {
     font-size: var(--text-4xl);
   }
@@ -136,7 +129,7 @@
 
   .technology-content {
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     bottom: 0;
   }
 
