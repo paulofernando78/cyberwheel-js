@@ -1,0 +1,30 @@
+.terms-bg {
+  background: #111111;
+}
+
+.terms-container {
+  padding: 30px;
+}
+
+.terms-container p {
+  font-size: var(--text-lg);
+  color: var(--gray-4);
+}
+
+.terms-container h1 {
+  color: white;
+}
+
+.terms-clauses {
+    padding: 20px;
+}
+
+.terms-clauses h2 {
+font-size: var(--text-2xl);
+padding-bottom: 1.125rem;
+font-family: "Poppins";
+}
+
+.terms-clauses p {
+    padding-bottom: 1rem;
+}

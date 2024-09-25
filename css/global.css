@@ -17,12 +17,14 @@
 
 /* pages */
 @import "./layout/pages/insurance.css";
+@import "./layout/pages/terms.css";
+
 
 body {
   max-width: 1100px;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 ul {
