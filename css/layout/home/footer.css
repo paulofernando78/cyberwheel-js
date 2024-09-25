@@ -7,7 +7,7 @@
   /* display: flex;
   justify-content: space-between; */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   font-family: "Roboto";
   color: white;
@@ -34,7 +34,7 @@ color: var(--gray-4);
   content: "";
   width: 7px;
   height: 13px;
-  background: red;
+  background: var(--orange-4);
   position: absolute;
   left: -15px;
   top: 2px;
@@ -49,13 +49,7 @@ color: var(--gray-4);
   padding: 20px;
 }
 
-@media (width <= 768px) {
-  .footer-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (width <= 669px) {
+@media (width <= 550px) {
   .footer-container {
     grid-template-columns: 1fr;
   }

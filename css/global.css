@@ -18,7 +18,7 @@
 /* pages */
 @import "./layout/pages/insurance.css";
 @import "./layout/pages/terms.css";
-
+@import "./layout/pages/bicycles.css";
 
 body {
   max-width: 1100px;
@@ -59,10 +59,16 @@ img[src$=".svg"] {
 }
 
 .title {
-
+  font-size: var(--text-5xl);
 }
 
 .subtitle {
+  font-size: var(--text-3xl);
+}
+
+.title,
+.subtitle {
+  font-family: "Poppins";
 
 }
 
@@ -76,4 +82,15 @@ img[src$=".svg"] {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+@media (width <= 768px) {
+  .title {
+    font-size: var(--text-4xl);
+  }
+
+  .subtitle {
+    font-size: var(--text-2xl);
+    font-family: "Poppins";
+  }
 }

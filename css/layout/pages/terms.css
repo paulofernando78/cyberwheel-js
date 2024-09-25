@@ -1,5 +1,5 @@
 .terms-bg {
-  background: #111111;
+  background: black;
 }
 
 .terms-container {
@@ -9,6 +9,7 @@
 .terms-container p {
   font-size: var(--text-lg);
   color: var(--gray-4);
+  font-weight: bold;
 }
 
 .terms-container h1 {

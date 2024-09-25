@@ -1,0 +1,67 @@
+.bicycles-bg {
+  background: black;
+}
+
+.bicycles-container {
+  padding: 30px;
+}
+
+.bicycles-container p {
+  color: var(--gray-4);
+}
+
+.bicycles-container h1 {
+  color: white;
+}
+
+.bicycles-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 15px;
+  margin-inline: 10px;
+  overflow-x: auto;
+}
+
+.bicycles-card {
+  padding: 10px;
+  margin-block: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.price-stark,
+.price-magic,
+.price-nebula {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  background: black;
+  padding: 7px;
+  border-radius: 5px 5px 5px 0;
+  border: 1px solid gray;
+  width: max-content;
+  height: max-content;
+  top: 10px;
+  left: 10px;
+}
+
+.bicycles-card:hover {
+  transform: scale(1.02);
+}
+
+/* @media (width <= 768px) {
+  .bicycles-card-container {
+    flex-direction: column;
+  }
+
+  .bicycles-card {
+    flex-direction: row;
+    margin-block: 30px;
+  }
+
+  .bicycles-img {
+    width: 50%;
+  }
+} */

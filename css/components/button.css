@@ -1,23 +1,24 @@
 .button {
-    padding: 10px 15px;
+    padding: 5px 10px;
     background: linear-gradient(var(--orange-2), var(--orange-4));
     display: inline-block;
     border-radius: 4px;
     box-shadow: 0 0 2px var(--orange-5);
     text-transform: uppercase;
     color: var(--color-p5);
-    font-size: 1.125rem;
+    font-size: var(--text-md);
     font-family: "Poppins";
     font-weight: 600;
+    width: fit-content;
   }
 
   .button:hover {
     background: linear-gradient(#ffb60d, #e59317);
   }
 
-  @media (width <= 768px) {
-    .botao {
+  /* @media (width <= 768px) {
+    .button {
       padding: 18px 10px;
       font-size: 0.9rem;
     }
-  }
+  } */
