@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: repeat(3, 300px);
   gap: 15px;
-  margin-inline: 10px;
+  padding: 10px;
   overflow-x: auto;
 }
 
@@ -31,7 +31,7 @@
   position: relative;
 }
 
-.price-stark,
+.price-nimbus,
 .price-magic,
 .price-nebula {
   position: absolute;
