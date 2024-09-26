@@ -1,5 +1,9 @@
 .technology {
-  padding-inline: 20px;
+  padding: 20px;
+}
+
+.technology h1 {
+  padding: 20px;
 }
 
 .technology-imgs {
@@ -52,10 +56,6 @@
   text-transform: uppercase;
 }
 
-.technology-content h2 span {
-  color: var(--orange-4);
-}
-
 .technology-content p {
   color: var(--gray-4);
   font-size: var(--text-xl);
@@ -87,6 +87,16 @@
   background: white;
 }
 
+@media (width <= 972px) {
+  .technology {
+    padding: 0;
+  }
+
+  .technology h1 {
+    padding: 0 20px 15px 20px;
+  }
+}
+
 @media (width >= 768px) {
   .tech-grid {
     display: none;
@@ -94,6 +104,7 @@
 }
 
 @media (width <= 768px) {
+  
   .tech-grid {
     margin: 15px 10px 10px 10px;
   }

@@ -1,14 +1,14 @@
 .introduction {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
-  align-items: center;
-  box-shadow: inset 0 -53px 0 white;
-  padding: 50px 20px 0 20px;
+  box-shadow: inset 0 -53px 0 black;
+  padding: 60px 20px 20px 20px;
 }
 
 .introduction h1 {
   color: white;
+  /* margin-top: 20px; */
 }
 
 .introduction p {
@@ -17,36 +17,57 @@
   font-family: "Roboto";
 }
 
-@media (width <= 1020px) {
-  .introduction-content {
-    position: relative;
-    top: -40px;
+.introduction img {
+  position: relative;
+  top: 60px;
+  transform: rotate(3deg);
+  width: 450px;
+  /* width: 600px; */
+  margin: auto;
+}
+
+@media (width <= 1060px) {
+  .introduction h1 {
+    font-size: 2.9rem;
   }
 }
 
-@media (width <= 920px) {
+@media (width <= 1028px) {
+  .introduction h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (width <= 994px) {
+  .introduction h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (width <= 972px) {
   .introduction {
     grid-template-columns: 1fr;
     gap: 32px;
   }
 
+  .introduction h1 {
+    font-size: 3rem;
+  }
+
   .introduction-content {
-    position: relative;
-    top: 0px;
+    width: 100%;
   }
 
   .introduction img {
-    width: 80%;
+    position: static;
+    width: 60%;
+    transform: rotate(0deg);
     margin: 0 auto;
+    margin-bottom: 10px;
   }
 }
 
 @media (width <= 768px) {
-
-  .introduction {
-    padding-top: 50px;
-  }
-
   .introduction img {
     width: 90%;
   }
@@ -57,4 +78,3 @@
     width: 100%;
   }
 }
-
