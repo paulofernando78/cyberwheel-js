@@ -1,32 +1,20 @@
 .introduction {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   gap: 30px;
   align-items: center;
-  box-shadow: inset 0 -75px 0 white;
+  box-shadow: inset 0 -53px 0 white;
   padding: 50px 20px 0 20px;
 }
 
 .introduction h1 {
   color: white;
-  font-size: var(--text-5xl);
-  font-family: "Poppins";
 }
 
 .introduction p {
   color: var(--gray-4);
   font-size: var(--text-xl);
   font-family: "Roboto";
-}
-
-@media (width <=1100px) {
-  .introduction h1 {
-    font-size: var(--text-4xl);
-  }
-
-  .introduction p {
-    font-size: var(--text-lg);
-  }
 }
 
 @media (width <= 1020px) {
@@ -36,7 +24,7 @@
   }
 }
 
-@media (width <= 836px) {
+@media (width <= 920px) {
   .introduction {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -46,17 +34,27 @@
     position: relative;
     top: 0px;
   }
+
+  .introduction img {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media (width <= 768px) {
-  .introduction img {
-    position: static;
-    /* margin: 0 auto; */
-    width: 100%;
-    max-width: 100%;
-  }
 
   .introduction {
     padding-top: 50px;
   }
+
+  .introduction img {
+    width: 90%;
+  }
 }
+
+@media (width <= 400px) {
+  .introduction img {
+    width: 100%;
+  }
+}
+

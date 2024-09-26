@@ -70,7 +70,11 @@ img[src$=".svg"] {
 .title,
 .subtitle {
   font-family: "Poppins";
+  line-height: 1.2;
+}
 
+p {
+  font-family: "Roboto";
 }
 
 .white {

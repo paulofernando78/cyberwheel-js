@@ -2,11 +2,6 @@
   padding-inline: 20px;
 }
 
-.technology h1 {
-  font-size: var(--text-5xl);
-  font-family: "Poppins";
-}
-
 .technology-imgs {
   position: relative;
 }
@@ -52,11 +47,9 @@
   padding: 30px 30px 0 30px;
 }
 
-.technology-content span {
+.technology-content h2 {
   color: var(--gray-4);
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: var(--text-3xl);
 }
 
 .technology-content h2 span {
@@ -75,7 +68,7 @@
   width: fit-content;
 }
 
-.technology h3 {
+.technology span {
   color: white;
 }
 
@@ -92,16 +85,6 @@
   width: 70%;
   margin: 10px auto 30px auto;
   background: white;
-}
-
-@media (width <=1100px) {
-  .technology h1 {
-    font-size: var(--text-4xl);
-  }
-
-  .technology p {
-    font-size: var(--text-lg);
-  }
 }
 
 @media (width >= 768px) {
@@ -131,10 +114,6 @@
     grid-template-columns: 1fr;
     padding: 20px 20px 0 20px;
     bottom: 0;
-  }
-
-  .technology span {
-    font-size: var(--text-xl);
   }
 
   .technology p {
