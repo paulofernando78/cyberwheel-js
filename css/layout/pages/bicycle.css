@@ -1,35 +1,17 @@
-.bicycle-container {
-  padding: 30px;
-}
-
-.bicycle-container h1 {
-  font-size: var(--text-5xl);
-  color: white;
-}
-
 .bicycle-info .bg {
-    padding: 20px;
-    border-radius: 5px;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-.bicycle-info .cycle {
+/* .bicycle-info .cycle {
     min-width: 200px;
-}
+} */
 
 .bicycle-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-}
-
-.technical { 
-    color: white;
-} 
-
-.bicycle-info .heading {
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
+  margin-inline: 20px;
 }
 
 .purchase {
@@ -38,23 +20,14 @@
   height: fit-content;
 }
 
-.purchase p {
-  font-size: var(--text-sm);
-  color: var(--gray-4);
-}
-
 .purchase img {
-    width: 20px;
+  width: 20px;
 }
 
 .purchase .icon-flex {
-    display: flex;
-    gap: 8px
+  display: flex;
+  gap: 8px;
 }
-
-/* .stock {
-    grid-column: 2;
-} */
 
 @media (width <= 768px) {
   .bicycle-info {

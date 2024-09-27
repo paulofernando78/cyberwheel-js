@@ -2,10 +2,6 @@
   padding: 20px;
 }
 
-.technology h1 {
-  padding: 20px;
-}
-
 .technology-imgs {
   position: relative;
 }
@@ -51,16 +47,6 @@
   padding: 30px 30px 0 30px;
 }
 
-.technology-content h2 {
-  color: var(--gray-4);
-  text-transform: uppercase;
-}
-
-.technology-content p {
-  color: var(--gray-4);
-  font-size: var(--text-xl);
-}
-
 .flex-icons {
   display: flex;
   gap: 12px;
@@ -77,14 +63,8 @@
 }
 
 .technology-icons img,
-.technology-icons h4 {
+.technology-icons h3 {
   padding-bottom: 15px;
-}
-
-.technology-frame {
-  width: 70%;
-  margin: 10px auto 30px auto;
-  background: white;
 }
 
 @media (width <= 972px) {

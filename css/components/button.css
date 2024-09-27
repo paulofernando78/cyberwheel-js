@@ -1,11 +1,10 @@
 .button {
     padding: 8px 13px;
-    background: linear-gradient(var(--orange-2), var(--orange-4));
+    background: linear-gradient(#fed7aa, #fb923c);
     display: inline-block;
     border-radius: 4px;
     box-shadow: 0 0 2px var(--orange-5);
     text-transform: uppercase;
-    color: var(--color-p5);
     font-size: var(--text-md);
     font-family: "Poppins";
     font-weight: 600;

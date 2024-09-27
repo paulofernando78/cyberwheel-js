@@ -2,27 +2,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  box-shadow: inset 0 -53px 0 black;
-  padding: 60px 20px 20px 20px;
 }
 
-.introduction h1 {
-  color: white;
-  /* margin-top: 20px; */
-}
-
-.introduction p {
-  color: var(--gray-4);
-  font-size: var(--text-xl);
-  font-family: "Roboto";
+.introduction .text-5xl {
+  padding-top: 60px;
 }
 
 .introduction img {
   position: relative;
-  top: 60px;
+  top: 70px;
   transform: rotate(3deg);
   width: 450px;
-  /* width: 600px; */
   margin: auto;
 }
 
