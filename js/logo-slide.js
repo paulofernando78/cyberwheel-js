@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const partnersSlide = document.querySelector(".partners-slide");
+    const partnersSlide = document.querySelector(".logos");
     const images = partnersSlide.querySelectorAll("li");
 
     // Duplicate each image and append to the list
