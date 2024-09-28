@@ -16,7 +16,7 @@
   margin: auto;
 }
 
-@media (width <= 1060px) {
+/* @media (width <= 1060px) {
   .introduction h1 {
     font-size: 2.9rem;
   }
@@ -26,7 +26,7 @@
   .introduction h1 {
     font-size: 2.8rem;
   }
-}
+} */
 
 @media (width <= 994px) {
   .introduction h1 {
@@ -38,6 +38,10 @@
   .introduction {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .introduction .text-5xl {
+    padding-top: 0px;
   }
 
   .introduction h1 {
