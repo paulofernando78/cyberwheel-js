@@ -2,7 +2,6 @@
   padding: 30px 0;
   overflow: hidden;
   position: relative;
-
 }
 
 .partners h1 {
@@ -14,9 +13,8 @@
   display: flex;
   align-items: center;
   width: calc(200%);
-  animation: slide 20s infinite linear;
+  animation: slide 15s infinite linear;
   height: 100px;
-
 }
 
 @keyframes slide {
@@ -24,9 +22,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(
-      -100%
-    );
+    transform: translateX(-80%);
   }
 }
 
