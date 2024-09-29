@@ -1,5 +1,10 @@
-.bicycle-presentation {
-  padding: 0 20px;
+.bicycle h1 {
+  color: white;
+}
+
+.bicycle p:first-of-type {
+  color: white;
+  padding-inline: 20px;
 }
 
 .bicycle-info {

@@ -84,7 +84,7 @@
   }
 }
 
-@media (width <= 500px) {
+@media (width <= 525px) {
   .header {
     justify-content: center;
     padding-top: 30px;

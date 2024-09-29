@@ -12,10 +12,12 @@
 }
 
 .technology-handlebar {
-  width: 22%;
+  width: 30%;
   margin-left: 20px;
   position: absolute;
   top: -20px;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
 }
 
 .technology-colors {
