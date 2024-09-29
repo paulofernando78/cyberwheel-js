@@ -16,12 +16,19 @@
 
 .bicycle-info .bike {
   min-width: 400px;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .technical li {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid var(--gray-4);
+  padding-bottom: 2px;
+  margin-bottom: 15px;
+}
+
+.technical li:last-child {
+  border-bottom: none;
 }
 
 .purchase {
