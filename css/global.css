@@ -53,12 +53,21 @@ img {
   box-shadow: 0 0 2px 0.3px white;
 }
 
+.div-img {
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px white;
+  width: max-content;
+  height: max-content;
+}
+
 img[src$=".svg"] {
   border-radius: 0;
   box-shadow: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Poppins";
 }
 
