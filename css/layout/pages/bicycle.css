@@ -1,17 +1,27 @@
+.bicycle-presentation {
+  padding: 0 20px;
+}
+
+.bicycle-info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px;
+  margin-inline: 20px;
+}
+
 .bicycle-info .bg {
   padding: 20px;
   border-radius: 5px;
 }
 
-/* .bicycle-info .cycle {
-    min-width: 200px;
-} */
+.bicycle-info .bike {
+  min-width: 400px;
+  margin-bottom: 19px;
+}
 
-.bicycle-info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin-inline: 20px;
+.technical li {
+  display: flex;
+  justify-content: space-between;
 }
 
 .purchase {
