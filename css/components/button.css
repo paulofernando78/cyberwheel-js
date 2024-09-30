@@ -6,7 +6,8 @@
     box-shadow: 0 0 2px var(--orange-5);
     text-transform: uppercase;
     font-weight: 600;
-    width: fit-content;
+    width: max-content;
+    height: max-content;
   }
 
   .button:hover {

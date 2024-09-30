@@ -2,6 +2,10 @@
   color: white;
 }
 
+.bicycles-container h2 {
+  color: var(--gray-4);
+}
+
 .bicycles-card-container {
   display: grid;
   grid-template-columns: repeat(3, 350px);
@@ -24,8 +28,8 @@
   position: relative;
 }
 
-.bicycle-card a {
-  flex: 1;
+.bicycles-card p {
+  flex-grow: 1;
 }
 
 .price-nimbus,
