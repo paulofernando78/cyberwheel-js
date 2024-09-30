@@ -2,7 +2,7 @@
   color: white;
 }
 
-.bicycle p:first-of-type {
+.bicycle p {
   color: white;
   padding-inline: 20px;
 }
@@ -21,10 +21,35 @@
 
 .bicycle-info .bike {
   min-width: 400px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
-.technical li {
+.bicycle-information h2 {
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.bicycle-information p:nth-child(1) {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0;
+}
+
+.bicycle-information p:nth-child(2) {
+  color: var(--gray-4);
+  padding: 0;
+}
+
+.bicycle-technical h2 {
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.bicycle-technical li {
+  color: white;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--gray-4);
@@ -32,7 +57,7 @@
   margin-bottom: 15px;
 }
 
-.technical li:last-child {
+.bicycle-technical li:last-child {
   border-bottom: none;
 }
 
@@ -42,13 +67,19 @@
   height: fit-content;
 }
 
-.purchase img {
-  width: 20px;
-}
-
 .purchase .icon-flex {
   display: flex;
-  gap: 8px;
+  align-items: center;
+}
+
+.purchase p {
+  line-height: 0;
+  position: relative;
+  right: 12px;
+}
+
+.purchase img {
+  width: 20px;
 }
 
 @media (width <= 768px) {
