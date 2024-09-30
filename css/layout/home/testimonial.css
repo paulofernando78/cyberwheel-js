@@ -22,6 +22,7 @@
   font-style: italic;
   margin-bottom: 30px;
   position: relative;
+  line-height: 1.2;
 }
 
 .testimonial p::before,
@@ -33,8 +34,8 @@
 
 .testimonial p::before {
   content: "“";
-  left: -50px;
-  top: -20px;
+  left: -40px;
+  top: -40px;
 }
 
 .testimonial p::after {
@@ -42,10 +43,9 @@
 }
 
 .testimonial-content span {
-  font-size: var(--text-lg);
   font-weight: bold;
-  font-family: "Roboto", serif;
   font-style: normal;
+  font-size: 1.2rem;
 }
 
 @media (width <= 768px) {
