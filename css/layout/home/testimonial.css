@@ -1,6 +1,7 @@
 .testimonial {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background: var(--orange-3);
 }
 
 .testimonial-content {
@@ -16,12 +17,10 @@
 }
 
 .testimonial-content p {
-  font-weight: 900;
+  font-size: 1.2rem;
+  font-weight: 300;
   font-style: italic;
-  font-family: "Poppins";
   margin-bottom: 30px;
-  font-family: "Merriweather", serif;
-  line-height: normal;
   position: relative;
 }
 
