@@ -4,18 +4,14 @@
 
 .footer-container {
   padding: 30px;
-  /* display: flex;
-  justify-content: space-between; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  font-family: "Roboto";
   color: white;
   align-items: start;
 }
 
 .footer-items {
-  font-family: "Roboto";
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;

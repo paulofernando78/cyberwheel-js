@@ -2,11 +2,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  height: 310px;
+  margin-bottom: 40px;
 }
 
 .introduction h1 {
   color: white;
-  padding-top: 60px;
+  padding-top: 40px;
+  font-weight: 600;
+}
+
+.introduction p {
+  color: var(--gray-4);
 }
 
 .introduction img {
@@ -21,10 +28,8 @@
   .introduction {
     grid-template-columns: 1fr;
     gap: 32px;
-  }
-
-  .introduction .text-5xl {
-    padding-top: 0px;
+    height: auto;
+    margin-bottom: auto;
   }
 
   .introduction-content {
@@ -33,21 +38,15 @@
 
   .introduction img {
     position: static;
-    width: 60%;
+    width: 100%;
     transform: rotate(0deg);
     margin: 0 auto;
     margin-bottom: 10px;
   }
 }
 
-@media (width <= 768px) {
-  .introduction img {
-    width: 90%;
-  }
-}
-
-@media (width <= 400px) {
-  .introduction img {
-    width: 100%;
+@media (width <= 472px) {
+  .introduction h1 {
+    padding: 0;
   }
 }
