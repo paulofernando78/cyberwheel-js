@@ -33,7 +33,7 @@ color: var(--gray-4);
   background: var(--orange-4);
   position: absolute;
   left: -15px;
-  top: 2px;
+  top: 6px;
 }
 
 .social-flex {
