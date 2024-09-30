@@ -19,8 +19,7 @@
   border-radius: 5px;
 }
 
-.bicycle-info .bike {
-  min-width: 400px;
+.bicycle-info .div-img {
   margin-bottom: 22px;
 }
 
@@ -85,5 +84,11 @@
 @media (width <= 768px) {
   .bicycle-info {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 450px) {
+  .bicycle-info .div-img {
+    width: fit-content;
   }
 }

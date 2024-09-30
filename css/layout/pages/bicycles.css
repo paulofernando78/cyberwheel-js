@@ -37,17 +37,18 @@
 .price-nebula {
   position: absolute;
   color: white;
-  font-weight: bold;
   background: black;
-  padding: 7px;
+  padding: 8px;
   border-radius: 5px 5px 5px 0;
   border: 1px solid gray;
-  width: max-content;
-  height: max-content;
   top: 10px;
   left: 10px;
 }
 
 .bicycles-card:hover {
   transform: scale(1.02);
+}
+
+@media (width <= 450px) {
+  
 }
