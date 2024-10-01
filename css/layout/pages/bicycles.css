@@ -15,9 +15,6 @@
 }
 
 .bicycles-card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   padding: 10px;
   margin-block: 10px;
   background: lightgray;
@@ -26,6 +23,12 @@
   border-radius: 5px;
   transition: transform 0.3s ease;
   position: relative;
+}
+
+.bicycles-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .bicycles-card p {
@@ -50,5 +53,4 @@
 }
 
 @media (width <= 450px) {
-  
 }
