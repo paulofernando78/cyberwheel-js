@@ -30,10 +30,10 @@ color: var(--gray-4);
   content: "";
   width: 7px;
   height: 13px;
-  background: var(--orange-4);
+  background: var(--slate-4);
   position: absolute;
   left: -15px;
-  top: 6px;
+  top: 7px;
 }
 
 .social-flex {
@@ -42,6 +42,7 @@ color: var(--gray-4);
 }
 
 .rights {
+  color: white;
   padding: 20px;
 }
 

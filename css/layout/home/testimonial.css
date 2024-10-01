@@ -1,7 +1,9 @@
 .testimonial {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: var(--orange-3);
+  background: var(--slate-3);
+  border: solid 2px var(--slate-3);
+  border-radius: 5px;
 }
 
 .testimonial-content {
@@ -28,14 +30,14 @@
 .testimonial p::before,
 .testimonial p::after {
   font-size: 5rem;
-  color: var(--orange-2);
+  color: var(--slate-1);
   position: absolute;
 }
 
 .testimonial p::before {
   content: "“";
   left: -40px;
-  top: -40px;
+  top: -34px;
 }
 
 .testimonial p::after {

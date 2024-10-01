@@ -42,8 +42,10 @@
   color: white;
   background: black;
   padding: 3px 9px 3px 9px;
-  border-radius: 5px 5px 5px 0;
-  border: 1px solid lightgray;
+  border-radius: 5px 0 5px 0;
+  border: solid;
+  border-width: 0 1px 1px 0;
+  box-shadow: 0 0 1px .3px white;
   top: 10px;
   left: 10px;
 }
