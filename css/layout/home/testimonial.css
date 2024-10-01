@@ -4,6 +4,7 @@
   background: var(--slate-3);
   border: solid 2px var(--slate-3);
   border-radius: 5px;
+  margin-inline: 20px;
 }
 
 .testimonial-content {
