@@ -1,11 +1,11 @@
-.insurance-bg {
-  background: #111111;
-  height: 100vh;
+
+.insurance h1 {
+  color: white;
+  padding-bottom: 60px;
 }
 
 .insurance-grid {
   display: flex;
-  justify-content:center;
   gap: 30px;
   padding-bottom: 30px;
 }
@@ -23,14 +23,8 @@
   justify-content: space-between;
 }
 
-.insurance h1 {
-  font-family: "Poppins";
-  padding-bottom: 30px;
-}
-
 .insurance h2 {
-  font-size: var(--text-3xl);
-  font-family: "Poppins";
+  font-size: 1.3rem;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50,7 +44,7 @@
   position: relative;
 }
 
-.insurance li:before {
+.insurance .tick:before {
   content: "";
   display: inline-block;
   width: 13px;

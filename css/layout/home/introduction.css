@@ -2,13 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  height: 310px;
+  height: 300px;
   margin-bottom: 40px;
 }
 
 .introduction h1 {
   color: white;
-  padding-top: 40px;
   font-weight: 600;
 }
 
@@ -41,11 +40,10 @@
     width: 100%;
     transform: rotate(0deg);
     margin: 0 auto;
-    margin-bottom: 10px;
   }
 }
 
-@media (width <= 472px) {
+@media (width <= 499px) {
   .introduction h1 {
     padding: 0;
   }
