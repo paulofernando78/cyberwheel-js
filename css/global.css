@@ -58,11 +58,11 @@ img[src$=".svg"] {
 }
 
 .bg-blend {
-  background: linear-gradient(black, #222222, black);
+  background: linear-gradient(black, var(--slate-6), black);
 }
 
 .container {
-  padding: 60px 30px 30px 30px;
+  padding: 60px 20px 30px 20px;
 }
 
 @media (width <= 499px) {

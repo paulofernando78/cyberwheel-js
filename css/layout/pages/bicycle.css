@@ -1,5 +1,7 @@
 .bicycle h1 {
-  color: white;
+  -webkit-text-stroke: 1px var(--cyan-4);
+  text-shadow: 1px 1px 10px var(--cyan-4);
+  text-transform: uppercase;
 }
 
 .bicycle p {

@@ -1,6 +1,8 @@
 .technology h1 {
-  /* margin-top: 50px; */
-  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px var(--cyan-4);
+  text-shadow: 1px 1px 10px var(--cyan-4);
+  padding-bottom: 50px;
 }
 
 .technology-imgs {
@@ -8,7 +10,7 @@
 }
 
 .technology-bicycle-shop {
-  margin: 30px auto;
+  margin: auto 30px;
   width: 93%;
 }
 
@@ -17,8 +19,8 @@
   margin-left: 20px;
   position: absolute;
   top: -20px;
-  border-right: 5px solid white;
-  border-bottom: 5px solid white;
+  /* border-right: 5px solid black;
+  border-bottom: 5px solid black; */
 }
 
 .technology-colors {
@@ -27,8 +29,8 @@
   position: absolute;
   bottom: -25px;
   right: 0;
-  border-left: 5px solid white;
-  border-top: 5px solid white;
+  /* border-left: 5px solid white;
+  border-top: 5px solid white; */
 }
 
 .tech-grid {
@@ -51,6 +53,21 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.technology h2 {
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.5px var(--cyan-4);
+  text-shadow: 1px 1px 10px var(--cyan-4);
+}
+
+.technology h3 {
+  -webkit-text-stroke: 0.5px var(--cyan-4);
+  text-shadow: 1px 1px 10px var(--cyan-4);
+}
+
+.technology p {
+  color: var(--gray-4);
+}
+
 .flex-icons {
   display: flex;
   gap: 12px;
@@ -58,12 +75,9 @@
   width: fit-content;
 }
 
-.technology span {
-  color: white;
-}
-
 .technology-icons img {
   width: 32px;
+  box-shadow: none;
 }
 
 .technology-icons img,
@@ -71,7 +85,13 @@
   padding-bottom: 15px;
 }
 
-@media (width >= 768px) {
+@media (width <= 972px) {
+  .technology h1 {
+    padding-top: 30px;
+  }
+}
+
+@media (width > 768px) {
   .tech-grid {
     display: none;
   }

@@ -1,9 +1,13 @@
 .bicycles-container h1 {
-  color: white;
+  -webkit-text-stroke: 1px var(--cyan-4);
+  text-shadow: 1px 1px 10px var(--cyan-4);
+  text-transform: uppercase;
 }
 
 .bicycles-container h2 {
-  color: var(--gray-4);
+  -webkit-text-stroke: 1px var(--gray-4);
+  text-shadow: 1px 1px 10px var(--gray-4);
+  text-transform: uppercase;
 }
 
 .bicycles-card-container {

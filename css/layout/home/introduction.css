@@ -2,13 +2,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  height: 293px;
-  margin-bottom: 40px;
+  /* height: 293px; */
 }
 
 .introduction h1 {
-  color: white;
-  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-text-stroke: .5px var(--cyan-4);
+  text-shadow: 1px 1px 10px var(--cyan-4);
 }
 
 .introduction p {
@@ -17,7 +17,7 @@
 
 .introduction img {
   position: relative;
-  top: 70px;
+  top: 60px;
   transform: rotate(3deg);
   width: 450px;
   margin: auto;
