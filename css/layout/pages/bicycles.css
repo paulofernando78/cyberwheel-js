@@ -39,9 +39,7 @@
   flex-grow: 1;
 }
 
-.price-nimbus,
-.price-magic,
-.price-nebula {
+.price-position {
   position: absolute;
   color: white;
   background: black;

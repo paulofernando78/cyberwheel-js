@@ -5,29 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Terms and Conditions." />
     <link rel="stylesheet" href="../css/global.css" />
+    <script type="module" src="/js/index.js" defer></script>
     <title>Bicycles | Bikcraft</title>
   </head>
   <body>
-    <!-- header -->
-    <div class="header-bg">
-      <header>
-        <div class="header">
-          <div class="logo-flex">
-            <img src="../img/icones/logo.png" alt="Bike icon" class="logo" />
-            <a href="../index.html"
-              ><img src="../img/bikcraft.svg" alt="Bikcraft"
-            /></a>
-          </div>
-          <nav aria-label="primaria">
-            <ul class="header-menu">
-              <li><a href="../pages/bicycles.html">Bicycles</a></li>
-              <li><a href="../pages/insurance.html">Insurance</a></li>
-              <li><a href="../insurance/contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-    </div>
+    
 
     <main>
       <div class="bg">
@@ -36,77 +18,7 @@
           <h2>Explore our models</h2>
         </div>
       </div>
-
-      <div class="bg-blend">
-        <div class="bicycles-card-container">
-          <!-- Bicycle 1 -->
-          <div class="bicycles-card">
-            <a href="./bicycles/nimbus.html">
-              <div>
-                <img
-                  src="../img/bicicletas/1.gif"
-                  alt="Nimbus Stark"
-                  class="bicycles-img-nimbus"
-                />
-                <span class="price-nimbus">$4999</span>
-                <h3>Velocity Z3</h3>
-                <p>
-                  The <b>Velocity Z3</b> is a high-speed machine built for
-                  racing and extreme performance. With an aerodynamic frame,
-                  ultra-light materials, and cutting-edge battery technology,
-                  this bike delivers lightning-fast acceleration and top speeds,
-                  perfect for those who crave adrenaline on every ride.
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <!-- Bicycle 2 -->
-          <div class="bicycles-card">
-            <a href="./bicycles/magic.html">
-              <div>
-                <img
-                  src="../img/bicicletas/2.gif"
-                  alt="Nimbus Stark"
-                  class="bicycles-img-nimbus"
-                />
-                <span class="price-nimbus">$5999</span>
-                <h3>Vortex V9</h3>
-                <p>
-                  The <b>Vortex V9</b> is designed for effortless urban
-                  commuting with a focus on comfort and pleasure. Its smooth
-                  ride, ergonomic design, and intelligent assistance features
-                  make it the perfect choice for relaxed city journeys. With a
-                  long-lasting battery this bike ensures every ride feels
-                  enjoyable.
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <!-- Bicycle 3 -->
-          <div class="bicycles-card">
-            <a href="./bicycles/nebula.html">
-              <div>
-                <img
-                  src="../img/bicicletas/3.gif"
-                  alt="Nebula Cosmic"
-                  class="bicycles-img-nebula"
-                />
-                <span class="price-nebula">$6999</span>
-                <h3>Quantum X1</h3>
-                <p>
-                  The <b>Quantum X1</b> blends high-speed performance with urban
-                  comfort. Featuring a sleek frame and advanced battery system
-                  for swift acceleration and long-range rides, it offers
-                  intelligent assistance and plush suspension, ensuring every
-                  journey is exhilarating and enjoyable.
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+      <wc-bicycle-card></wc-bicycle-card>
     </main>
 
     <!-- footer -->
