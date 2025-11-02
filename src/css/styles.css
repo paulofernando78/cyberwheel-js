@@ -1,10 +1,15 @@
 @import "./imports.css";
 
 :root {
-  --background-color: #e0e0e0;
-  --text-color: #000000;
+  --background-color: #18191f;
+  --text-color: #ffffff;
   --border-radius: 5px;
   --header: max-content;
+}
+
+[data-theme="dark"] {
+  --background-color: #e0e0e0;
+  --text-color: #000000;
 }
 
 body {

@@ -4,7 +4,6 @@
 
 /* theme */
 @import "@css/theme/colors.css";
-@import "@css/theme/dark-mode.css";
 
 /* utilities */
 @import "@css/utils/spacing.css";
@@ -12,3 +11,8 @@
 @import "@css/utils/display.css";
 @import "@css/utils/spacing.css";
 @import "@css/utils/text.css";
+
+/* Pages */
+@import "/src/css/pages/home.css";
+/* @import "/src/css/pages/bicycles.css";
+@import "/src/css/pages/insurance.css"; */
