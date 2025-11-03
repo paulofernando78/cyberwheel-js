@@ -2,14 +2,16 @@
 
 :root {
   --background-color: #18191f;
-  --text-color: #ffffff;
+  --color: var(--gray-1);
+  --icon-color: var(--gray-1);
   --border-radius: 5px;
   --header: max-content;
 }
 
 [data-theme="dark"] {
   --background-color: #e0e0e0;
-  --text-color: #000000;
+  --color: #000000;
+  --icon-color: #18191f;
 }
 
 body {
@@ -17,6 +19,7 @@ body {
   margin: 0 auto;
   padding: var(--padding);
   background-color: var(--background-color, #fff);
+  color: var(--color);
   /* Grid Areas */
   display: grid;
   grid-template-rows: auto 1fr;
@@ -39,6 +42,7 @@ header {
 }
 
 .header-logo {
+  font-family: "BBH Sans Bartle", sans-serif;
   line-height: 1;
 }
 
@@ -55,9 +59,7 @@ nav.visible {
 }
 
 main {
-  border: 1px solid var(--gray-4);
-  padding: 0 5px 2px 5px;
-  border-radius: var(--border-radius);
+  padding: 5px;
   height: 100%;
 }
 

@@ -1,18 +1,28 @@
-.section-3 {
+.customization img {
+  width: 95%;
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+}
+
+.technology {
   display: flex;
   gap: 10px;
 }
 
-.review-container {
+.review {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-}
-
-.review img {
-  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .review {
- background-color: var(--gray-2);
+  background-color: var(--gray-2);
+}
+
+@media (max-width: 600px) {
+  .technology {
+    flex-direction: column;
+  }
 }
