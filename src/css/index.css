@@ -2,7 +2,7 @@
 
 :root {
   --background-color: #18191f;
-  --color: var(--gray-1);
+  --color: var(--slate-4);
   --icon-color: var(--gray-1);
   --border-radius: 5px;
   --header: max-content;
@@ -15,21 +15,15 @@
 }
 
 body {
-  max-width: 1100px;
-  margin: 0 auto;
   padding: var(--padding);
   background-color: var(--background-color, #fff);
   color: var(--color);
-  /* Grid Areas */
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: auto 1fr;
-  grid-template-areas:
-    "header header"
-    "nav main"
-    "nav footer";
-  gap: 5px;
-  height: 100dvh;
+}
+
+.layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100dvh;
 }
 
 header {
@@ -44,14 +38,18 @@ header {
 .header-logo {
   font-family: "BBH Sans Bartle", sans-serif;
   line-height: 1;
+  color: #000;
+  text-shadow: 1px 1px 5px rgba(0, 255, 255, 0.6);
+  font-style: italic;
 }
 
 nav {
   grid-area: nav;
   border: 1px solid var(--gray-4);
-  padding: var(--padding);
+  padding: 5px 5px 5px 7px;
   border-radius: var(--border-radius);
   width: 100px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 nav.visible {
@@ -65,29 +63,21 @@ main {
 
 footer {
   grid-area: footer;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--gray-4);
-  border-radius: var(--border-radius);
-  height: 36px;
-  font-size: 0.9rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin: 0 auto;
 }
 
-@media (max-width: 700px) {
-  body {
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+@media (min-width: 700px) {
+  .layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
     grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
-  }
-
-  nav {
-    display: none;
-    width: 100%;
+      "header header"
+      "nav main"
+      "nav footer";
+    gap: 5px;
   }
 }
 
@@ -98,5 +88,17 @@ footer {
 
   .header-logo {
     padding-left: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
   }
 }

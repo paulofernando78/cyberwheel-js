@@ -3,25 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
     <script type="module" src="./src/js/main.js" defer></script>
     <title>Boilerplate</title>
   </head>
   <body>
-    <header>
-      <wc-button icon="menu" id="menu"></wc-button>
-      <a href="/" class="header-logo" data-link="">CYBER WHEEL</a>
-      <wc-button icon="lightMode"></wc-button>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="/about" data-link>About</a></li>
-      </ul>
-      <ul>
-        <li><a href="/contact" data-link>Contact</a></li>
-      </ul>
-    </nav>
-    <main id="app"></main>
-    <footer>Copyright © 2025 ... Inc. All rights reserved.</footer>
+    <div class="layout">
+      <!-- Header -->
+      <header>
+        <wc-button icon="menu" id="menu"></wc-button>
+        <a href="/" class="header-logo" data-link="">CYBER WHEEL</a>
+        <wc-button icon="lightMode"></wc-button>
+      </header>
+
+      <!-- Nav -->
+      <nav>
+        <ul>
+          <li><a href="/bikes" data-link>Bikes</a></li>
+          <li><a href="/contact" data-link>Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <main id="app"></main>
+
+      <!-- Footer -->
+      <footer>
+        <div>
+          <span class="display-block margin-bottom">CONTACT</span>
+          <ul>
+            <li>+1-555-123-4567</li>
+            <li><a maito>contact@cyberwheel.com</a></li>
+            <li>1234 Cycle Lane</li>
+            <li>New York</li>
+            <li>NY 10001, USA</li>
+          </ul>
+        </div>
+        <div>
+          <span class="display-block margin-bottom">INFORMATION</span>
+          <ul>
+            <li>Bicycles</li>
+            <li>Insurance</li>
+            <li>Terms and Condition</li>
+          </ul>
+        </div>
+        <div>
+          <span class="display-block margin-bottom">SOCIAL</span>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div></div>
+        <div></div>
+      </footer>
+    </div>
   </body>
 </html>

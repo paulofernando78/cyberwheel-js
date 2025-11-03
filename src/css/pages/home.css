@@ -9,20 +9,57 @@
   gap: 10px;
 }
 
-.review {
+.review-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   overflow: hidden;
 }
 
 .review {
   background-color: var(--gray-2);
+  display: grid;
+  place-items: center;
+  padding-inline: 50px;
+  color: #080808;
+}
+
+.review-text {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.review-text::before {
+  position: absolute;
+  content: "“";
+  top: -25px;
+  left: -30px;
+}
+
+.review-text::after {
+  content: "”";
+  position: absolute;
+  bottom: -25px;
+  right: -30px;
+}
+
+.review-text::before,
+.review-text::after {
+  font-size: 3rem;
+}
+
+.our-partners {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 600px) {
   .technology {
+    flex-direction: column;
+  }
+
+  .review-container {
+    display: flex;
     flex-direction: column;
   }
 }

@@ -1,7 +1,7 @@
 const routes = {
   404: "/pages/404.hmtl",
   "/": "/pages/home.html",
-  "/about": "/pages/about.html",
+  "/bikes": "/pages/bikes.html",
   "/contact": "/pages/contact.html",
 };
 
