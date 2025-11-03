@@ -8,6 +8,14 @@
   animation: fadeIn 0.4s;
 }
 
+:host([icon="darkMode"]) svg {
+  fill: var(--blue-6);
+}
+
+:host([icon="lightMode"]) svg {
+  fill: var(--yellow-5);
+}
+
 button {
   all: unset;
   cursor: pointer;

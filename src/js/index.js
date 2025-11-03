@@ -1,17 +1,3 @@
-const menuBtn = document.querySelector("wc-button[icon='menu']");
-const navBar = document.querySelector("nav");
-const navLinks = document.querySelectorAll("nav li a");
-
-menuBtn.addEventListener("nav-click", () => {
-  navBar.classList.toggle("visible");
-});
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navBar.classList.remove("visible");
-  });
-});
-
 const darkModeBtn = document.querySelector("wc-button[icon='lightMode']");
 
 darkModeBtn.addEventListener("click", () => {
