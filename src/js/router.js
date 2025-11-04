@@ -1,8 +1,8 @@
 const routes = {
-  404: "/pages/404.hmtl",
-  "/": "/pages/home.html",
-  "/bikes": "/pages/bikes.html",
-  "/contact": "/pages/contact.html",
+  404: "/src/pages/404.html",
+  "/": "/src/pages/home.html",
+  "/bikes": "/src/pages/bikes.html",
+  "/contact": "/src/pages/contact.html",
 };
 
 export function navigateTo(path) {
@@ -20,8 +20,24 @@ export async function renderRoute() {
     if (!response.ok) throw new Error("Page not found");
     const html = await response.text();
     app.innerHTML = html;
+
+    setTimeout(() => {
+      const carousel = document.querySelector(".carousel");
+      const leftBtn = document.querySelector("#left");
+      const rightBtn = document.querySelector("#right");
+      console.log("Buttons found", leftBtn, rightBtn);
+
+      if (leftBtn && rightBtn && carousel) {
+        leftBtn.addEventListener("click", () => {
+          carousel.scrollBy({ left: -200, behavior: "smooth" });
+        });
+        rightBtn.addEventListener("click", () => {
+          carousel.scrollBy({ left: 200, behavior: "smooth" });
+        });
+      }
+    });
   } catch (err) {
-    app.innerHTML = `<h1>404 - Page Not Found</h1>`
+    app.innerHTML = `<h1>404 - Page Not Found</h1>`;
   }
 }
 

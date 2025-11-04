@@ -6,6 +6,7 @@
   --icon-color: var(--gray-1);
   --border-radius: 5px;
   --header: max-content;
+  scrollbar-gutter: stable;
 }
 
 [data-theme="dark"] {
@@ -35,7 +36,9 @@ header {
   font-family: "BBH Sans Bartle", sans-serif;
   line-height: 1;
   color: #000;
-  text-shadow: 1px 1px 5px rgba(0, 255, 255, 0.6);
+  text-shadow:
+  1px 1px 1px var(--gray-5),
+  2px 2px 10px var(--slate-5);
   font-style: italic;
   padding-left: 8px;
 }
@@ -73,11 +76,8 @@ section {
 }
 
 footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  gap: 30px;
-  padding: var(--padding);
+  text-align: center;
+
 }
 
 @media (max-width: 700px) {
