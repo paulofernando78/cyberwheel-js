@@ -1,22 +1,25 @@
 .wrapper {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
+
   justify-content: center;
   position: relative;
+  /* width: 40%; */
 }
 
 .carousel {
   display: flex;
-  /* justify-content: center; */
   gap: 0.7rem;
   margin-inline: 40px;
   overflow-x: auto;
-  scrollbar-width: none;      /* Firefox */
-  -ms-overflow-style: none;   /* IE e Edge antigos */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE e Edge antigos */
+
+  scroll-snap-type: x mandatory;
 }
 
-.carousel::-webkit-scrollbar { /* Chrome, Safari, Opera */
-  display: none;
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .left-button {
@@ -45,10 +48,10 @@
 }
 
 .card {
+  scroll-snap-align: start;
   border-radius: var(--border-radius);
   border: 1px solid var(--slate-5);
   overflow: hidden;
-  width: 300px;
   flex: 0 0 22rem;
 }
 

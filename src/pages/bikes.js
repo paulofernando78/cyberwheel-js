@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<section class="line-break">
+export function Bikes(app) {
+  /*html*/ 
+  app.innerHTML = `
+  <section class="line-break">
   <h1>Our Bikes</h1>
   <div>
     <p>Check out our cutting-edge bikes.</p>
@@ -21,7 +23,7 @@
       </li>
       <li class="card">
         <img src="/images/bikes/urban-z3.png" alt="" />
-        <h2>Urbar Z3</h2>
+        <h2>Urban Z3</h2>
         <h3>Precision Meets Power</h3>
         <p>
           Bridging elegance and performance, the Rider Z3 is crafted for riders
@@ -59,17 +61,21 @@
     <button class="right-button" id="right">❯</button>
   </div>
 </section>
-<script>
+  `;
+
   setTimeout(() => {
+    const carousel = document.querySelector(".carousel");
     const leftBtn = document.querySelector("#left");
     const rightBtn = document.querySelector("#right");
-    console.log("Buttons found");
+    console.log("Buttons found", leftBtn, rightBtn);
 
-    if (leftBtn && rightBtn) {
+    if (leftBtn && rightBtn && carousel) {
       leftBtn.addEventListener("click", () => {
-        leftBtn.addEventListener("click", () => console.log("← clicked"));
-        rightBtn.addEventListener("click", () => console.log("→ clicked"));
+        carousel.scrollBy({ left: -carousel.offsetWidth, behavior: "smooth" });
+      });
+      rightBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: carousel.offsetWidth, behavior: "smooth" });
       });
     }
   });
-</script>
+}
