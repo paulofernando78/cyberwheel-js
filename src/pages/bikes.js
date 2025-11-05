@@ -63,11 +63,9 @@ export function Bikes(app) {
 </section>
   `;
 
-  setTimeout(() => {
     const carousel = document.querySelector(".carousel");
     const leftBtn = document.querySelector("#left");
     const rightBtn = document.querySelector("#right");
-    console.log("Buttons found", leftBtn, rightBtn);
 
     if (leftBtn && rightBtn && carousel) {
       leftBtn.addEventListener("click", () => {
@@ -77,5 +75,4 @@ export function Bikes(app) {
         carousel.scrollBy({ left: carousel.offsetWidth, behavior: "smooth" });
       });
     }
-  });
 }
