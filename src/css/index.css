@@ -29,12 +29,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header-logo {
   line-height: 1;
   font-style: italic;
-  padding-left: 48px;
+  padding-left: 8px;
 }
 
 nav {
@@ -80,13 +81,14 @@ section {
 }
 
 footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 50px;
   padding: 20px;
   background-color: #242424;
   box-shadow: 0 -3px 6px #242424, 0 3px 6px #18191f;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  color: var(--slate-4)
 }
 
 @media (max-width: 630px) {

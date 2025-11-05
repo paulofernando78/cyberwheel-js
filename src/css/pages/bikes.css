@@ -1,15 +1,14 @@
 .wrapper {
   /* display: flex;
   align-items: center; */
-
+  margin: 0 auto;
   justify-content: center;
   position: relative;
-  /* width: 40%; */
+  width: clamp(300px, 100vw, 600px);
 }
 
 .carousel {
   display: flex;
-  gap: 0.7rem;
   margin-inline: 40px;
   overflow-x: auto;
   scrollbar-width: none; /* Firefox */
@@ -24,18 +23,17 @@
 
 .left-button {
   padding-right: 0.1rem;
-  top: 50%;
-  left: -5px;
+  left: 25px;
 }
 
 .right-button {
   padding-left: 0.1rem;
-  top: 50%;
-  right: -5px;
+  right: 25px;
 }
 
 .right-button,
 .left-button {
+  top: 30%;
   width: 35px;
   height: 35px;
   font-size: 1.4rem;
@@ -48,11 +46,11 @@
 }
 
 .card {
+  flex: 0 0 100%;
   scroll-snap-align: start;
   border-radius: var(--border-radius);
   border: 1px solid var(--slate-5);
   overflow: hidden;
-  flex: 0 0 22rem;
 }
 
 .card img {
