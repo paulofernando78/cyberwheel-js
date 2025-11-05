@@ -45,14 +45,6 @@ em {
   font-style: italic;
 }
 
-a {
-  color: var(--slate-5);
-  text-decoration: none;
-  transition: color 0.2s ease;
-
-  font-size: 1.2rem;
-  line-height: 1;
-}
 a:hover {
   color: var(--slate-4);
 }

@@ -16,10 +16,6 @@ export async function renderRoute() {
       const bikesModule = await import("/src/pages/bikes.js");
       bikesModule.Bikes(app);
       break;
-    case "/contact":
-      const contactModule = await import("/src/pages/contact.js");
-      contactModule.Contact(app);
-      break;
     default:
       const notFoundModule = await import("/src/pages/404.js");
       notFoundModule.NotFound(app);

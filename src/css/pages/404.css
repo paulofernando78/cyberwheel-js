@@ -1,7 +1,5 @@
-:host {
+.not-found {
   text-align: center;
-}
-
-.container {
-  margin-top: 50px;
+  font-size: 2rem;
+  padding: 50px;
 }
