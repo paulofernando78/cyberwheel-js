@@ -51,15 +51,21 @@ export function Bikes(app) {
     li.className = "card";
     /* html*/
     li.innerHTML = `
-    <div class="img-wrapper">
-      <img src="${bike.img}" alt="${bike.alt}" class="bike-img"/>
-      <button class="left-button">❮</button>
-      <button class="right-button">❯</button>
-    </div>
+    <figure>
+      <div class="img-wrapper">
+        <img src="${bike.img}" alt="${bike.alt}" class="bike-img"/>
+        <button class="left-button">❮</button>
+        <button class="right-button">❯</button>
+      </div>
+      <figcaption>
+        <h2>${bike.title}</h2>
+        <h3>${bike.subtitle}</h3>
+        <p>${bike.description}</p>
+    </figcaption>
       
-      <h2>${bike.title}</h2>
-      <h3>${bike.subtitle}</h3>
-      <p>${bike.description}</p>
+    </figure>
+      
+      
     `;
     ul.appendChild(li);
   });

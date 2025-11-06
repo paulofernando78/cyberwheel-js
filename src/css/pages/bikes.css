@@ -4,7 +4,6 @@
   margin: 0 auto;
   justify-content: center;
   width: 700px;
-  position: relative;
 }
 
 .carousel {
@@ -13,7 +12,7 @@
   overflow-x: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE e Edge antigos */
-  
+
   scroll-snap-type: x mandatory;
 }
 
@@ -23,22 +22,26 @@
 
 .img-wrapper {
   position: relative;
-  display: inline-block;
-  z-index: 1;
+}
+
+.figure {
+  position: relative;
 }
 
 .left-button {
-  padding-right: 0.1rem;
+  padding-right: 0.2rem;
+  padding-bottom: 0.1rem;
   top: 50%;
   transform: translateY(-50%);
-  left: -20px;
+  left: 5px;
 }
 
 .right-button {
-  padding-left: 0.1rem;
+  padding-left: 0.2rem;
+  padding-bottom: 0.1rem;
   top: 50%;
   transform: translateY(-50%);
-  right: -20px;
+  right: 5px;
 }
 
 .right-button,
@@ -47,16 +50,13 @@
   height: 35px;
   font-size: 1.4rem;
   border-radius: 50%;
-  background-color: var(--slate-3);
+  background-color: var(--slate-7);
+  color: white;
   cursor: pointer;
   border: none;
   padding-top: 0.1rem;
   position: absolute;
-  z-index: 2;
-}
-
-.bike-img {
-  z-index: 0;
+  z-index: 1;
 }
 
 .card {
