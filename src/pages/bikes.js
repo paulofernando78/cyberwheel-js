@@ -1,5 +1,6 @@
+import { navigateTo } from "../js/router";
+
 export function Bikes(app) {
-  
   const carouselData = [
     {
       img: "/images/bikes/rider-a1.png",
@@ -27,19 +28,21 @@ export function Bikes(app) {
     },
   ];
 
+  /* html */
   app.innerHTML = `
     <section class="line-break">
       <h1>Our bikes</h1>
-        <p>Check out our cutting-edge bikes.</p>
+        <p>Check out our cutting-edge bikes models.</p>
         <div class="wrapper">
           <ul class="carousel">
             ${carouselData
               .map(
+                /* html */
                 (bike) => `
               <li class="carousel__card">
                 <figure>
                   <div class="carousel__img-wrapper">
-                    <img src="${bike.img}" alt="${bike.alt}" class="bike-img"/>
+                    <img src="${bike.img}" alt="${bike.alt}" class="carousel__card-img"/>
                     <button class="carousel__button--left">❮</button>
                     <button class="carousel__button--right">❯</button>
                   </div>
@@ -49,6 +52,7 @@ export function Bikes(app) {
                     <p>${bike.description}</p>
                   </figcaption>
                 </figure> 
+                <button class="carousel__button__link">Details</button>
               </li>
               `
               )
@@ -62,15 +66,31 @@ export function Bikes(app) {
   const leftBtns = app.querySelectorAll(".carousel__button--left");
   const rightBtns = app.querySelectorAll(".carousel__button--right");
 
+  // Left Button
   leftBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       ul.scrollBy({ left: -ul.offsetWidth, behavior: "smooth" });
     });
   });
 
+  // Right Button
   rightBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       ul.scrollBy({ left: ul.offsetWidth, behavior: "smooth" });
     });
+  });
+
+  // Details
+  const linkBtns = app.querySelectorAll(".carousel__button__link");
+  linkBtns[0].addEventListener("click", () => {
+    navigateTo("/bikes/rider-a1");
+  });
+
+  linkBtns[1].addEventListener("click", () => {
+    navigateTo("/bikes/urban-z3");
+  });
+
+  linkBtns[2].addEventListener("click", () => {
+    navigateTo("/bikes/ares-x10");
   });
 }

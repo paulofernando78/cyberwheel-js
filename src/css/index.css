@@ -91,6 +91,17 @@ footer {
   color: var(--slate-4)
 }
 
+.footer__social-media {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+svg {
+  width: 30px;
+  fill: white
+}
+
 @media (max-width: 630px) {
   header {
     padding-top: 20px;
@@ -113,5 +124,6 @@ footer {
   footer {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 }
