@@ -47,12 +47,14 @@ export function Bikes(app) {
                     <button class="carousel__button--right">❯</button>
                   </div>
                   <figcaption>
-                    <h2>${bike.title}</h2>
-                    <h3>${bike.subtitle}</h3>
-                    <p>${bike.description}</p>
+                    <div class="carousel__info">
+                      <h2>${bike.title}</h2>
+                      <h3>${bike.subtitle}</h3>
+                      <p class="carousel__description">${bike.description}</p>
+                      <button class="carousel__button__link">Details</button>
+                    </div>
                   </figcaption>
                 </figure> 
-                <button class="carousel__button__link">Details</button>
               </li>
               `
               )
@@ -82,15 +84,24 @@ export function Bikes(app) {
 
   // Details
   const linkBtns = app.querySelectorAll(".carousel__button__link");
-  linkBtns[0].addEventListener("click", () => {
-    navigateTo("/bikes/rider-a1");
-  });
+  const bikeRoutes = ["/bikes/rider-a1", "/bikes/urban-z3", "/bikes/ares-x10"]
 
-  linkBtns[1].addEventListener("click", () => {
-    navigateTo("/bikes/urban-z3");
-  });
+  // Shorter version
+  linkBtns.forEach((Btn, i) => {
+    if (bikeRoutes[i]) {
+      Btn.addEventListener("click", () => navigateTo(bikeRoutes[i]))
+    }
+  })
 
-  linkBtns[2].addEventListener("click", () => {
-    navigateTo("/bikes/ares-x10");
-  });
+  // linkBtns[0].addEventListener("click", () => {
+  //   navigateTo("/bikes/rider-a1");
+  // });
+
+  // linkBtns[1].addEventListener("click", () => {
+  //   navigateTo("/bikes/urban-z3");
+  // });
+
+  // linkBtns[2].addEventListener("click", () => {
+  //   navigateTo("/bikes/ares-x10");
+  // });
 }

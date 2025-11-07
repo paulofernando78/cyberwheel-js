@@ -1,0 +1,6 @@
+.rider-a1__img {
+  margin: 0 auto;
+  width: 90%;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
