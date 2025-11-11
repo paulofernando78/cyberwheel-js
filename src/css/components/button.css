@@ -23,7 +23,15 @@ button {
 }
 
 svg {
-  fill: var(--icon-color)
+  fill: var(--icon-color);
+}
+
+.btn--with-label {
+  width: max-content;
+  padding: 22px;
+  background-color: var(--slate-6);
+  border-radius: var(--border-radius);
+  font-weight: bold;
 }
 
 @keyframes fadeIn {

@@ -1,6 +1,6 @@
 import styleImports from "@css/imports.css?inline";
 import styleButton from "@css/components/button.css?inline";
-import { menu, lightMode, darkMode } from "../../../assets/images/svg-imports";
+import { lightMode, darkMode } from "../../../assets/images/svg-imports";
 
 class Button extends HTMLElement {
   static get observedAttributes() {
@@ -39,9 +39,16 @@ class Button extends HTMLElement {
   }
 
   updateIcon() {
-    const icons = { menu, lightMode, darkMode };
+    const icons = { lightMode, darkMode };
     const iconAttr = this.getAttribute("icon");
-    this.button.innerHTML = icons[iconAttr] || "";
+    const labelAttr = this.getAttribute("label")
+
+    if (labelAttr) {
+      this.button.textContent = labelAttr
+      this.button.className = "btn--with-label"
+    } else {
+      this.button.innerHTML = icons[iconAttr] || "";
+    }
   }
 }
 

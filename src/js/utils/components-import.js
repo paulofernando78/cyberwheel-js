@@ -7,6 +7,10 @@ import Button from "../components/atoms/Button"
 
 // Organisms
 
+// Organisms
+
+// Template
+import Bike from "../components/template/bike"
 
 //! Customs 
 
@@ -16,3 +20,6 @@ customElements.define("wc-button", Button)
 // Molecules
 
 // Organisms
+
+// Template
+customElements.define("wc-bike", Bike)
