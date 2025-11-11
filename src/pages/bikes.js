@@ -32,41 +32,36 @@ export function Bikes(app) {
   app.innerHTML = `
     <section class="line-break">
       <h1>Our bikes</h1>
-        <p>Check out our cutting-edge bikes models.</p>
-        <div class="wrapper">
-          <ul class="carousel">
-            ${carouselData
-              .map(
-                /* html */
-                (bike) => `
-              <li class="carousel__card">
+        <p>Check out our cutting-edge bike models.</p>
+        <div class="bikes__wrapper">
+          <ul class="bikes__carousel">
+            ${carouselData.map((bike) => /* html */ `
+              <li class="bikes__carousel__card">
                 <figure>
-                  <div class="carousel__img-wrapper">
-                    <img src="${bike.img}" alt="${bike.alt}" class="carousel__card-img"/>
-                    <button class="carousel__button--left">❮</button>
-                    <button class="carousel__button--right">❯</button>
+                  <div class="bikes__carousel__img-wrapper">
+                    <img src="${bike.img}" alt="${bike.alt}" class="bikes__carousel__card-img"/>
+                    <button class="bikes__carousel__button--left">❮</button>
+                    <button class="bikes__carousel__button--right">❯</button>
                   </div>
                   <figcaption>
-                    <div class="carousel__info">
+                    <div class="bikes__carousel__info">
                       <h2>${bike.title}</h2>
                       <h3>${bike.subtitle}</h3>
-                      <p class="carousel__description">${bike.description}</p>
-                      <button class="carousel__button__link">Details</button>
+                      <p class="bikes__carousel__description">${bike.description}</p>
+                      <wc-button label="DETAILS" class="bikes__carousel__button-link"></wc-button>
                     </div>
                   </figcaption>
                 </figure> 
               </li>
-              `
-              )
-              .join("")}  
+            `).join("")}  
           </ul>
-        </div>
+      </div>
     </section>
-      `;
+            `;
 
   const ul = app.querySelector("ul"); // Needed to link to *ul.scrollBy*
-  const leftBtns = app.querySelectorAll(".carousel__button--left");
-  const rightBtns = app.querySelectorAll(".carousel__button--right");
+  const leftBtns = app.querySelectorAll(".bikes__carousel__button--left");
+  const rightBtns = app.querySelectorAll(".bikes__carousel__button--right");
 
   // Left Button
   leftBtns.forEach((btn) => {
@@ -83,7 +78,7 @@ export function Bikes(app) {
   });
 
   // Details
-  const linkBtns = app.querySelectorAll(".carousel__button__link");
+  const linkBtns = app.querySelectorAll(".bikes__carousel__button-link");
   const bikeRoutes = ["/bikes/rider-a1", "/bikes/urban-z3", "/bikes/ares-x10"]
 
   // Shorter version

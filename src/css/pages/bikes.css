@@ -1,4 +1,4 @@
-.wrapper {
+.bikes__wrapper {
   /* display: flex;
   align-items: center; */
   margin: 0 auto;
@@ -6,7 +6,7 @@
   width: 700px;
 }
 
-.carousel {
+.bikes__carousel {
   display: flex;
   margin-inline: 40px;
   overflow-x: auto;
@@ -15,28 +15,28 @@
   scroll-snap-type: x mandatory;
 }
 
-.carousel::-webkit-scrollbar {
+.bikes__carousel::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
 
-.carousel__img-wrapper {
+.bikes__carousel__img-wrapper {
   position: relative;
 }
 
-.carousel__button--left {
+.bikes__carousel__button--left {
   top: 50%;
   transform: translateY(-50%);
   left: 10px;
 }
 
-.carousel__button--right {
+.bikes__carousel__button--right {
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
 }
 
-.carousel__button--left,
-.carousel__button--right {
+.bikes__carousel__button--left,
+.bikes__carousel__button--right {
   background-color: rgba(0, 0, 0, 0.1);
   color: white;
   font-size: 1.4rem;
@@ -47,7 +47,7 @@
   z-index: 1;
 }
 
-.carousel__card {
+.bikes__carousel__card {
   flex: 0 0 100%;
   scroll-snap-align: start;
   border: 1px solid var(--slate-5);
@@ -55,35 +55,35 @@
   overflow: hidden;
 }
 
-.carousel__card-img {
+.bikes__carousel__card-img {
   outline: 1px solid var(--slate-5);
 }
 
-.carousel__info {
+.bikes__carousel__info {
   padding: var(--padding);
 }
 
-.carousel__card h3 {
+.bikes__carousel__card h3 {
   margin-bottom: 10px;
   font-size: 1.3rem;
 }
 
-.carousel__card h2,
-.carousel__card h3,
-.carousel__card p {
+.bikes__carousel__card h2,
+.bikes__carousel__card h3,
+.bikes__carousel__card p {
   text-align: justify;
 }
 
-.carousel__description {
+.bikes__carousel__description {
   margin-bottom: 20px;
 }
 
-.carousel__button__link {
-  padding: 5px;
+.bikes__carousel__button-link {
+  position: static;
 }
 
 @media (max-width: 700px) {
-  .wrapper {
+  .bikes__wrapper {
     width: 100%;
   }
 }

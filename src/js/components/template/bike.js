@@ -57,14 +57,11 @@ class Bike extends HTMLElement {
                 </li>
               `).join("")}
             </ul>
-            <div class="bike__buy-now__wrapper">
-              <button>BUY NOW</button>
-              <div class="bike__method-container">
-                <span class="bike__method">Delivery in 5 days</span>
-                <span class="bike__method">18 in stock</span>
-              </div>
-              
+            <div class="bike__method-container">
+              <span class="bike__method">Delivery in 5 days</span>
+              <span class="bike__method">18 in stock</span>
             </div>
+            <wc-button label="BUY NOW"></wc-button>
           </section>
         </div>
       </div>
