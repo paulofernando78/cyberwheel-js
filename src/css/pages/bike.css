@@ -1,5 +1,5 @@
 :root {
-  --border-rider-a1: 2px solid #9cdfe8;
+  --border-thicker: 2px solid var(--slate-4);
   --padding-info-tech: 11px 17px 8px 15px;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .bike__img {
-  border: var(--border);
+  border: var(--border-thicker);
   border-radius: var(--border-radius);
 }
 
@@ -37,14 +37,14 @@
   background: black;
   padding: var(--padding-info-tech);
   border-radius: var(--border-radius);
-  border: var(--border-rider-a1);
+  border: var(--border-thicker);
   margin-bottom: 20px;
 }
 
 .bike__tech-specs {
   background: black;
   padding: var(--padding-info-tech);
-  border: var(--border-rider-a1);
+  border: var(--border-thicker);
   border-radius: var(--border-radius);
 }
 

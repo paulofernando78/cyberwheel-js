@@ -91,7 +91,9 @@ footer {
   margin-top: 50px;
   padding: 20px;
   background-color: #242424;
-  box-shadow: 0 -3px 6px #242424, 0 3px 6px #18191f;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   text-align: center;
   color: var(--slate-4)
 }
