@@ -1,10 +1,10 @@
 export function Home(home) {
-  /*html*/ 
+  /*html*/
   home.innerHTML = `
   <div class="line-break">
   <!--  Introduction -->
   <section class="line-break">
-    <h1>The future of biking starts here</h1>
+    <h1>The <span id="future">future</span> of biking starts here</h1>
     <div>
       <p>
         Experience cutting-edge, battery-powered bicycles designed for the
@@ -68,6 +68,5 @@ export function Home(home) {
     <h1>Our Partners</h1>
   </section>
 </div>
-  `
+  `;
 }
-

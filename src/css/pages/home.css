@@ -1,3 +1,22 @@
+#future {
+  display: inline-block;
+  color: #00eaff;
+  text-shadow:
+    0 0 8px #00eaff,
+    0 0 16px #00eaff,
+    0 0 24px #00eaff;
+  animation: wave 3s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(3deg);
+  }
+}
+
 .customization img {
   width: 95%;
   margin: 0 auto;

@@ -15,7 +15,7 @@ export function riderA1(app) {
       },
       {
         "title":"Max Speed",
-        "info":"25 km/h assisted"
+        "info":"20 km/h assisted"
       },
       {
         "title":"Battery",
@@ -30,7 +30,7 @@ export function riderA1(app) {
       tech='[
         {
           "title": "Weight",
-          "info": "9 kg"
+          "info": "12 kg"
         },
         {
           "title": "Height",
@@ -46,7 +46,7 @@ export function riderA1(app) {
         },
         {
         "title": "Gears",
-        "info": "16-speed"
+        "info": "10-speed"
         },
         {
         "title": "Wheel Size",

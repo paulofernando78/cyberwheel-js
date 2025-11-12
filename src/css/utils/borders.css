@@ -1,7 +1,5 @@
 :root {
   --border: 1px solid var(--slate-6);
   --border-radius: 5px;
-  --box-shadow: 0 0 10px var(--slate-6);
-  --img-border: 5px solid rgba(211, 211, 211, 0.233);
-  --img-border: 5px solid grey;
+  --box-shadow: 0 0 12px var(--slate-6);
 }

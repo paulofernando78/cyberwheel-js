@@ -1,18 +1,59 @@
 export function urbanZ3(app) {
-
-  const bikeData = [
-    {
-      img: "/images/bikes/urban-z3.png",
-      alt: "",
-      title: "Urban Z3",
-      subtitle: "Precision Meets Power",
-      description:
-        "Bridging elegance and performance, the Rider Z3 is crafted for riders who crave more. With a redefined aerodynamic frame, improved torque delivery, and advanced smart control, it delivers both stability and acceleration when you need it most. It’s not just a ride — it’s the transition from everyday to exceptional.",
-    }
-  ];
-
   /* html */ 
   app.innerHTML = `
-    <h1>Urban Z3</h1>
-  `
+    <wc-bike
+      img="/images/bikes/urban-z3.png"
+      alt="Urban Z3 model"
+      title= "Urban Z3",
+      subtitle= "Precision Meets Power",
+      description=
+        "Bridging elegance and performance, the Rider Z3 is crafted for riders who crave more. With a redefined aerodynamic frame, improved torque delivery, and advanced smart control, it delivers both stability and acceleration when you need it most. It’s not just a ride — it’s the transition from everyday to exceptional."
+      info='[
+      {
+        "title":"Electric Motor",
+        "info":""
+      },
+      {
+        "title":"Max Speed",
+        "info":"35"
+      },
+      {
+        "title":"Battery",
+        "info":""
+      }
+      ,
+      {
+        "title":"Material",
+        "info":""
+      }
+      ]'
+      tech='[
+        {
+          "title": "Weight",
+          "info": "9 kg"
+        },
+        {
+          "title": "Height",
+          "info": "60 cm"
+        },
+        {
+        "title": "Width",
+        "info": "120 cm"
+        },
+        {
+        "title": "Depth",
+        "info": "10 cm"
+        },
+        {
+        "title": "Gears",
+        "info": "16-speed"
+        },
+        {
+        "title": "Wheel Size",
+        "info": "29 in"
+        }
+      ]'
+    >
+    </wc-bike>
+  `;
 }

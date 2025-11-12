@@ -31,6 +31,9 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .header-logo {

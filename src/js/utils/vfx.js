@@ -1,6 +1,6 @@
-import { VFX } from "@vfx-js/core";
+// import { VFX } from "@vfx-js/core";
 
-const logo = document.querySelector(".header-logo");
+// const logo = document.querySelector("#future");
 
-const vfx = new VFX();
-vfx.add(logo, { shader: "glitch", overflow: 100 });
+// const vfx = new VFX();
+// vfx.add(logo, { shader: "glitch", overflow: 100 });

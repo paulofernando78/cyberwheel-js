@@ -7,6 +7,8 @@
 }
 
 .bikes__carousel {
+  margin-top: 48px;
+  box-shadow: var(--box-shadow);
   display: flex;
   margin-inline: 40px;
   overflow-x: auto;
@@ -50,7 +52,7 @@
 .bikes__carousel__card {
   flex: 0 0 100%;
   scroll-snap-align: start;
-  border: 1px solid var(--slate-5);
+  border: 2px solid var(--slate-5);
   border-radius: var(--border-radius);
   overflow: hidden;
 }
@@ -60,7 +62,8 @@
 }
 
 .bikes__carousel__info {
-  padding: var(--padding);
+  padding: 7px 10px 10px 10px;
+  background-color: black;
 }
 
 .bikes__carousel__card h3 {
