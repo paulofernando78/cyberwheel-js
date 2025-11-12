@@ -11,20 +11,20 @@ export function urbanZ3(app) {
       info='[
       {
         "title":"Electric Motor",
-        "info":""
+        "info":"Mid-drive 350 W brushless motor"
       },
       {
         "title":"Max Speed",
-        "info":"35"
+        "info":"35 km/h assisted"
       },
       {
         "title":"Battery",
-        "info":""
+        "info":"48V 14Ah lithium-ion, 5h charge"
       }
       ,
       {
         "title":"Material",
-        "info":""
+        "info":"Carbon fiber and aluminum alloy"
       }
       ]'
       tech='[

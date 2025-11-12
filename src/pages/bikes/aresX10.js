@@ -19,23 +19,22 @@ export function aresX10(app) {
       subtitle="The Pinnacle of Speed",
       description="Unleash the future of biking with the Areas X10. Every curve, every light, every motion is engineered for maximum performance. Its hyper-responsive carbon body and high-output electric drive deliver unmatched velocity and precision — the fastest, boldest, and most advanced machine in the CyberWheel lineup.",
       info='[
-      {
-        "title":"Electric Motor",
-        "info":""
-      },
-      {
+        {
+          "title":"Electric Motor",
+          "info":"Dual-drive 500 W high-torque motor"
+        },
+        {
         "title":"Max Speed",
-        "info":"80"
-      },
-      {
-        "title":"Battery",
-        "info":""
-      }
-      ,
-      {
-        "title":"Material",
-        "info":""
-      }
+          "info":"80 km/h assisted"
+        },
+        {
+          "title":"Battery",
+          "info":"72V 20Ah graphene cell, 2h fast charge"
+        },
+        {
+          "title":"Material",
+          "info":"Ultra-light carbon fiber monocoque frame"
+        }
       ]'
       tech='[
         {
