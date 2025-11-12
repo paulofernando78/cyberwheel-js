@@ -1,9 +1,6 @@
 .bikes__wrapper {
-  /* display: flex;
-  align-items: center; */
   margin: 0 auto;
   justify-content: center;
-  width: 700px;
 }
 
 .bikes__carousel {
@@ -86,7 +83,7 @@
 }
 
 @media (max-width: 700px) {
-  .bikes__wrapper {
-    width: 100%;
+  .bikes__carousel {
+    margin-inline: 0px;
   }
 }

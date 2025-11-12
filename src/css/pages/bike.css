@@ -89,7 +89,7 @@
   gap: 5px;
 }
 
-@media (max-width: 750) {
+@media (max-width: 680px) {
   .bike__container__img-info {
     grid-template-columns: 1fr;
   }
