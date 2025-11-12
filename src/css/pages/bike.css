@@ -16,7 +16,7 @@
 .bike__imgs {
   display: flex;
   flex-direction: column;
-  gap: 15px;;
+  gap: 15px;
 }
 
 .bike__img-angles {
@@ -36,8 +36,9 @@
   gap: 15px;
   background: black;
   padding: var(--padding-info-tech);
-  border-radius: var(--border-radius);
   border: var(--border-thicker);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   margin-bottom: 20px;
 }
 
@@ -46,6 +47,7 @@
   padding: var(--padding-info-tech);
   border: var(--border-thicker);
   border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .bike__tech-specs-list {
@@ -80,7 +82,7 @@
   background-color: black;
   width: max-content;
   padding: 5px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
@@ -89,6 +91,6 @@
 
 @media (max-width: 1022) {
   .bike__container__img-info {
-  grid-template-columns: 1fr;
-}
+    grid-template-columns: 1fr;
+  }
 }

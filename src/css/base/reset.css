@@ -27,6 +27,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  box-shadow: var(--box-shadow);
 }
 
 video {

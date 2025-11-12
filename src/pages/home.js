@@ -4,7 +4,7 @@ export function Home(home) {
   <div class="line-break">
   <!--  Introduction -->
   <section class="line-break">
-    <h1>The <span id="future">future</span> of biking starts here</h1>
+    <h1 class="home__future">The <span id="future">future</span> of biking starts here</h1>
     <div>
       <p>
         Experience cutting-edge, battery-powered bicycles designed for the
@@ -17,13 +17,13 @@ export function Home(home) {
   </section>
 
   <!-- Customization -->
-  <section class="customization line-break">
+  <section class="home__customization line-break">
     <h1>Customize yours now</h1>
     <img src="/images/shop.png" alt="Bicycle shop" class="shop"/>
   </section>
 
   <!-- Technology -->
-  <section class="technology">
+  <section class="home__technology">
     <div class="line-break">
       <h1>Advance technology</h1>
       <p>
@@ -53,10 +53,10 @@ export function Home(home) {
   </section>
 
   <!--  Review -->
-  <section class="review-container">
+  <section class="home__review-container">
     <img src="/images/review-woman.png" alt="A woman riding a bike" />
-    <div class="review">
-      <p class="review-text">
+    <div class="home__review">
+      <p class="home__review-text">
         Cycling has always been my passion, and what I found at Cyber Wheel intensified my love for this activity. I recommend it to everyone I
         care about.
       </p>
@@ -64,7 +64,7 @@ export function Home(home) {
   </section>
 
   <!-- Our Partners -->
-  <section class="our-partners">
+  <section class="home__our-partners">
     <h1>Our Partners</h1>
   </section>
 </div>
