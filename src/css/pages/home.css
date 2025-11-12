@@ -19,11 +19,8 @@
   margin-top: 0px;
 }
 
-.home__customization img {
-  width: 95%;
+.home__introduction img {
   margin: 0 auto;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
 }
 
 .home__technology {
@@ -86,10 +83,12 @@
   margin-top: 50px;
   width: 100%;
   overflow: hidden;
+
 }
 
 .home__partners-slider__group {
   display: flex;
+  border: 1px solid red;
   align-items: center;
   flex-shrink: 0;
   gap: 50px;

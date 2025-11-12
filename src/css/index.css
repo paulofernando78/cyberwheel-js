@@ -15,6 +15,11 @@
   --icon-color: #18191f;
 }
 
+img {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
 body {
   background-color: var(--background-color, #fff);
   color: var(--color);

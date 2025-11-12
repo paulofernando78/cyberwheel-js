@@ -3,9 +3,8 @@ export function Home(home) {
   home.innerHTML = `
   <div class="line-break">
   <!--  Introduction -->
-  <section class="line-break" aria-label="Introduction">
+  <section class="home__introduction line-break" aria-label="Introduction">
     <h1 class="home__future">The <span id="future">future</span> of biking starts here</h1>
-    <div>
       <p>
         Experience cutting-edge, battery-powered bicycles designed for the
         ultimate ride. Our sleek models redefine mobility, combining effortless
@@ -13,7 +12,7 @@ export function Home(home) {
         biking—where innovation meets elegance, and every destination feels
         within reach.
       </p>
-    </div>
+      <img src="/images/shop.png" alt="Bicycle shop" class="shop"/>
   </section>
 
   <!-- Customization -->
