@@ -19,7 +19,6 @@ class Bike extends HTMLElement {
     /* html */ 
     this.shadowRoot.innerHTML = `
       <style>${styleImports}</style>
-      <div class="bike__container">
         <section class="line-break bike__description">
           <h1>${titleAttr}</h1>
           <p>${descriptionAttr}</p>
@@ -72,7 +71,6 @@ class Bike extends HTMLElement {
             <wc-button label="BUY NOW"></wc-button>
           </section>
         </div>
-      </div>
     `;
   }
 }

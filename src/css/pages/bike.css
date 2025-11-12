@@ -3,9 +3,6 @@
   --padding-info-tech: 11px 17px 8px 15px;
 }
 
-.bike__container {
-}
-
 .bike__description {
   margin-bottom: var(--margin);
 }
@@ -13,19 +10,19 @@
 .bike__container__img-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 15px;
 }
 
 .bike__imgs {
   display: flex;
   flex-direction: column;
-  gap: 10px;;
+  gap: 15px;;
 }
 
 .bike__img-angles {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 15px;
 }
 
 .bike__img {
@@ -69,13 +66,14 @@
 .bike__buy-now__wrapper {
   display: flex;
   /* align-items: center; */
-  gap: 10px;
+  gap: 15px;
 }
 
 .bike__method-container {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  margin-block: 6px;
 }
 
 .bike__method {
@@ -90,5 +88,7 @@
 }
 
 @media (max-width: 1022) {
-  
+  .bike__container__img-info {
+  grid-template-columns: 1fr;
+}
 }
