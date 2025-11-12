@@ -102,7 +102,12 @@ footer {
   border-radius: 5px 5px 0 0;
   box-shadow: var(--box-shadow);
   text-align: center;
-  color: var(--slate-4)
+  color: var(--slate-4);
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer__social-media {
