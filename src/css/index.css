@@ -81,11 +81,12 @@ main {
 }
 
 section {
-  margin-top: 50px;
+  margin-bottom: 50px;
+  height: max-content;
 }
 
-section:first-child {
-  margin-top: 0;
+section:last-child {
+  margin-bottom: 0;
 }
 
 .shop {
@@ -95,7 +96,6 @@ section:first-child {
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 50px;
   padding: 20px;
   background-color: #242424;
   border: var(--border);
@@ -103,6 +103,7 @@ footer {
   box-shadow: var(--box-shadow);
   text-align: center;
   color: var(--slate-4);
+  margin-top: 50px;
 }
 
 footer a {

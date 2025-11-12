@@ -1,15 +1,13 @@
 #future {
   display: inline-block;
   color: #00eaff;
-  text-shadow:
-    0 0 8px #00eaff,
-    0 0 16px #00eaff,
-    0 0 24px #00eaff;
+  text-shadow: 0 0 8px #00eaff, 0 0 16px #00eaff, 0 0 24px #00eaff;
   animation: wave 3s infinite ease-in-out;
 }
 
 @keyframes wave {
-  0%, 100% {
+  0%,
+  100% {
     transform: skewY(0deg);
   }
   50% {
@@ -79,8 +77,43 @@
   font-size: 3rem;
 }
 
-.home__our-partners {
+.home__partners {
   text-align: center;
+}
+
+.home__partners-slider {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home__partners-slider__group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 50px;
+  
+  padding-left: 50px;
+  height: 60px;
+
+  /* border: 1px solid red; */
+
+  animation: spin 14s infinite linear;
+}
+
+.home__partners-slider__group img {
+  box-shadow: none;
+}
+
+@keyframes spin {
+  to {
+    translate: -100%;
+  }
+}
+
+.home__partners-slider__group li {
+  margin-block: 50px;
 }
 
 @media (max-width: 600px) {
