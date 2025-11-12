@@ -81,6 +81,10 @@ section {
   margin-top: 30px;
 }
 
+.shop {
+  border: 1px solid var(--slate-6);
+}
+
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -19,7 +19,7 @@ export function Home(home) {
   <!-- Customization -->
   <section class="customization line-break">
     <h1>Customize yours now</h1>
-    <img src="/images/bicycle-shop.webp" alt="Bicycle shop" />
+    <img src="/images/shop.png" alt="Bicycle shop" class="shop"/>
   </section>
 
   <!-- Technology -->

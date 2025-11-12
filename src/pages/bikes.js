@@ -40,8 +40,13 @@ export function Bikes(app) {
                 <figure>
                   <div class="bikes__carousel__img-wrapper">
                     <img src="${bike.img}" alt="${bike.alt}" class="bikes__carousel__card-img"/>
-                    <button class="bikes__carousel__button--left">❮</button>
-                    <button class="bikes__carousel__button--right">❯</button>
+                    <button class="bikes__carousel__button-left">❮</button>
+                    <button class="bikes__carousel__button-right">❯</button>
+                    <div>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                   </div>
                   <figcaption>
                     <div class="bikes__carousel__info">
@@ -60,8 +65,8 @@ export function Bikes(app) {
             `;
 
   const ul = app.querySelector("ul"); // Needed to link to *ul.scrollBy*
-  const leftBtns = app.querySelectorAll(".bikes__carousel__button--left");
-  const rightBtns = app.querySelectorAll(".bikes__carousel__button--right");
+  const leftBtns = app.querySelectorAll(".bikes__carousel__button-left");
+  const rightBtns = app.querySelectorAll(".bikes__carousel__button-right");
 
   // Left Button
   leftBtns.forEach((btn) => {

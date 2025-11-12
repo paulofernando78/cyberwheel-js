@@ -26,16 +26,18 @@ class Bike extends HTMLElement {
         </section>
 
         <div class="bike__container__img-info">
-          <section class="bike__img-container">
-            <img
-            src="${imgAttr}"
-            alt="${altAttr}" class="bike__img bike__img-1"/>
+          <section class="bike__imgs">
             <img
             src="${imgAttr}"
             alt="${altAttr}" class="bike__img"/>
-            <img
-            src="${imgAttr}"
-            alt="${altAttr}" class="bike__img"/>
+            <div class="bike__img-angles">
+              <img
+              src="${imgAttr}"
+              alt="${altAttr}" class="bike__img"/>
+              <img
+              src="${imgAttr}"
+              alt="${altAttr}" class="bike__img"/>
+            </div>  
           </section>
           
           <section class="container-line-break">

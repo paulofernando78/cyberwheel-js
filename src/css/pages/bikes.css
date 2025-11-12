@@ -23,20 +23,20 @@
   position: relative;
 }
 
-.bikes__carousel__button--left {
+.bikes__carousel__button-left {
   top: 50%;
   transform: translateY(-50%);
   left: 10px;
 }
 
-.bikes__carousel__button--right {
+.bikes__carousel__button-right {
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
 }
 
-.bikes__carousel__button--left,
-.bikes__carousel__button--right {
+.bikes__carousel__button-left,
+.bikes__carousel__button-right {
   background-color: rgba(0, 0, 0, 0.1);
   color: white;
   font-size: 1.4rem;

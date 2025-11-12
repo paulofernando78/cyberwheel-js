@@ -10,25 +10,27 @@
   margin-bottom: var(--margin);
 }
 
-.bike__img-container {
+.bike__container__img-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.bike__imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;;
+}
+
+.bike__img-angles {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
 .bike__img {
-  border: var(--border-rider-a1);
+  border: var(--border);
   border-radius: var(--border-radius);
-}
-
-.bike__img-1 {
-  grid-column: 1 / 3;
-}
-
-.bike__container__img-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
 }
 
 .bike__info {
@@ -40,10 +42,6 @@
   border-radius: var(--border-radius);
   border: var(--border-rider-a1);
   margin-bottom: 20px;
-}
-
-.bike__info-list {
-  /* padding: 10px; */
 }
 
 .bike__tech-specs {
