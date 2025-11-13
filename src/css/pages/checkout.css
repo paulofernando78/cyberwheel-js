@@ -1,5 +1,55 @@
-.checkout__delivery-information {
-  border: 1px solid red;
+.checkout__container {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.checkout__container span {
+  display: block;
+}
+
+.checkout__description {
+  font-size: .9rem;
+}
+
+.checkout__title {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.4rem;
+}
+
+.checkout__payment-details {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 20px
+}
+
+.test {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 10px;
+}
+
+.checkout__state-zip {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.checkout__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 20px
+}
+
+@media (max-width: 600px) {
+  .checkout__container {
+  grid-template-columns: 1fr;
+}
 }
