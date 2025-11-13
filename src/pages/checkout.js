@@ -11,7 +11,7 @@ export function Checkout(app) {
         </div>
         <div>
           <span>Cardholder Name*</span>
-          <input/>
+          <input placeholder="Jared Leto"/>
         </div>
 
         <div class="checkout__card-data">
@@ -49,21 +49,21 @@ export function Checkout(app) {
         </div>
         <div>
           <span>Address</span>
-          <input/>
+          <input placeholder="21st street"/>
         </div>
         <div>
           <span>City</span>
-          <input/>
+          <input placeholder="New York"/>
         </div>
 
         <div class="checkout__state-zip">
           <div>
             <span>State*</span>
-            <input/>
+            <input placeholder="New York City"/>
           </div>
           <div>
             <span>Zip Code*</span>
-            <input/>
+            <input placeholder="12345"/>
           </div>
         </div>
 

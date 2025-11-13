@@ -29,12 +29,29 @@
 
 .checkout__container input,
 .checkout__container select {
-  padding: 3px;
-  border-radius: var(--border-radius);
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.checkout__container select {
+  padding: 7px 4px;
+  font-size: .9rem;
+  color: var(--slate-5)
+}
+
+.checkout__container input {
+  padding: 8px 8px;
+  font-size: .9rem;
 }
 
 .checkout__card-data {
-  display: flex
+  display: grid;
+  grid-template-columns: 45% auto auto;
+  gap: 10px;
+}
+
+.checkout__card-data > div {
 }
 
 .checkout__state-zip {
