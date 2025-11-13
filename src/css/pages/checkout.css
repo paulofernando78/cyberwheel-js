@@ -10,11 +10,11 @@
 }
 
 .checkout__description {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .checkout__title {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1.4rem;
 }
 
@@ -24,18 +24,22 @@
   gap: 10px;
   border: var(--border);
   border-radius: var(--border-radius);
-  padding: 20px
+  padding: 20px;
 }
 
-.test {
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 10px;
+.checkout__container input,
+.checkout__container select {
+  padding: 3px;
+  border-radius: var(--border-radius);
+}
+
+.checkout__card-data {
+  display: flex
 }
 
 .checkout__state-zip {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
@@ -45,11 +49,11 @@
   gap: 10px;
   border: var(--border);
   border-radius: var(--border-radius);
-  padding: 20px
+  padding: 20px;
 }
 
 @media (max-width: 600px) {
   .checkout__container {
-  grid-template-columns: 1fr;
-}
+    grid-template-columns: 1fr;
+  }
 }

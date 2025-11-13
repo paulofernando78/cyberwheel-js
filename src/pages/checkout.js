@@ -2,7 +2,7 @@ export function Checkout(app) {
   /* html*/ 
   app.innerHTML = `
     <h1>Checkout</h1>
-    <div class="checkout__container">
+    <form id="checkoutForm" class="checkout__container">
       
       <div class="checkout__payment-details">
         <div>
@@ -11,42 +11,59 @@ export function Checkout(app) {
         </div>
         <div>
           <span>Cardholder Name*</span>
-          <input class="display-block"/>
+          <input/>
         </div>
 
-        <div class="test">
+        <div class="checkout__card-data">
           <div>
             <span>Card Number*</span>
-            <input class="display-block"/>
+            <input placeholder="1111 2222 3333 4444"/>
           </div>
           <div>
             <span>Expiry Date*</span>
-            <input class="display-block"/>
+            <input placeholder="MM/YY"/>
           </div>
-        
+          <div>
+            <span>CVV*</span>
+            <input placeholder="•••"/>
+          </div>
         </div>
 
         <div>
-          <span>Country*</span>
-          <input class="display-block"/>
+        <label for="country" class="display-block">Countries</label>
+          <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="pt">Portugal</option>
+            <option value="sp">Spain</option>
+            <option value="fr">France</option>
+            <option value="it">Italy</option>
+            <option value="de">Germany</option>
+            <option value="au">Australia</option>
+            <option value="cn">China</option>
+            <option value="jp">Japan</option>
+          </select>
+          
         </div>
         <div>
           <span>Address</span>
-          <input class="display-block"/>
+          <input/>
         </div>
         <div>
           <span>City</span>
-          <input class="display-block"/>
+          <input/>
         </div>
 
         <div class="checkout__state-zip">
           <div>
             <span>State*</span>
-            <input class="display-block"/>
+            <input/>
           </div>
           <div>
             <span>Zip Code*</span>
-            <input class="display-block"/>
+            <input/>
           </div>
         </div>
 
@@ -54,12 +71,14 @@ export function Checkout(app) {
       
       <div class="checkout__summary">
         <div>
-        <span class="checkout__title">Summary</span>
+          <span class="checkout__title">Summary</span>
         </div>
+
+        <wc-button label="Submit" style="position: static"></wc-button>
       </div>
 
 
-    </div>
+    </form>
 
     
   `
