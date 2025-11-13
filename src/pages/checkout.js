@@ -10,60 +10,64 @@ export function Checkout(app) {
           <p class="checkout__description">Complete your purchase by providing your payment details.</p>
         </div>
         <div>
-          <span>Cardholder Name*</span>
-          <input placeholder="Jared Leto"/>
+          <label for="cardholder-name">Cardholder Name*</label>
+          <input id="cardholder-name" placeholder="Jared Leto"/>
         </div>
 
         <div class="checkout__card-data">
-          <div>
-            <span>Card Number*</span>
-            <input placeholder="1111 2222 3333 4444"/>
+          <div class="checkout__card-data__card-number">
+            <label for="card-number">Card Number*</label>
+            <input id="card-number" placeholder="1111 2222 3333 4444"/>
           </div>
           <div>
-            <span>Expiry Date*</span>
-            <input placeholder="MM/YY"/>
+            <label for="expiry-date">Expiry Date*</label>
+            <input id="expiry-date" placeholder="MM/YY"/>
           </div>
           <div>
-            <span>CVV*</span>
-            <input placeholder="•••"/>
+            <label for="cvv">CVV*</label>
+            <input id="cvv" placeholder="•••"/>
           </div>
         </div>
 
-        <div>
-        <label for="country" class="display-block">Countries</label>
-          <select id="country" name="country" required>
-            <option value="" disabled selected>Select your country</option>
-            <option value="us">United States</option>
-            <option value="ca">Canada</option>
-            <option value="uk">United Kingdom</option>
-            <option value="pt">Portugal</option>
-            <option value="sp">Spain</option>
-            <option value="fr">France</option>
-            <option value="it">Italy</option>
-            <option value="de">Germany</option>
-            <option value="au">Australia</option>
-            <option value="cn">China</option>
-            <option value="jp">Japan</option>
-          </select>
+        <div class="checkout__country-city">
+          <div>
+            <label for="country" class="display-block">Countries</label>
+            <select id="country" name="country" required>
+              <option value="" disabled selected>Select your country</option>
+              <option value="us">United States</option>
+              <option value="ca">Canada</option>
+              <option value="uk">United Kingdom</option>
+              <option value="pt">Portugal</option>
+              <option value="sp">Spain</option>
+              <option value="fr">France</option>
+              <option value="it">Italy</option>
+              <option value="de">Germany</option>
+              <option value="au">Australia</option>
+              <option value="cn">China</option>
+              <option value="jp">Japan</option>
+            </select>
+          </div>
+          <div>
+            <label for="city" >City</label>
+            <input id="city" placeholder="New York"/>
+          </div>
+        </div>
           
-        </div>
+
         <div>
-          <span>Address</span>
-          <input placeholder="21st street"/>
-        </div>
-        <div>
-          <span>City</span>
-          <input placeholder="New York"/>
+          <label for="address">Address</label>
+          <input id="address" placeholder="21st street"/>
+          
         </div>
 
         <div class="checkout__state-zip">
           <div>
-            <span>State*</span>
-            <input placeholder="New York City"/>
+            <label for="state" >State*</label>
+            <input id="state" placeholder="New York City"/>
           </div>
           <div>
-            <span>Zip Code*</span>
-            <input placeholder="12345"/>
+            <label for="zip-code" >Zip Code*</label>
+            <input id="zip-code" placeholder="12345"/>
           </div>
         </div>
 
