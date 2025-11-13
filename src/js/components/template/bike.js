@@ -1,3 +1,5 @@
+import { navigateTo } from "../../router";
+
 import styleImports from "@css/imports.css?inline";
 
 class Bike extends HTMLElement {
@@ -7,16 +9,16 @@ class Bike extends HTMLElement {
   }
 
   connectedCallback() {
-    const imgAttr = this.getAttribute("img")
-    const altAttr = this.getAttribute("alt")
-    const titleAttr = this.getAttribute("title")
-    const descriptionAttr = this.getAttribute("description")
+    const imgAttr = this.getAttribute("img");
+    const altAttr = this.getAttribute("alt");
+    const titleAttr = this.getAttribute("title");
+    const descriptionAttr = this.getAttribute("description");
 
-    const inforList = JSON.parse(this.getAttribute("info") || "[]")
+    const inforList = JSON.parse(this.getAttribute("info") || "[]");
 
-    const techList = JSON.parse(this.getAttribute("tech") || "[]")
-    
-    /* html */ 
+    const techList = JSON.parse(this.getAttribute("tech") || "[]");
+
+    /* html */
     this.shadowRoot.innerHTML = `
       <style>${styleImports}</style>
         <section class="line-break bike__description">
@@ -42,21 +44,29 @@ class Bike extends HTMLElement {
           <section class="container-line-break">
             <span class="uppercase bold">Information</span>
             <ul class="bike__info">
-            ${inforList.map(item => /* html*/ `
+            ${inforList
+              .map(
+                (item) => /* html*/ `
               <li class="bike__info-list">
               <span class="display-block"><strong>${item.title}</strong></span>
               <span>${item.info}</span>
               </li>
-              `).join("")}
+              `
+              )
+              .join("")}
               </ul>
             <span class="uppercase bold">Technical Specifications</span>
             <ul class="bike__tech-specs">
-              ${techList.map(item => /*html*/ `
+              ${techList
+                .map(
+                  (item) => /*html*/ `
                 <li class="bike__tech-specs-list">
                   <span><strong>${item.title}</strong></span>
                   <span>${item.info}</span>
                 </li>
-              `).join("")}
+              `
+                )
+                .join("")}
             </ul>
             <div class="bike__method-container">
               <div class="bike__method">
@@ -72,6 +82,12 @@ class Bike extends HTMLElement {
           </section>
         </div>
     `;
+
+    const buyButton = this.shadowRoot.querySelector("wc-button");
+
+    buyButton.addEventListener("click", () => {
+      navigateTo("/checkout")
+    })
   }
 }
 

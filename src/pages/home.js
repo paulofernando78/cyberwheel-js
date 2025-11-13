@@ -1,6 +1,6 @@
-export function Home(home) {
+export function Home(app) {
   /*html*/
-  home.innerHTML = `
+  app.innerHTML = `
   <div class="line-break">
   <!--  Introduction -->
   <section class="home__introduction line-break" aria-label="Introduction">

@@ -6,7 +6,7 @@ export function aresX10(app) {
       title: "Ares X10",
       subtitle: "The Pinnacle of Speed",
       description:
-        "Unleash the future of biking with the Areas X10. Every curve, every light, every motion is engineered for maximum performance. Its hyper-responsive carbon body and high-output electric drive deliver unmatched velocity and precision — the fastest, boldest, and most advanced machine in the CyberWheel lineup.",
+        "Every curve, every light, every motion is engineered for maximum performance. Its hyper-responsive carbon body and high-output electric drive deliver unmatched velocity and precision — the fastest, boldest, and most advanced machine in the CyberWheel lineup.",
     },
   ];
 
@@ -17,7 +17,7 @@ export function aresX10(app) {
       alt="",
       title="Ares X10",
       subtitle="The Pinnacle of Speed",
-      description="Unleash the future of biking with the Areas X10. Every curve, every light, every motion is engineered for maximum performance. Its hyper-responsive carbon body and high-output electric drive deliver unmatched velocity and precision — the fastest, boldest, and most advanced machine in the CyberWheel lineup.",
+      description="Every curve, every light, every motion is engineered for maximum performance. Its hyper-responsive carbon body and high-output electric drive deliver unmatched velocity and precision — the fastest, boldest, and most advanced machine in the CyberWheel lineup.",
       info='[
         {
           "title":"Electric Motor",

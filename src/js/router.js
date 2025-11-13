@@ -36,6 +36,11 @@ export async function renderRoute() {
       const bikeAresX10 = await import("/src/pages/bikes/aresX10.js");
       bikeAresX10.aresX10(app);
       break;
+    case "/checkout":
+      app.innerHTML = "";
+      const checkout = await import("/src/pages/checkout.js");
+      checkout.Checkout(app);
+      break
     default:
       app.innerHTML = "";
       const notFoundModule = await import("/src/pages/404.js");
