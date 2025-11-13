@@ -1,10 +1,8 @@
-.bikes__wrapper {
-  margin: 0 auto;
-  justify-content: center;
+.bikes__description {
+  margin-bottom: 48px;
 }
 
 .bikes__carousel {
-  margin-top: 48px;
   box-shadow: var(--box-shadow);
   display: flex;
   margin-inline: 40px;

@@ -5,14 +5,20 @@
   gap: 20px;
 }
 
+.checkout__title-description {
+  margin-bottom: 48px;
+}
+
 .checkout__container span,
 .checkout__container label {
   display: block;
   margin-bottom: 5px;
+  color: var(--slate-5)
 }
 
-.checkout__description {
+.checkout__payment-description {
   font-size: 0.9rem;
+  color: var(--slate-4);
 }
 
 .checkout__title {
@@ -62,7 +68,7 @@
   position: absolute;
   width: 30px;
   height: 20px;
-  top: 50%;
+  top: 53%;
   right: 5px;
   background-image: url("/images/master-card.svg");
   background-repeat: no-repeat;

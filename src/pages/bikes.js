@@ -1,6 +1,7 @@
  import { navigateTo } from "../js/router";
 
 export function Bikes(app) {
+
   const carouselData = [
     {
       img: "/images/bikes/rider-a1.png",
@@ -32,35 +33,33 @@ export function Bikes(app) {
   app.innerHTML = `
     <section class="line-break">
       <h1>Our bikes</h1>
-        <p>Check out our cutting-edge bike models.</p>
-        <div class="bikes__wrapper">
-          <ul class="bikes__carousel">
-            ${carouselData.map((bike) => /* html */ `
-              <li class="bikes__carousel__card">
-                <figure>
-                  <div class="bikes__carousel__img-wrapper">
-                    <img src="${bike.img}" alt="${bike.alt}" class="bikes__carousel__card-img"/>
-                    <button class="bikes__carousel__button-left">❮</button>
-                    <button class="bikes__carousel__button-right">❯</button>
-                    <div>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
+      <p class="bikes__description">Check out our cutting-edge bike models.</p>
+        <ul class="bikes__carousel">
+          ${carouselData.map((bike) => /* html */ `
+            <li class="bikes__carousel__card">
+              <figure>
+                <div class="bikes__carousel__img-wrapper">
+                  <img src="${bike.img}" alt="${bike.alt}" class="bikes__carousel__card-img"/>
+                  <button class="bikes__carousel__button-left">❮</button>
+                  <button class="bikes__carousel__button-right">❯</button>
+                  <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                   </div>
-                  <figcaption>
-                    <div class="bikes__carousel__info">
-                      <h2>${bike.title}</h2>
-                      <h3>${bike.subtitle}</h3>
-                      <p class="bikes__carousel__description">${bike.description}</p>
-                      <wc-button label="DETAILS" class="bikes__carousel__button-link"></wc-button>
-                    </div>
-                  </figcaption>
-                </figure> 
-              </li>
-            `).join("")}  
-          </ul>
-      </div>
+                </div>
+                <figcaption>
+                  <div class="bikes__carousel__info">
+                    <h2>${bike.title}</h2>
+                    <h3>${bike.subtitle}</h3>
+                    <p class="bikes__carousel__description">${bike.description}</p>
+                    <wc-button label="DETAILS" class="bikes__carousel__button-link"></wc-button>
+                  </div>
+                </figcaption>
+              </figure> 
+            </li>
+          `).join("")}  
+        </ul>
     </section>
             `;
 
