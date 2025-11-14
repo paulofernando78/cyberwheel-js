@@ -29,13 +29,11 @@ svg {
 .btn--with-label {
   width: max-content;
   padding: 18px 11px 17px 11px;
-  /* background:
-  linear-gradient(200deg, var(--slate-2), transparent 60.71%),
-  linear-gradient(120deg, var(--slate-2), transparent 70.71%),
-  linear-gradient(-60deg, var(--slate-4), transparent 90%); */
+  background:
+  linear-gradient(to bottom, var(--slate-5), var(--slate-7));
   background-color: var(--slate-5);
   color: white;
-  border: 1px solid var(--slate-4);
+  border: 1px solid var(--slate-5);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   font-weight: 900;
