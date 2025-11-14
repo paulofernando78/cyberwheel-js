@@ -57,11 +57,14 @@ export function Home(app) {
   <section class="home__review-container" aria-label="Review">
     <img src="/images/review-woman.png" alt="A woman riding a bike" />
     <div class="home__review">
-      <p class="home__review-text">
-        Cycling has always been my passion, and what I found at Cyber Wheel intensified my love for this activity. I recommend it to everyone I
-        care about.
-      </p>
-    </div>
+      <blockquote>
+        <p class="home__review-text">
+          Cycling has always been my passion, and what I found at Cyber Wheel intensified my love for this activity. I recommend it to everyone I
+          care about.
+        </p>
+      </blockquote>
+      <span class="home__review-text_name">Heather Smith</span>
+      </div>
   </section>
 
   <!-- Our Partners -->

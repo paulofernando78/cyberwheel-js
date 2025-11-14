@@ -59,10 +59,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-p {
-  text-wrap: pretty;
-}
-
 /* :focus {
   outline: 2px solid #000;
   outline-offset: 2px;

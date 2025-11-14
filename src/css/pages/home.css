@@ -53,8 +53,6 @@
 
 .home__review {
   background-color: var(--gray-2);
-  display: grid;
-  place-items: center;
   color: #080808;
   padding: 50px;
 }
@@ -62,25 +60,29 @@
 .home__review-text {
   font-size: 1.3rem;
   position: relative;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.home__review-text::after,
+.home__review-text::before {
+  position: absolute;
+  font-size: 5rem;
+  color: var(--slate-4)
 }
 
 .home__review-text::before {
-  position: absolute;
   content: "“";
-  top: -25px;
-  left: -30px;
+  top: -30px;
+  left: -35px;
 }
 
 .home__review-text::after {
   content: "”";
-  position: absolute;
-  bottom: -25px;
-  right: -30px;
+  bottom: -70px
 }
 
-.home__review-text::before,
-.home__review-text::after {
-  font-size: 3rem;
+.home__review-text_name {
 }
 
 .home__partners {
