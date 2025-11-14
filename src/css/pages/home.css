@@ -26,10 +26,11 @@
 }
 
 .home__introduction img {
-  width: 55%;
+  width: 52%;
   height: 55%;
-  transform: rotate(2deg);
   flex-shrink: 0;
+  transform: perspective(800px) rotateY(-20deg);
+  margin-right: 13px;
 }
 
 .home__technology {
@@ -136,7 +137,8 @@
 
   .home__introduction img {
   width: 100%;
-  transform: rotate(0);
+  transform: skew(0);
+  margin-right: 0;
 }
 }
 

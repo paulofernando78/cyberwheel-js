@@ -22,4 +22,9 @@
 @import "/src/css/pages/404.css";
 
 /* Bike */
-@import "/src/css/pages/bike.css"
+@import "/src/css/pages/bike.css";
+
+hr {
+  margin-inline: 20px;
+  border-color: var(--slate-6);
+}
