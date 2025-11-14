@@ -5,7 +5,7 @@
 .bikes__carousel {
   box-shadow: var(--box-shadow);
   display: flex;
-  margin-inline: 40px;
+  margin-inline: 150px;
   overflow-x: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE e Edge antigos */
