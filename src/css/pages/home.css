@@ -19,8 +19,17 @@
   margin-top: 0px;
 }
 
+.home__introduction {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 .home__introduction img {
-  margin: 0 auto;
+  width: 55%;
+  height: 55%;
+  transform: rotate(2deg);
+  flex-shrink: 0;
 }
 
 .home__technology {
@@ -83,7 +92,6 @@
   margin-top: 50px;
   width: 100%;
   overflow: hidden;
-
 }
 
 .home__partners-slider__group {
@@ -91,10 +99,9 @@
   align-items: center;
   flex-shrink: 0;
   gap: 50px;
-  
+
   padding-left: 50px;
   height: 60px;
-
 
   animation: spin 14s infinite linear;
 }
@@ -103,6 +110,7 @@
   box-shadow: none;
 }
 
+/* Carousel */
 @keyframes spin {
   to {
     translate: -100%;
@@ -117,6 +125,17 @@
   .home__technology {
     flex-direction: column;
   }
+}
+
+@media (max-width: 790px) {
+  .home__introduction {
+    flex-direction: column;
+  }
+
+  .home__introduction img {
+  width: 100%;
+  transform: rotate(0);
+}
 }
 
 @media (max-width: 730px) {

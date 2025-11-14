@@ -3,8 +3,9 @@ export function Home(app) {
   app.innerHTML = `
   <div class="line-break">
   <!--  Introduction -->
-  <section class="home__introduction line-break" aria-label="Introduction">
-    <h1 class="home__future">The <span id="future">future</span> of biking starts here</h1>
+  <section class="home__introduction" aria-label="Introduction">
+    <div class="line-break">
+      <h1 class="home__future">The <span id="future">future</span> of biking starts here</h1>
       <p>
         Experience cutting-edge, battery-powered bicycles designed for the
         ultimate ride. Our sleek models redefine mobility, combining effortless
@@ -12,12 +13,13 @@ export function Home(app) {
         biking—where innovation meets elegance, and every destination feels
         within reach.
       </p>
+      </div>
       <img src="/images/bikes.png" alt="Bicycle shop" class="shop"/>
   </section>
 
   <!-- Customization -->
   <section class="home__customization line-break" aria-label="Customization">
-    <h1>Customize yours</h1>
+    <h1>Stores everywhere</h1>
     <img src="/images/shop.png" alt="Bicycle shop" class="shop"/>
   </section>
 
