@@ -1,6 +1,6 @@
 import { navigateTo } from "../../router";
 
-import styleImports from "@css/imports.css?inline";
+import styleImports from "@css/style.css?inline";
 
 class Bike extends HTMLElement {
   constructor() {
@@ -78,7 +78,7 @@ class Bike extends HTMLElement {
                 <span>18 in stock</span>
               </div>
             </div>
-            <wc-button label="BUY NOW"></wc-button>
+            <wc-button label="BUY NOW" style=""></wc-button>
           </section>
         </div>
     `;

@@ -74,19 +74,22 @@ export function Checkout(app) {
 
         </div>
         
-        <div class="checkout__summary">
+        <div class="checkout__summary line-break">
           <div>
             <span class="checkout__title">Summary</span>
           </div>
+          <img src="/images/bikes/ares-x10.png"/>
           <div class="checkout__price">
             <div>
               <span>Bike: Ares X-10</span>
               <span>$9.000</span>
             </div>
+            <hr>
             <div>
               <span>Tax:</span>
               <span>$50</span>
             </div>
+            <hr>
             <div>
               <span>Total:</span>
               <span>$9.250</span>

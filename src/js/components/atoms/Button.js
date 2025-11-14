@@ -1,4 +1,4 @@
-import styleImports from "@css/imports.css?inline";
+import styleImports from "@css/style.css?inline";
 import styleButton from "@css/components/button.css?inline";
 import { lightMode, darkMode } from "../../../assets/images/svg-imports";
 

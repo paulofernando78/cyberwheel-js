@@ -12,8 +12,11 @@
 .checkout__container span,
 .checkout__container label {
   display: block;
-  margin-bottom: 5px;
   color: var(--slate-5);
+}
+
+.checkout__container label {
+  margin-bottom: 5px;
 }
 
 .checkout__payment-description {
@@ -89,12 +92,15 @@
 }
 
 .checkout__summary {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   border: var(--border);
   border-radius: var(--border-radius);
   padding: 20px;
+}
+
+.checkout__price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .checkout__price div {
