@@ -42,7 +42,7 @@ export function Bikes(app) {
                   <img src="${bike.img}" alt="${bike.alt}" class="bikes__carousel__card-img"/>
                   <button class="bikes__carousel__button-left">❮</button>
                   <button class="bikes__carousel__button-right">❯</button>
-                  <div>
+                  <div class="">
                     <span></span>
                     <span></span>
                     <span></span>

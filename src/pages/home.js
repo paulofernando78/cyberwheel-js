@@ -12,12 +12,12 @@ export function Home(app) {
         biking—where innovation meets elegance, and every destination feels
         within reach.
       </p>
-      <img src="/images/shop.png" alt="Bicycle shop" class="shop"/>
+      <img src="/images/bikes.png" alt="Bicycle shop" class="shop"/>
   </section>
 
   <!-- Customization -->
   <section class="home__customization line-break" aria-label="Customization">
-    <h1>Customize yours now</h1>
+    <h1>Customize yours</h1>
     <img src="/images/shop.png" alt="Bicycle shop" class="shop"/>
   </section>
 

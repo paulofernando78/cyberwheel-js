@@ -13,7 +13,7 @@
 .checkout__container label {
   display: block;
   margin-bottom: 5px;
-  color: var(--slate-5)
+  color: var(--slate-5);
 }
 
 .checkout__payment-description {
@@ -95,6 +95,16 @@
   border: var(--border);
   border-radius: var(--border-radius);
   padding: 20px;
+}
+
+.checkout__price div {
+  display: flex;
+  justify-content: space-between
+}
+
+.checkout__secure-msg {
+  font-size: 0.9rem;
+  color: var(--slate-4);
 }
 
 @media (max-width: 680px) {

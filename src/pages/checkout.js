@@ -78,8 +78,23 @@ export function Checkout(app) {
           <div>
             <span class="checkout__title">Summary</span>
           </div>
+          <div class="checkout__price">
+            <div>
+              <span>Bike: Ares X-10</span>
+              <span>$9.000</span>
+            </div>
+            <div>
+              <span>Tax:</span>
+              <span>$50</span>
+            </div>
+            <div>
+              <span>Total:</span>
+              <span>$9.250</span>
+            </div>
+          </div>
 
           <wc-button label="Submit" style="position: static"></wc-button>
+          <span class="checkout__secure-msg">Payments are secure and encrypted</span>
         </div>
       </form>
     </div>
