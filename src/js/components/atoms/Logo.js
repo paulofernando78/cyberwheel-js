@@ -18,6 +18,17 @@ const css = /* css */ `
     box-shadow: none;
     filter: grayscale(100%)
   }
+
+  @media (max-width: 600px) {
+    .logo-container {
+      flex-direction: column;
+      align-items: center
+    }
+    
+    span {
+      font-size: 1.5rem
+    }
+  }
 `
 
 class Logo extends HTMLElement {
