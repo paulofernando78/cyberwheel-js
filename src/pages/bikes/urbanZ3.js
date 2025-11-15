@@ -4,8 +4,9 @@ export function urbanZ3(app) {
     <wc-bike
       img="/images/bikes/urban-z3.png"
       alt="Urban Z3 model"
-      title= "Urban Z3",
-      subtitle= "Precision Meets Power",
+      price="6500"
+      title= "Urban Z3"
+      subtitle= "Precision Meets Power"
       description=
         "With a redefined aerodynamic frame, improved torque delivery, and advanced smart control, it delivers both stability and acceleration when you need it most. It’s not just a ride — it’s the transition from everyday to exceptional."
       info='[

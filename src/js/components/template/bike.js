@@ -1,5 +1,4 @@
 import { navigateTo } from "../../router";
-
 import styleImports from "@css/style.css?inline";
 
 class Bike extends HTMLElement {
@@ -9,13 +8,21 @@ class Bike extends HTMLElement {
   }
 
   connectedCallback() {
+    const priceRaw = Number(this.getAttribute("price"));
+    const currency = this.getAttribute("currency") || "USD";
+
+    const priceFormatted = priceRaw.toLocaleString("en-US", {
+      style: "currency",
+      currency,
+    });
+
     const imgAttr = this.getAttribute("img");
     const altAttr = this.getAttribute("alt");
+    const priceAttr = this.getAttribute("price");
     const titleAttr = this.getAttribute("title");
     const descriptionAttr = this.getAttribute("description");
 
     const inforList = JSON.parse(this.getAttribute("info") || "[]");
-
     const techList = JSON.parse(this.getAttribute("tech") || "[]");
 
     /* html */
@@ -30,7 +37,8 @@ class Bike extends HTMLElement {
           <section class="bike__imgs">
             <img
             src="${imgAttr}"
-            alt="${altAttr}" class="bike__img"/>
+            alt="${altAttr}" class="bike__img bike__img-main"/>
+            <span class="bike__price">${priceFormatted}</span>
             <div class="bike__img-angles">
               <img
               src="${imgAttr}"
@@ -86,8 +94,8 @@ class Bike extends HTMLElement {
     const buyButton = this.shadowRoot.querySelector("wc-button");
 
     buyButton.addEventListener("click", () => {
-      navigateTo("/checkout")
-    })
+      navigateTo("/checkout");
+    });
   }
 }
 

@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: relative;
 }
 
 .bike__img-angles {
@@ -28,6 +29,20 @@
 .bike__img {
   border: var(--border-thicker);
   border-radius: var(--border-radius);
+}
+
+.bike__img-main {
+  clip-path: path("M Z");
+}
+
+.bike__price {
+  position: absolute;
+  border: var(--border-thicker);
+  border-radius: 5px 0;
+  padding: 11px 13px;
+  background: linear-gradient(var(--slate-6), var(--slate-10)) ;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
 }
 
 .bike__info {
@@ -87,6 +102,11 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.bike__method img {
+  border: none;
+
 }
 
 @media (max-width: 680px) {

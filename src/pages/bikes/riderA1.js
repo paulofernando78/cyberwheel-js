@@ -4,6 +4,7 @@ export function riderA1(app) {
     <wc-bike
       img="/images/bikes/rider-a1.png"
       alt="Rider A1 model"
+      price="4500"
       title="Rider A1"
       subtitle="Everyday Evolution"
       description=

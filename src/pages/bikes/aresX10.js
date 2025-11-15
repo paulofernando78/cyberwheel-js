@@ -1,20 +1,10 @@
 export function aresX10(app) {
-  const bikeData = [
-    {
-      img: "/images/bikes/ares-x10.png",
-      alt: "",
-      title: "Ares X10",
-      subtitle: "The Pinnacle of Speed",
-      description:
-        "Every curve, every light, every motion is engineered for maximum performance. Its hyper-responsive carbon body and high-output electric drive deliver unmatched velocity and precision — the fastest, boldest, and most advanced machine in the CyberWheel lineup.",
-    },
-  ];
-
   /* html */
   app.innerHTML = `
     <wc-bike
       img="/images/bikes/ares-x10.png",
-      alt="",
+      alt="Ares X10",
+      price="8500",
       title="Ares X10",
       subtitle="The Pinnacle of Speed",
       description="Every curve, every light, every motion is engineered for maximum performance. Its hyper-responsive carbon body and high-output electric drive deliver unmatched velocity and precision — the fastest, boldest, and most advanced machine in the CyberWheel lineup.",
