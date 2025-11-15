@@ -3,11 +3,11 @@ const darkModeBtn = document.querySelector("wc-button[icon='lightMode']");
 if (darkModeBtn) {
   darkModeBtn.addEventListener("click", () => {
     const current = document.body.getAttribute("data-theme");
-    const newTheme = current === "dark" ? "light" : "dark";
+    const newTheme = current === "light" ? "dark" : "light";
     document.body.setAttribute("data-theme", newTheme);
     darkModeBtn.setAttribute(
       "icon",
-      newTheme === "dark" ? "darkMode" : "lightMode"
+      newTheme === "dark" ? "lightMode" : "darkMode"
     );
   });
 }
