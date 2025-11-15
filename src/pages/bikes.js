@@ -1,4 +1,4 @@
- import { navigateTo } from "../js/router";
+import { navigateTo } from "../js/router";
 
 export function Bikes(app) {
 

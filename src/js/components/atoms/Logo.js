@@ -1,5 +1,5 @@
 import style from "@css/style.css?inline";
- 
+
 const css = /* css */ `
   .logo-container {
     display: flex;
@@ -10,13 +10,13 @@ const css = /* css */ `
 
   span {
     font-size: 1.9rem;
-    font-weight: bold
+    font-weight: bold;
   }
 
   img {
     width: 50px;
     box-shadow: none;
-    filter: grayscale(100%)
+    filter: var(--logo)
   }
 
   @media (max-width: 630px) {
@@ -28,7 +28,7 @@ const css = /* css */ `
       flex-direction: column
     }
   }
-`
+`;
 
 class Logo extends HTMLElement {
   constructor() {
@@ -41,12 +41,12 @@ class Logo extends HTMLElement {
 
     const logoContainer = document.createElement("div");
     logoContainer.className = "logo-container";
-    /* html*/ 
+    /* html*/
     logoContainer.innerHTML = `
       <style>${css}</style>
       <img src="/images/logo.svg" alt="Logo"/>
       <span>CYBER WHEEL</span>
-    `
+    `;
 
     this.shadowRoot.appendChild(logoContainer);
   }

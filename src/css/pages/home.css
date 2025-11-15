@@ -47,9 +47,9 @@
 }
 
 .home__review-container img {
-  border: 1px solid red;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px 0 0 5px;
 }
 
 .home__review {
