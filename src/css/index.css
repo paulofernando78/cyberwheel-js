@@ -4,12 +4,16 @@
   --icon-color: var(--gray-1);
   --header: max-content;
   --logo: invert(0);
+  --heading-color: var(--slate-1);
+  --heading-text-shadow-color: var(--slate-1);
   scrollbar-gutter: stable;
 }
 
 [data-theme="dark"] {
   --background-color: #e0e0e0;
   --color: #000000;
+  --heading-color: var(--slate-10);
+  --heading-text-shadow-color: var(--slate-10);
   --icon-color: #18191f;
   --logo: invert(1);
 }
