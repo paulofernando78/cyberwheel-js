@@ -39,8 +39,9 @@
   position: absolute;
   border: var(--border-thicker);
   border-radius: 5px 0;
-  padding: 11px 13px;
-  background: linear-gradient(var(--slate-6), var(--slate-10)) ;
+  padding: 10px 13px;
+  background: black;
+  color: white;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: bold;
 }
