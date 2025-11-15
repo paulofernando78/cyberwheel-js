@@ -20,9 +20,12 @@ const css = /* css */ `
   }
 
   @media (max-width: 630px) {
-    
     span {
       font-size: 1.7rem
+    }
+
+    .logo-container {
+      flex-direction: column
     }
   }
 `

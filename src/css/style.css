@@ -24,6 +24,9 @@
 /* Bike */
 @import "/src/css/pages/bike.css";
 
+/* Components*/
+@import "src/css/components/button.css";
+
 hr {
   margin-inline: 20px;
   border-color: var(--slate-6);
