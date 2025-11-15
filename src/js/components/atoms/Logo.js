@@ -9,7 +9,7 @@ const css = /* css */ `
   }
 
   span {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     font-weight: 900;
     font-family: "Orbitron", sans-serif;
   }
@@ -21,10 +21,6 @@ const css = /* css */ `
   }
 
   @media (max-width: 630px) {
-    span {
-      font-size: 1.7rem
-    }
-
     .logo-container {
       flex-direction: column
     }
