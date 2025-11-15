@@ -10,7 +10,8 @@ const css = /* css */ `
 
   span {
     font-size: 1.9rem;
-    font-weight: bold;
+    font-weight: 900;
+    font-family: "Orbitron", sans-serif;
   }
 
   img {
