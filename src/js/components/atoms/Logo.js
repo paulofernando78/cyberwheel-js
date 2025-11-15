@@ -15,7 +15,8 @@ const css = /* css */ `
 
   img {
     width: 50px;
-    box-shadow: none
+    box-shadow: none;
+    filter: grayscale(100%)
   }
 `
 
