@@ -9,7 +9,7 @@ const css = /* css */ `
   }
 
   span {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: bold
   }
 
@@ -19,14 +19,10 @@ const css = /* css */ `
     filter: grayscale(100%)
   }
 
-  @media (max-width: 600px) {
-    .logo-container {
-      flex-direction: column;
-      align-items: center
-    }
+  @media (max-width: 630px) {
     
     span {
-      font-size: 1.5rem
+      font-size: 1.7rem
     }
   }
 `
