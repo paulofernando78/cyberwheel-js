@@ -18,38 +18,8 @@
   position: relative;
 }
 
-.bikes__carousel__button-left {
-  top: 50%;
-  transform: translateY(-50%);
-  left: 10px;
-}
-
-.bikes__carousel__button-right {
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10px;
-}
-
-.bikes__carousel__button-left,
-.bikes__carousel__button-right {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: white;
-  font-size: 1.4rem;
-  cursor: pointer;
-  border: none;
-  padding-top: 0.1rem;
-  position: absolute;
-  z-index: 1;
-}
-
-button:disabled {
-  opacity: 0;
-  cursor: default;
-  pointer-events: none;
-}
-
 .bikes__carousel__card {
-  padding: 20px 150px;
+  padding: 0px 150px;
   flex: 0 0 100%;
   scroll-snap-align: start;
   overflow: hidden;
@@ -60,11 +30,38 @@ button:disabled {
   border: 2px solid var(--slate-5);
 }
 
+.bikes__carousel__button-left,
+.bikes__carousel__button-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: none;
+  padding-top: 0.1rem;
+  z-index: 1;
+}
+
+.bikes__carousel__button-left {
+  left: 10px;
+}
+
+.bikes__carousel__button-right {
+  right: 10px;
+}
+
+button:disabled {
+  opacity: 0.1;
+  cursor: default;
+  pointer-events: none;
+}
+
 .bikes__carousel-dots {
   display: flex;
   justify-content: center;
   gap: 6px;
-  margin-top: 10px;
 }
 
 .bikes__carousel-dots span {
