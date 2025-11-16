@@ -54,6 +54,7 @@
 
 .bikes__carousel__card-img {
   outline: 1px solid var(--slate-5);
+  border-radius: 5px 5px 0 0 
 }
 
 .bikes__carousel__info {

@@ -4,6 +4,8 @@
   gap: 20px;
 }
 
+
+
 .checkout__title-description {
   margin-bottom: 48px;
 }
@@ -45,7 +47,7 @@
 
 .checkout__container input,
 .checkout__container select {
-  border: none;
+  border: var(--border);
   border-radius: 4px;
   width: 100%;
 }
@@ -57,7 +59,6 @@
 }
 
 .checkout__container input {
-  border: var(--border);
   padding: 8px;
   font-size: 0.9rem;
 }

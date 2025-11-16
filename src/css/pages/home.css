@@ -1,8 +1,9 @@
 #future {
   display: inline-block;
-  color: #00eaff;
-  text-shadow: 0 0 8px #00eaff, 0 0 16px #00eaff, 0 0 24px #00eaff;
-  animation: wave 3s infinite ease-in-out;
+  color: var(--cyan-3);
+  text-shadow: 0 0 8px var(--cyan-4), 0 0 16px var(--cyan-4), 0 0 24px var(--cyan-4);
+  -webkit-text-stroke: 1px var(--cyan-3);
+  /* animation: wave 3s infinite ease-in-out; */
 }
 
 /* @keyframes wave {

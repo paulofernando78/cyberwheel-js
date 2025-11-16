@@ -27,6 +27,7 @@ svg {
 }
 
 .btn--with-label {
+  display: inline-block;
   width: max-content;
   padding: 18px 11px 17px 11px;
   background:
@@ -35,8 +36,13 @@ svg {
   color: white;
   border: 1px solid var(--slate-5);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
   font-weight: 900;
+}
+
+.btn--with-label:hover {
+  box-shadow:
+  5px 5px 5px var(--slate-1);
+  transition: box-shadow 0.2s ease-out;
 }
 
 @keyframes fadeIn {

@@ -46,22 +46,29 @@
   font-weight: bold;
 }
 
+.bike__info,
+.bike__tech-specs,
+.bike__method {
+  color: var(--slate-4);
+  border: var(--border);
+}
+
 .bike__info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   background: black;
   padding: var(--padding-info-tech);
-  border: var(--border-thicker);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   margin-bottom: 20px;
 }
 
+
+
 .bike__tech-specs {
   background: black;
   padding: var(--padding-info-tech);
-  border: var(--border-thicker);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
@@ -106,8 +113,7 @@
 }
 
 .bike__method img {
-  border: none;
-
+  box-shadow: none;
 }
 
 @media (max-width: 680px) {

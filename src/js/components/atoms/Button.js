@@ -19,7 +19,7 @@ class Button extends HTMLElement {
   }
 
   connectedCallback() {
-    this.updtaeRendering();
+    this.updateRendering();
     this.button.addEventListener("click", () => {
       this.dispatchEvent(
         new CustomEvent("nav-click", {
@@ -32,11 +32,11 @@ class Button extends HTMLElement {
 
   attributeChangedCallback(name, oldVal, newVal) {
     if (name === "icon" && oldVal !== newVal) {
-      this.updtaeRendering();
+      this.updateRendering();
     }
   }
 
-  updtaeRendering() {
+  updateRendering() {
     const icons = { lightMode, darkMode };
     const iconAttr = this.getAttribute("icon");
     const labelAttr = this.getAttribute("label");
