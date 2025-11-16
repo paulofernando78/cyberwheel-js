@@ -5,11 +5,12 @@ export function Checkout(app) {
       <h1>Checkout</h1>
       <p class="checkout__title-description">Fill in the payment form.</p>
       <form id="checkoutForm" class="checkout__container">
-        <div class="checkout__payment-details">
+        <div class="checkout__payment-details line-break">
           <div>
             <span class="checkout__title">Payment Details</span>
             <p class="checkout__payment-description">Complete your purchase by providing your payment details.</p>
           </div>
+          <hr />
           <div>
             <label for="cardholder-name">Cardholder Name*</label>
             <input id="cardholder-name" placeholder="Jared Leto"/>
@@ -77,19 +78,21 @@ export function Checkout(app) {
         <div class="checkout__summary line-break">
           <div>
             <span class="checkout__title">Summary</span>
+            <p class="checkout__payment-description">Complete your purchase by providing your payment details.</p>
           </div>
+          <hr />
           <img src="/images/bikes/ares-x10.png"/>
           <div class="checkout__price">
             <div>
               <span>Bike: Ares X-10</span>
               <span>$9.000</span>
             </div>
-            <hr>
+            <hr />
             <div>
               <span>Tax:</span>
               <span>$50</span>
             </div>
-            <hr>
+            <hr />
             <div>
               <span>Total:</span>
               <span>$9.250</span>
