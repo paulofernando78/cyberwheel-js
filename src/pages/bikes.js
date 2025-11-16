@@ -1,7 +1,6 @@
 import { navigateTo } from "../js/router";
 
 export function Bikes(app) {
-
   const carouselData = [
     {
       img: "/images/bikes/rider-a1.png",
@@ -35,14 +34,16 @@ export function Bikes(app) {
       <h1>Our bikes</h1>
       <p class="bikes__description">Check out our cutting-edge bike models.</p>
         <ul class="bikes__carousel">
-          ${carouselData.map((bike) => /* html */ `
+          ${carouselData
+            .map(
+              (bike) => /* html */ `
             <li class="bikes__carousel__card">
               <figure>
                 <div class="bikes__carousel__img-wrapper">
                   <img src="${bike.img}" alt="${bike.alt}" class="bikes__carousel__card-img"/>
                   <button class="bikes__carousel__button-left">❮</button>
                   <button class="bikes__carousel__button-right">❯</button>
-                  <div class="">
+                  <div class="bikes__carousel-dots">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -58,7 +59,9 @@ export function Bikes(app) {
                 </figcaption>
               </figure> 
             </li>
-          `).join("")}  
+          `
+            )
+            .join("")}  
         </ul>
     </section>
             `;
@@ -66,6 +69,7 @@ export function Bikes(app) {
   const ul = app.querySelector("ul"); // Needed to link to *ul.scrollBy*
   const leftBtns = app.querySelectorAll(".bikes__carousel__button-left");
   const rightBtns = app.querySelectorAll(".bikes__carousel__button-right");
+  const dots = app.querySelectorAll(".bikes__carousel-dots span");
 
   // Left Button
   leftBtns.forEach((btn) => {
@@ -81,16 +85,45 @@ export function Bikes(app) {
     });
   });
 
+  function updateButtons() {
+    if (ul.scrollLeft === 0) {
+      leftBtns.forEach((btn) => (btn.disabled = true));
+    } else {
+      leftBtns.forEach((btn) => (btn.disabled = false));
+    }
+
+    if (ul.scrollLeft + ul.clientWidth >= ul.scrollWidth) {
+      rightBtns.forEach((btn) => (btn.disabled = true));
+    } else {
+      rightBtns.forEach((btn) => (btn.disabled = false));
+    }
+  }
+
+  ul.addEventListener("scroll", updateButtons);
+  updateButtons();
+
+  // Dots
+  function updateDots() {
+    const index = Math.round(ul.scrollLeft / ul.clientWidth);
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+  }
+
+  ul.addEventListener("scroll", updateDots);
+  updateDots();
+
   // Details
   const linkBtns = app.querySelectorAll(".bikes__carousel__button-link");
-  const bikeRoutes = ["/bikes/rider-a1", "/bikes/urban-z3", "/bikes/ares-x10"]
+  const bikeRoutes = ["/bikes/rider-a1", "/bikes/urban-z3", "/bikes/ares-x10"];
 
   // Shorter version
   linkBtns.forEach((Btn, i) => {
     if (bikeRoutes[i]) {
-      Btn.addEventListener("click", () => navigateTo(bikeRoutes[i]))
+      Btn.addEventListener("click", () => navigateTo(bikeRoutes[i]));
     }
-  })
+  });
 
   // linkBtns[0].addEventListener("click", () => {
   //   navigateTo("/bikes/rider-a1");
