@@ -1,0 +1,24 @@
+.logo__container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px
+  }
+
+  .logo__container span {
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-family: "Orbitron", sans-serif;
+  }
+
+  .logo__container img {
+    width: 50px;
+    box-shadow: none;
+    filter: var(--logo)
+  }
+
+  @media (max-width: 630px) {
+    .logo__container {
+      flex-direction: column
+    }
+  }

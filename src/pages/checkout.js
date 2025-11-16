@@ -98,9 +98,11 @@ export function Checkout(app) {
               <span>$9.250</span>
             </div>
           </div>
-
-          <wc-button label="Submit" style="position: static"></wc-button>
-          <span class="checkout__secure-msg">Payments are secure and encrypted</span>
+          <wc-button label="Submit"></wc-button>
+          <div class="checkout__secure-msg__wrapper">
+            <img src="/images/padlock.svg" alt="padlock icon"/>
+            <span class="checkout__secure-msg">Payments are secure and encrypted</span>
+          </div>
         </div>
       </form>
     </div>

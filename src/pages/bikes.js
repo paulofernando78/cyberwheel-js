@@ -44,14 +44,13 @@ export function Bikes(app) {
                   <button class="bikes__carousel__button-left">❮</button>
                   <button class="bikes__carousel__button-right">❯</button>
                 </div>
-                  
-                  <figcaption>
-                    <div class="bikes__carousel__info">
-                      <h2>${bike.title}</h2>
-                      <h3>${bike.subtitle}</h3>
-                      <p class="bikes__carousel__description">${bike.description}</p>
-                      <wc-button label="DETAILS" class="bikes__carousel__button-link"></wc-button>
-                  </figcaption>
+                <figcaption>
+                  <div class="bikes__carousel__info">
+                    <h2>${bike.title}</h2>
+                    <h3>${bike.subtitle}</h3>
+                    <p class="bikes__carousel__description">${bike.description}</p>
+                    <wc-button label="DETAILS" class="bikes__carousel__button-link"></wc-button>
+                </figcaption>
               </figure> 
             </li>
                   `

@@ -112,6 +112,17 @@
   color: var(--slate-4);
 }
 
+.checkout__secure-msg__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.checkout__secure-msg__wrapper img {
+  box-shadow: none;
+  width: 18px
+}
+
 @media (max-width: 680px) {
   .checkout__container {
     grid-template-columns: 1fr;

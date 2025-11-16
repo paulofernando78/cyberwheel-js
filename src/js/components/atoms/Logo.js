@@ -1,31 +1,4 @@
-import style from "@css/style.css?inline";
-
-const css = /* css */ `
-  .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 5px
-  }
-
-  span {
-    font-size: 1.6rem;
-    font-weight: 900;
-    font-family: "Orbitron", sans-serif;
-  }
-
-  img {
-    width: 50px;
-    box-shadow: none;
-    filter: var(--logo)
-  }
-
-  @media (max-width: 630px) {
-    .logo-container {
-      flex-direction: column
-    }
-  }
-`;
+import styleImports from "@css/style.css?inline";
 
 class Logo extends HTMLElement {
   constructor() {
@@ -33,15 +6,14 @@ class Logo extends HTMLElement {
     this.attachShadow({ mode: "open" });
 
     const style = document.createElement("style");
-    style.textContent = style;
+    style.textContent = styleImports;
     this.shadowRoot.appendChild(style);
 
     const logoContainer = document.createElement("div");
-    logoContainer.className = "logo-container";
+    logoContainer.className = "logo__container";
     /* html*/
     logoContainer.innerHTML = `
-      <style>${css}</style>
-      <img src="/images/logo.svg" alt="Logo"/>
+      <img src="/images/icons/logo.svg" alt="Logo"/>
       <span>CYBER WHEEL</span>
     `;
 

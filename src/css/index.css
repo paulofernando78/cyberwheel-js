@@ -87,7 +87,23 @@ footer a {
 .footer__social-media {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 15px;
+}
+
+footer span {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.footer__social-media img {
+  box-shadow: none;
+  filter: invert(1);
+  width: 23px;
+}
+
+footer span:last-child {
+  grid-column: 1/4;
+  font-family: inherit;
+  font-weight: bold;
 }
 
 @media (max-width: 630px) {
