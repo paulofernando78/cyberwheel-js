@@ -18,12 +18,18 @@ class Bike extends HTMLElement {
 
     const imgAttr = this.getAttribute("img");
     const altAttr = this.getAttribute("alt");
-    const priceAttr = this.getAttribute("price");
     const titleAttr = this.getAttribute("title");
     const descriptionAttr = this.getAttribute("description");
-
-    const inforList = JSON.parse(this.getAttribute("info") || "[]");
-    const techList = JSON.parse(this.getAttribute("tech") || "[]");
+    const electricMotorAttr = this.getAttribute("electricMotor") || "";
+    const maxSpeedAttr = this.getAttribute("maxSpeed") || "";
+    const batteryAttr = this.getAttribute("battery") || "";
+    const materialAttr = this.getAttribute("material") || "";
+    const weightAttr = this.getAttribute("weight") || "";
+    const heightAttr = this.getAttribute("height") || "";
+    const widthAttr = this.getAttribute("width") || "";
+    const depthAttr = this.getAttribute("depth") || "";
+    const gearsAttr = this.getAttribute("gears") || "";
+    const wheelAttr = this.getAttribute("wheelSize") || "";
 
     /* html */
     this.shadowRoot.innerHTML = `
@@ -49,43 +55,71 @@ class Bike extends HTMLElement {
             </div>  
           </section>
           
-          <section class="container-line-break">
+          <section class="line-break">
             <span class="uppercase bold">Information</span>
             <ul class="bike__info">
-            ${inforList
-              .map(
-                (item) => /* html*/ `
-              <li class="bike__info-list">
-              <span class="display-block"><strong>${item.title}</strong></span>
-              <span>${item.info}</span>
+              <li>
+                <span class="display-block"><strong>Eletric Motor</strong></span>
+                <span>${electricMotorAttr}</span>
               </li>
-              `
-              )
-              .join("")}
-              </ul>
+              <li>
+                <span class="display-block"><strong>Max Speed</strong></span>
+                <span>${maxSpeedAttr}</span>
+              </li>
+              <li>
+                <span class="display-block"><strong>Battery</strong></span>
+                <span>${batteryAttr}</span>
+              </li>
+              <li>
+                <span class="display-block"><strong>Material</strong></span>
+                <span>${materialAttr}</span>
+              </li>
+            </ul>
+
             <span class="uppercase bold">Technical Specifications</span>
             <ul class="bike__tech-specs">
-              ${techList
-                .map(
-                  (item) => /*html*/ `
-                <li class="bike__tech-specs-list">
-                  <span><strong>${item.title}</strong></span>
-                  <span>${item.info}</span>
-                </li>
-              `
-                )
-                .join("")}
+              <li>
+                <span class="display-block"><strong>Weight</strong></span>
+                <span>${weightAttr}</span>
+              </li>
+              <hr />
+              <li>
+                <span class="display-block"><strong>Height</strong></span>
+                <span>${heightAttr}</span>
+              </li>
+              <hr />
+              <li>
+                <span class="display-block"><strong>Width</strong></span>
+                <span>${widthAttr}</span>
+              </li>
+              <hr />
+              <li>
+                <span class="display-block"><strong>Depth</strong></span>
+                <span>${depthAttr}</span>
+              </li>
+              <hr />
+              <li>
+                <span class="display-block"><strong>Gears</strong></span>
+                <span>${gearsAttr}</span>
+              </li>
+              <hr />
+              <li>
+                <span class="display-block"><strong>Wheel</strong></span>
+                <span>${wheelAttr}</span>
+              </li>
             </ul>
+
             <div class="bike__method-container">
               <div class="bike__method">
-                <img src="/images/delivery.svg" />
+                <img src="/images/icons/delivery.svg" />
                 <span>Delivery in 5 days</span>
               </div>
               <div class="bike__method">
-                <img src="/images/stock.svg" />
+                <img src="/images/icons/stock.svg" />
                 <span>18 in stock</span>
               </div>
             </div>
+
             <wc-button label="BUY NOW" style=""></wc-button>
           </section>
         </div>
@@ -94,9 +128,9 @@ class Bike extends HTMLElement {
     const buyButton = this.shadowRoot.querySelector("wc-button");
 
     buyButton.addEventListener("click", () => {
-      navigateTo("/checkout");
+      navigateTo(`/checkout?id=${this.getAttribute("id")}`);
     });
   }
 }
-
+666;
 export default Bike;

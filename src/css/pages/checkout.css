@@ -37,10 +37,20 @@
   padding: 20px;
 }
 
+.checkout__credit-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.checkout__credit-cards img {
+  width: 40px;
+  box-shadow: none
+}
+
 .checkout__payment-details {
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
 }
 
 .checkout__container input,
@@ -69,18 +79,6 @@
 
 .checkout__card-data__card-number {
   position: relative;
-}
-
-.checkout__card-data__card-number::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 20px;
-  top: 53%;
-  right: 5px;
-  background-image: url("/images/master-card.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .checkout__country-city {

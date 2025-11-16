@@ -1,0 +1,145 @@
+[
+  {
+    "id": "rider-a1",
+    "title": "Rider A1",
+    "description": "The Rider A1 blends minimalism with modern electric engineering, providing a smooth ride through city streets and open roads alike. With a lightweight frame and intuitive pedal-assist, it’s built for everyone — sleek, simple, and ready for daily rides.",
+    "price": "4500",
+    "currency": "USD",
+    "img1": "/images/bikes/rider-a1-1.png",
+    "img2": "/images/bikes/rider-a1-2.png",
+    "img3": "/images/bikes/rider-a1-3.png",
+    "info": [
+      {
+        "electricMotor": "Rear hub 250 W, pedal-assist"
+      },
+      {
+        "battery": "36V 10A, 4-6h charge"
+      },
+      {
+        "maxSpeed": "20 km/h assisted"
+      },
+      {
+        "material": "Lightweight aluminum frame"
+      }
+    ],
+    "tech": [
+      {
+        "weight": "12 kg"
+      },
+      {
+        "width": "120 cm"
+      },
+      {
+        "height": "60 cm"
+      },
+      {
+        "depth": "10 cm"
+      },
+      {
+        "gears": "10-speed"
+      },
+      {
+        "wheelSize": "25 in"
+      }
+    ],
+    "delivery": {
+      "estimate": "5",
+      "unit": "days"
+    },
+    "stock": "18"
+  },
+  {
+    "id": "urban-z3",
+    "title": "Urban Z3",
+    "description": "Urban Z3 With a redefined aerodynamic frame, improved torque delivery, and advanced smart control, it delivers both stability and acceleration when you need it most. It’s not just a ride — it’s the transition from everyday to exceptional.",
+    "price": "6500",
+    "currency": "USD",
+    "img": "/images/bikes/rider-a1.png",
+    "info": [
+      {
+        "electricMotor": "Mid-drive 350 W brushless motor"
+      },
+      {
+        "battery": "48V 14Ah lithium-ion, 5h charge"
+      },
+      {
+        "maxSpeed": "35 km/h assisted"
+      },
+      {
+        "material": "Carbon fiber and aluminum alloy"
+      }
+    ],
+    "tech": [
+      {
+        "weight": "9 kg"
+      },
+      {
+        "width": "60 cm"
+      },
+      {
+        "height": "120 cm"
+      },
+      {
+        "depth": "10  cm"
+      },
+      {
+        "gears": "16-speed"
+      },
+      {
+        "wheelSize": "25 in"
+      }
+    ],
+    "delivery": {
+      "estimate": "7",
+      "unit": "days"
+    },
+    "stock": "10"
+  },
+  {
+    "id": "ares-x10",
+    "title": "Ares X10",
+    "description": "Every curve, every light, every motion is engineered for maximum performance. Its hyper-responsive carbon body and high-output electric drive deliver unmatched velocity and precision — the fastest, boldest, and most advanced machine in the CyberWheel lineup.",
+    "price": "8500",
+    "currency": "USD",
+    "img": "/images/bikes/ares-x10.png",
+    "info": [
+      {
+        "electricMotor": "Dual-drive 500 W high-torque motor"
+      },
+      {
+        "battery": "72V 20Ah graphene cell, 2h fast charge"
+      },
+      {
+        "maxSpeed": "80 km/h assisted"
+      },
+      {
+        "material": "Ultra-light carbon fiber monocoque frame"
+      }
+    ],
+    "tech": [
+      {
+        "weight": "7 kg"
+      },
+      {
+        "width": "50 cm"
+      },
+      {
+        "height": "100 cm"
+      },
+      {
+        "depth": "8 cm"
+      },
+      {
+        "gears": "20-speed"
+      },
+      {
+        "wheelSize": "27 in"
+      }
+    ],
+    "delivery": {
+      "estimate": "10",
+      "unit": "days"
+    },
+    "stock": "10"
+  }
+]

@@ -11,11 +11,18 @@ export function Checkout(app) {
             <p class="checkout__payment-description">Complete your purchase by providing your payment details.</p>
           </div>
           <hr />
+          <span>Cards Accepted:</span>
+          <div class="checkout__credit-cards">
+            <img src="/images/icons/credit-cards/visa.svg" alt="visa credit card"/>
+            <img src="/images/icons/credit-cards/mastercard.svg" alt="master credit card"/>
+            <img src="/images/icons/credit-cards/american-express.svg" alt="american express credit card"/>
+            <img src="/images/icons/credit-cards/paypal.svg" alt="paypal"/>
+            <img src="/images/icons/credit-cards/bitcoin.svg" alt="bitcoin"/>
+          </div>
           <div>
             <label for="cardholder-name">Cardholder Name*</label>
             <input id="cardholder-name" placeholder="Jared Leto"/>
           </div>
-
           <div class="checkout__card-data">
             <div class="checkout__card-data__card-number">
               <label for="card-number">Card Number*</label>
@@ -100,7 +107,7 @@ export function Checkout(app) {
           </div>
           <wc-button label="Submit"></wc-button>
           <div class="checkout__secure-msg__wrapper">
-            <img src="/images/padlock.svg" alt="padlock icon"/>
+            <img src="/images/icons/padlock.svg" alt="padlock icon"/>
             <span class="checkout__secure-msg">Payments are secure and encrypted</span>
           </div>
         </div>
