@@ -85,7 +85,9 @@ footer a {
 }
 
 footer span {
+  display: inline-block;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 10px;
 }
 
 .footer__social-media svg {
@@ -131,6 +133,6 @@ footer span:last-child {
   footer {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 35px;
   }
 }
