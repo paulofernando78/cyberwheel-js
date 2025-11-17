@@ -38,6 +38,7 @@ h6 {
 }
 
 p, span, a, li {
+  color: var(--slate-4);
   line-height: 1.3;
 }
 

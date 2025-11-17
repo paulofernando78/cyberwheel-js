@@ -2,7 +2,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 5px
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  .logo__container img {
+    width: 38px;
+    box-shadow: none;
+    filter: var(--logo)
   }
 
   .logo__container span {
@@ -11,14 +18,13 @@
     font-family: "Orbitron", sans-serif;
   }
 
-  .logo__container img {
-    width: 50px;
-    box-shadow: none;
-    filter: var(--logo)
-  }
 
   @media (max-width: 630px) {
     .logo__container {
       flex-direction: column
     }
+
+     .logo__container img {
+      width: 60px;
+     }
   }

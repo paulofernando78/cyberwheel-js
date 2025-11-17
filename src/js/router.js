@@ -1,14 +1,8 @@
-// ------------------------------
-// Navegação
-// ------------------------------
 export function navigateTo(path) {
   window.history.pushState({}, "", path);
   renderRoute();
 }
 
-// ------------------------------
-// Definição das rotas com REGEX
-// ------------------------------
 const routes = [
   // Home
   {
@@ -42,9 +36,6 @@ const routes = [
   }
 ];
 
-// ------------------------------
-// Renderização das rotas
-// ------------------------------
 export async function renderRoute() {
   const app = document.querySelector("#app");
   const path = window.location.pathname;
@@ -60,15 +51,10 @@ export async function renderRoute() {
     }
   }
 
-  // ------------------------------
-  // 404 - Rota não encontrada
-  // ------------------------------
   app.innerHTML = "";
   const notFound = await import("/src/pages/404.js");
   notFound.NotFound(app);
 }
 
-// ------------------------------
 // Suporte ao botão voltar/avançar
-// ------------------------------
 window.addEventListener("popstate", renderRoute);

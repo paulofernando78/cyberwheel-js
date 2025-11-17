@@ -3,18 +3,7 @@
   color: var(--cyan-3);
   text-shadow: 0 0 8px var(--cyan-4), 0 0 16px var(--cyan-4), 0 0 24px var(--cyan-4);
   -webkit-text-stroke: 1px var(--cyan-3);
-  /* animation: wave 3s infinite ease-in-out; */
 }
-
-/* @keyframes wave {
-  0%,
-  100% {
-    transform: skewY(0deg);
-  }
-  50% {
-    transform: skewY(3deg);
-  }
-} */
 
 .home__future {
   margin-top: 0px;
@@ -30,7 +19,7 @@
   width: 52%;
   height: 55%;
   flex-shrink: 0;
-  transform: perspective(800px) rotateY(-20deg);
+  transform: perspective(800px) rotateY(-15deg);
   margin-right: 13px;
 }
 

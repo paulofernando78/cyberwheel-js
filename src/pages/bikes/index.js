@@ -23,6 +23,9 @@ export async function handler(app, params) {
       depth="${bike.depth}"
       gears="${bike.gears}"
       wheelSize="${bike.wheelSize}"
+      estimate="${bike.delivery.estimate}"
+      unit="${bike.delivery.unit}"
+      stock="${bike.stock}"
     ></wc-bike>
   `;
 }

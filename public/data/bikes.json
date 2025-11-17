@@ -29,32 +29,21 @@
     "price": 6500,
     "currency": "USD",
     "img": "/images/bikes/urban-z3.png",
-
     "electricMotor": "Mid-drive 350 W brushless motor",
-
     "battery": "48V 14Ah lithium-ion, 5h charge",
-
     "maxSpeed": "35 km/h assisted",
-
     "material": "Carbon fiber and aluminum alloy",
-
     "weight": "9 kg",
-
     "width": "60 cm",
-
     "height": "120 cm",
-
     "depth": "10  cm",
-
     "gears": "16-speed",
-
     "wheelSize": "25 in",
-
     "delivery": {
       "estimate": "7",
       "unit": "days"
     },
-    "stock": "10"
+    "stock": "12"
   },
   {
     "id": "ares-x10",
@@ -77,6 +66,6 @@
       "estimate": "10",
       "unit": "days"
     },
-    "stock": "10"
+    "stock": "7"
   }
 ]

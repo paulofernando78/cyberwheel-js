@@ -30,6 +30,9 @@ class Bike extends HTMLElement {
     const depthAttr = this.getAttribute("depth") || "";
     const gearsAttr = this.getAttribute("gears") || "";
     const wheelAttr = this.getAttribute("wheelSize") || "";
+    const estimateAtrr = this.getAttribute("estimate") || "";
+    const unitAttr = this.getAttribute("unit") || "";
+    const stockAttr = this.getAttribute("stock") || "";
 
     /* html */
     this.shadowRoot.innerHTML = `
@@ -112,11 +115,11 @@ class Bike extends HTMLElement {
             <div class="bike__method-container">
               <div class="bike__method">
                 <img src="/images/icons/delivery.svg" />
-                <span>Delivery in 5 days</span>
+                <spa>Delivery in ${estimateAtrr} ${unitAttr}</spa bn>
               </div>
               <div class="bike__method">
                 <img src="/images/icons/stock.svg" />
-                <span>18 in stock</span>
+                <span>${stockAttr} in stock</span>
               </div>
             </div>
 

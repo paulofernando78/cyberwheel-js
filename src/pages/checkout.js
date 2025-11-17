@@ -19,13 +19,15 @@ export async function Checkout(app, params) {
             <p class="checkout__payment-description">Complete your purchase by providing your payment details.</p>
           </div>
           <hr />
-          <span>Cards Accepted:</span>
-          <div class="checkout__credit-cards">
-            <img src="/images/icons/credit-cards/visa.svg" alt="visa credit card"/>
-            <img src="/images/icons/credit-cards/mastercard.svg" alt="master credit card"/>
-            <img src="/images/icons/credit-cards/american-express.svg" alt="american express credit card"/>
-            <img src="/images/icons/credit-cards/paypal.svg" alt="paypal"/>
-            <img src="/images/icons/credit-cards/bitcoin.svg" alt="bitcoin"/>
+          <div>
+            <span class="checkout__cards">Cards Accepted:</span>
+            <div class="checkout__credit-cards">
+              <img src="/images/icons/credit-cards/visa.svg" alt="visa credit card"/>
+              <img src="/images/icons/credit-cards/mastercard.svg" alt="master credit card"/>
+              <img src="/images/icons/credit-cards/american-express.svg" alt="american express credit card"/>
+              <img src="/images/icons/credit-cards/paypal.svg" alt="paypal"/>
+              <img src="/images/icons/credit-cards/bitcoin.svg" alt="bitcoin"/>
+            </div>
           </div>
           <div>
             <label for="cardholder-name">Cardholder Name*</label>

@@ -16,15 +16,15 @@
 @import "@css/utils/text.css";
 
 /* Pages */
-@import "/src/css/pages/home.css";
-@import "/src/css/pages/bikes.css";
-@import "/src/css/pages/contact.css";
-@import "/src/css/pages/checkout.css";
-@import "/src/css/pages/404.css";
+@import "@css/pages/home.css";
+@import "@css/pages/bikes.css";
+@import "@css/pages/contact.css";
+@import "@css/pages/checkout.css";
+@import "@css/pages/404.css";
 
 /* Bike */
-@import "/src/css/pages/bike.css";
+@import "@css/pages/bike.css";
 
 /* Components*/
-@import "src/css/components/button.css";
-@import "src/css/components/logo.css";
+@import "@css/components/button.css";
+@import "@css/components/logo.css";

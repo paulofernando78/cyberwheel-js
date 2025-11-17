@@ -14,12 +14,12 @@
   color: var(--slate-5);
 }
 
+.checkout__cards,
 .checkout__container label {
   margin-bottom: 5px;
 }
 
 .checkout__payment-description {
-  font-size: 0.9rem;
   color: var(--slate-4);
 }
 

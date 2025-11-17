@@ -3,7 +3,7 @@
   --color: var(--slate-4);
   --icon-color: var(--gray-1);
   --header: max-content;
-  --logo: invert(1);
+  --logo: invert(0);
   --heading-color: var(--slate-1);
   --heading-text-shadow-color: var(--slate-2);
   scrollbar-gutter: stable;
@@ -15,7 +15,7 @@
   --heading-color: var(--slate-10);
   --heading-text-shadow-color: var(--slate-10);
   --icon-color: #18191f;
-  --logo: invert(0);
+  --logo: invert(1);
 }
 
 img {

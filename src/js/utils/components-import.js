@@ -2,7 +2,6 @@
 
 // Atoms
 import Button from "../components/atoms/Button"
-import Logo from "../components/atoms/Logo"
 
 // Molecules
 
@@ -17,7 +16,6 @@ import Bike from "../components/template/bike"
 
 // Atoms
 customElements.define("wc-button", Button)
-customElements.define("wc-logo", Logo)
 
 // Molecules
 
