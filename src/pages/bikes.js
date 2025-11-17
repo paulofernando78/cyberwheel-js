@@ -41,8 +41,6 @@ export function Bikes(app) {
               <figure>
                 <div class="bikes__carousel__img-wrapper">
                   <img src="${bike.img}" alt="${bike.alt}" class="bikes__carousel__card-img"/>
-                  <button class="bikes__carousel__button-left">❮</button>
-                  <button class="bikes__carousel__button-right">❯</button>
                 </div>
                 <figcaption>
                   <div class="bikes__carousel__info">
@@ -58,9 +56,13 @@ export function Bikes(app) {
                 .join("")}  
                 </ul>
                 <div class="bikes__carousel-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                  <button class="bikes__carousel__button-left"></button>
+                    <div>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  <button class="bikes__carousel__button-right"></button>
                 </div>
               </div>
     </section>
