@@ -128,7 +128,10 @@ class Bike extends HTMLElement {
     const buyButton = this.shadowRoot.querySelector("wc-button");
 
     buyButton.addEventListener("click", () => {
-      navigateTo(`/checkout?id=${this.getAttribute("id")}`);
+      const pathParts = window.location.pathname.split("/");
+      const id = pathParts[2]; // "rider-a1"
+      console.log(pathParts);
+      navigateTo(`/checkout/${id}`);
     });
   }
 }

@@ -20,7 +20,7 @@ class Button extends HTMLElement {
 
   connectedCallback() {
     this.updateRendering();
-    this.button.addEventListener("click", () => {
+    this.button.addEventListener("click", (e) => {
       this.dispatchEvent(
         new CustomEvent("nav-click", {
           bubbles: true,

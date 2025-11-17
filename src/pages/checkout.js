@@ -1,4 +1,12 @@
-export function Checkout(app) {
+export async function Checkout(app, params) {
+  console.log(params)
+  const resp = await fetch("/data/bikes.json");
+  const bikes = await resp.json();
+  
+  const bike = bikes.find((b) => b.id === params[1])
+
+  const formatCurrency = (value) => new Intl.NumberFormat("us-US", {style:"currency", currency: "USD"}).format(value)
+
   /* html*/ 
   app.innerHTML = `
     <div class="line-break">
@@ -88,21 +96,21 @@ export function Checkout(app) {
             <p class="checkout__payment-description">Complete your purchase by providing your payment details.</p>
           </div>
           <hr />
-          <img src="/images/bikes/ares-x10.png"/>
+          <img src="${bike.img}"/>
           <div class="checkout__price">
             <div>
-              <span>Bike: Ares X-10</span>
-              <span>$9.000</span>
+              <span>Bike: ${bike.title}</span>
+              <span>${formatCurrency(bike.price)}</span>
             </div>
             <hr />
             <div>
               <span>Tax:</span>
-              <span>$50</span>
+              <span>${formatCurrency(50)}</span>
             </div>
             <hr />
             <div>
               <span>Total:</span>
-              <span>$9.250</span>
+              <span>${formatCurrency(bike.price + 50)}</span>
             </div>
           </div>
           <wc-button label="Submit"></wc-button>

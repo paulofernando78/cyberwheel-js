@@ -1,51 +1,74 @@
+// ------------------------------
+// Navegação
+// ------------------------------
 export function navigateTo(path) {
   window.history.pushState({}, "", path);
   renderRoute();
 }
 
+// ------------------------------
+// Definição das rotas com REGEX
+// ------------------------------
+const routes = [
+  // Home
+  {
+    pattern: /^\/$/,
+    load: () => import("../pages/home.js"),
+    handler: (mod, app) => mod.Home(app)
+  },
+
+  // Lista de bikes
+  {
+    pattern: /^\/bikes$/,
+    load: () => import("../pages/bikes.js"),
+    handler: (mod, app) => mod.Bikes(app)
+  },
+
+  // Página de bike com parâmetro dinâmico
+  // /bikes/alguma-coisa
+  {
+    pattern: /^\/bikes\/([^\/]+)$/,
+    load: () => import("../pages/bikes/index.js"),
+    handler: (mod, app, params) => mod.handler(app, params)
+    // params[1] => ID ou slug da bike
+  },
+
+  // Checkout com parâmetro dinâmico
+  // /checkout/123
+  {
+    pattern: /^\/checkout\/([^\/]+)$/,
+    load: () => import("../pages/checkout.js"),
+    handler: (mod, app, params) => mod.Checkout(app, params)
+  }
+];
+
+// ------------------------------
+// Renderização das rotas
+// ------------------------------
 export async function renderRoute() {
   const app = document.querySelector("#app");
   const path = window.location.pathname;
 
-  switch (path) {
-    case "/":
-      app.innerHTML = "";
-      const homeModule = await import("/src/pages/home.js");
-      homeModule.Home(app);
-      break;
-    case "/bikes":
-      app.innerHTML = "";
-      const bikesModule = await import("/src/pages/bikes.js");
-      bikesModule.Bikes(app);
-      break;
-    //
-    case "/bikes/rider-a1":
-      app.innerHTML = "";
-      const bikeRiderA1 = await import("/src/pages/bikes/riderA1.js");
-      bikeRiderA1.riderA1(app);
-      break;
+  for (const route of routes) {
+    const match = path.match(route.pattern);
 
-    case "/bikes/urban-z3":
+    if (match) {
       app.innerHTML = "";
-      const bikeUrbanZ3 = await import("/src/pages/bikes/urbanZ3.js");
-      bikeUrbanZ3.urbanZ3(app);
-      break;
-
-    case "/bikes/ares-x10":
-      app.innerHTML = "";
-      const bikeAresX10 = await import("/src/pages/bikes/aresX10.js");
-      bikeAresX10.aresX10(app);
-      break;
-    case "/checkout":
-      app.innerHTML = "";
-      const checkout = await import("/src/pages/checkout.js");
-      checkout.Checkout(app);
-      break
-    default:
-      app.innerHTML = "";
-      const notFoundModule = await import("/src/pages/404.js");
-      notFoundModule.NotFound(app);
+      const module = await route.load();
+      route.handler(module, app, match);
+      return;
+    }
   }
+
+  // ------------------------------
+  // 404 - Rota não encontrada
+  // ------------------------------
+  app.innerHTML = "";
+  const notFound = await import("/src/pages/404.js");
+  notFound.NotFound(app);
 }
 
+// ------------------------------
+// Suporte ao botão voltar/avançar
+// ------------------------------
 window.addEventListener("popstate", renderRoute);

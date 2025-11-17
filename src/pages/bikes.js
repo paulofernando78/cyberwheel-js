@@ -47,7 +47,7 @@ export function Bikes(app) {
                     <h2>${bike.title}</h2>
                     <h3>${bike.subtitle}</h3>
                     <p class="bikes__carousel__description">${bike.description}</p>
-                    <wc-button label="DETAILS" class="bikes__carousel__button-link"></wc-button>
+                    <wc-button label="DETAILS" class="bikes__carousel__button-link" ></wc-button>
                 </figcaption>
               </figure> 
             </li>
