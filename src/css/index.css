@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav a {
-  color: var(--slate-5);
+  color: var(--slate-2);
   text-decoration: none;
   transition: color 0.2s ease;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -90,7 +90,7 @@ footer span {
 
 .footer__social-media svg {
   width: 23px;
-  fill: var(--slate-4)
+  fill: var(--slate-2)
 }
 
 footer span:last-child {

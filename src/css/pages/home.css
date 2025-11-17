@@ -31,9 +31,11 @@
 .home__review-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  place-items: center;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   overflow: hidden;
+  background-color: var(--gray-2);
 }
 
 .home__review-container img {
@@ -43,7 +45,6 @@
 }
 
 .home__review {
-  background-color: var(--gray-2);
   color: #080808;
   padding: 50px;
 }
@@ -53,6 +54,11 @@
   position: relative;
   margin-bottom: 30px;
   font-style: italic;
+}
+.home__review-text,
+.home__review-text_name {
+  color: var(--slate-7)
+
 }
 
 .home__review-text::after,
