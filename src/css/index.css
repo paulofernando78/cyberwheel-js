@@ -69,7 +69,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
   text-align: center;
-  color: var(--slate-4);
+  color: var(--color);
   margin-top: 50px;
 }
 
@@ -90,7 +90,7 @@ footer span {
 
 .footer__social-media img {
   box-shadow: none;
-  filter: invert(1);
+  filter: var(--logo);
   width: 23px;
 }
 
