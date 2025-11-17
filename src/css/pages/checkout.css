@@ -1,6 +1,6 @@
 .checkout__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 60% 40%;
   gap: 20px;
 }
 
@@ -121,7 +121,7 @@
   width: 18px
 }
 
-@media (max-width: 680px) {
+@media (max-width: 703px) {
   .checkout__container {
     grid-template-columns: 1fr;
   }
