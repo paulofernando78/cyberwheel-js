@@ -72,7 +72,7 @@ footer {
   color: var(--color);
   background-color: black;
   border-radius: 5px 5px 0 0;
-  box-shadow: 0 0 15px var(--gray-7);
+  box-shadow: 0 0 15px var(--gray-8);
   margin-top: 50px;
 }
 
@@ -100,8 +100,9 @@ footer span {
 footer span:last-child {
   grid-column: 1/4;
   font-family: inherit;
+  font-size: .9rem;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 @media (max-width: 630px) {
@@ -129,6 +130,10 @@ footer span:last-child {
     top: 11px;
     right: 10px;
   }
+
+  footer span:last-child {
+  margin-top: 0;
+}
 }
 
 @media (max-width: 700px) {

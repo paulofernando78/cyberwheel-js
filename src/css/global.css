@@ -37,3 +37,7 @@ body {
 hr {
   margin-inline: 10px;
 }
+
+.bike-brightness {
+  filter: brightness(50%)
+}
