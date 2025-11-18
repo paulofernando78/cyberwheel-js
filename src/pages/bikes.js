@@ -3,7 +3,7 @@ import { navigateTo } from "../js/router";
 export function Bikes(app) {
   const carouselData = [
     {
-      img: "/images/bikes/rider-a1.png",
+      img: "/images/bikes/rider-a1-1.png",
       alt: "Rider A1 model",
       title: "Rider A1",
       subtitle: "Everyday Evolution",
@@ -11,7 +11,7 @@ export function Bikes(app) {
         "Designed for those who value comfort, balance, and effortless motion.",
     },
     {
-      img: "/images/bikes/urban-z3.png",
+      img: "/images/bikes/urban-z3-1.png",
       alt: "",
       title: "Urban Z3",
       subtitle: "Precision Meets Power",
@@ -19,7 +19,7 @@ export function Bikes(app) {
         "Bridging elegance and performance, it is crafted for riders who crave more.",
     },
     {
-      img: "/images/bikes/ares-x10.png",
+      img: "/images/bikes/ares-x10-1.png",
       alt: "",
       title: "Ares X10",
       subtitle: "The Pinnacle of Speed",

@@ -16,8 +16,12 @@ class Bike extends HTMLElement {
       currency,
     });
 
-    const imgAttr = this.getAttribute("img");
-    const altAttr = this.getAttribute("alt");
+    const imgOneAttr = this.getAttribute("imgOne");
+    const altOneAttr = this.getAttribute("altOne");
+    const imgTwoAttr = this.getAttribute("imgTwo");
+    const altTwoAttr = this.getAttribute("altTwo");
+    const imgThreeAttr = this.getAttribute("imgThree");
+    const altThreeAttr = this.getAttribute("altThree");
     const titleAttr = this.getAttribute("title");
     const descriptionAttr = this.getAttribute("description");
     const electricMotorAttr = this.getAttribute("electricMotor") || "";
@@ -45,16 +49,16 @@ class Bike extends HTMLElement {
         <div class="bike__container__img-info">
           <section class="bike__imgs">
             <img
-            src="${imgAttr}"
-            alt="${altAttr}" class="bike__img bike__img-main"/>
+            src="${imgOneAttr}"
+            alt="${altOneAttr}" class="bike__img bike__img-main"/>
             <span class="bike__price">${priceFormatted}</span>
             <div class="bike__img-angles">
               <img
-              src="${imgAttr}"
-              alt="${altAttr}" class="bike__img"/>
+              src="${imgTwoAttr}"
+              alt="${altTwoAttr}" class="bike__img"/>
               <img
-              src="${imgAttr}"
-              alt="${altAttr}" class="bike__img"/>
+              src="${imgThreeAttr}"
+              alt="${altThreeAttr}" class="bike__img"/>
             </div>  
           </section>
           
@@ -115,7 +119,7 @@ class Bike extends HTMLElement {
             <div class="bike__method-container">
               <div class="bike__method">
                 <img src="/images/icons/delivery.svg" />
-                <spa>Delivery in ${estimateAtrr} ${unitAttr}</spa bn>
+                <span>Delivery in ${estimateAtrr} ${unitAttr}</span>
               </div>
               <div class="bike__method">
                 <img src="/images/icons/stock.svg" />

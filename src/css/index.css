@@ -70,6 +70,9 @@ footer {
   padding: 20px;
   text-align: center;
   color: var(--color);
+  background-color: black;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 15px var(--gray-7);
   margin-top: 50px;
 }
 
@@ -87,7 +90,6 @@ footer a {
 footer span {
   display: inline-block;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin-bottom: 10px;
 }
 
 .footer__social-media svg {

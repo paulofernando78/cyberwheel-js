@@ -7,7 +7,12 @@ export async function handler(app, params) {
   /* html */
   app.innerHTML = `
     <wc-bike
-      img="${bike.img}"
+      imgOne="${bike.imgOne}"
+      AltOne="${bike.AltOne}"
+      imgTwo="${bike.imgTwo}"
+      AltTwo="${bike.AltTwo}"
+      imgThree="${bike.imgThree}"
+      AltThree="${bike.AltThree}"
       alt="${bike.alt}"
       price="${bike.price}"
       title="${bike.title}"
