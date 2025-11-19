@@ -1,26 +1,27 @@
+.home__introduction {
+  position: relative;
+}
+
+.home__people-riding {
+  width: 100%;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.home__introduction div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 290px;
+  padding: 5px 10px 7px 10px;
+}
+
 #future {
   display: inline-block;
   color: var(--cyan-3);
-  text-shadow: 0 0 8px var(--cyan-4), 0 0 16px var(--cyan-4), 0 0 24px var(--cyan-4);
+  text-shadow: 0 0 8px var(--cyan-4), 0 0 16px var(--cyan-4),
+    0 0 24px var(--cyan-4);
   -webkit-text-stroke: 1px var(--cyan-3);
-}
-
-.home__future {
-  margin-top: 0px;
-}
-
-.home__introduction {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.home__introduction img {
-  width: 52%;
-  height: 55%;
-  flex-shrink: 0;
-  transform: perspective(800px) rotateY(-15deg);
-  margin-right: 13px;
 }
 
 .home__technology {
@@ -32,7 +33,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   overflow: hidden;
   background-color: var(--gray-2);
@@ -41,7 +41,7 @@
 .home__review-container img {
   height: 100%;
   object-fit: cover;
-  border-radius: 5px 0 0 5px;
+  border-radius: 0;
 }
 
 .home__review {
@@ -57,15 +57,14 @@
 }
 .home__review-text,
 .home__review-text_name {
-  color: var(--slate-7)
-
+  color: var(--slate-7);
 }
 
 .home__review-text::after,
 .home__review-text::before {
   position: absolute;
   font-size: 5rem;
-  color: var(--slate-4)
+  color: var(--slate-4);
 }
 
 .home__review-text::before {
@@ -76,7 +75,7 @@
 
 .home__review-text::after {
   content: "”";
-  bottom: -70px
+  bottom: -70px;
 }
 
 .home__partners {
@@ -123,22 +122,24 @@
   }
 }
 
+@media (max-width: 730px) {
+  .home__review-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 790px) {
   .home__introduction {
     flex-direction: column;
   }
 
-  .home__introduction img {
-  width: 100%;
-  transform: skew(0);
-  margin-right: 0;
-}
-}
-
-@media (max-width: 730px) {
-  .home__review-container {
-    display: flex;
-    flex-direction: column;
+  .home__introduction div {
+    position: static;
+    width: 100%;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
   }
 }
 

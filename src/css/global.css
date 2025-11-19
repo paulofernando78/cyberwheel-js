@@ -18,10 +18,10 @@
   --logo: invert(1);
 }
 
-img {
+/* img {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-}
+} */
 
 body {
   background-color: var(--background-color, #fff);
@@ -36,6 +36,10 @@ body {
 
 hr {
   margin-inline: 10px;
+}
+
+.titles {
+  padding-left: 10px;
 }
 
 .bike-brightness {

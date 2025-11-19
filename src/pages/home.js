@@ -14,12 +14,12 @@ export function Home(app) {
         within reach.
       </p>
       </div>
-      <img src="/images/bikes.png" alt="Bicycle shop" class="shop"/>
+      <img src="/images/introduction-bikes-people.png" alt="Bicycle shop" class="home__people-riding"/>
   </section>
 
-  <!-- Customization -->
-  <section class="home__customization line-break" aria-label="Customization">
-    <h1>Stores everywhere</h1>
+  <!-- Stores -->
+  <section class="line-break" aria-label="Customization">
+    <h1 class="titles">Stores everywhere</h1>
     <img src="/images/shop.png" alt="Bicycle shop" class="shop"/>
   </section>
 
