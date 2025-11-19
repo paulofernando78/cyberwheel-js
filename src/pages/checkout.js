@@ -31,20 +31,20 @@ export async function Checkout(app, params) {
           </div>
           <div>
             <label for="cardholder-name">Cardholder Name*</label>
-            <input id="cardholder-name" placeholder="Jared Leto"/>
+            <input type="text" id="cardholder-name" placeholder="Jared Leto" required/>
           </div>
           <div class="checkout__card-data">
             <div class="checkout__card-data__card-number">
               <label for="card-number">Card Number*</label>
-              <input id="card-number" placeholder="0000 0000 0000 0000"/>
+              <input type="text" id="card-number" placeholder="0000 0000 0000 0000" required/>
             </div>
             <div>
-              <label for="expiry-date">Expiry Date*</label>
-              <input id="expiry-date" placeholder="MM/YY"/>
+              <label for="expiry-date">Exp. Date*</label>
+              <input type="text" id="expiry-date" placeholder="MM/YY" required/>
             </div>
             <div>
               <label for="cvv">CVV*</label>
-              <input id="cvv" placeholder="•••"/>
+              <input type="text" inputmode="numeric" maxlength="3" id="cvv" placeholder="•••" required/>
             </div>
           </div>
 
@@ -68,25 +68,25 @@ export async function Checkout(app, params) {
             </div>
             <div>
               <label for="city" >City</label>
-              <input id="city" placeholder="New York"/>
+              <input type="text" id="city" placeholder="New York" required/>
             </div>
           </div>
             
 
           <div>
             <label for="address">Address</label>
-            <input id="address" placeholder="21st street"/>
+            <input type="text" id="address" placeholder="21st street" required/>
             
           </div>
 
           <div class="checkout__state-zip">
             <div>
               <label for="state" >State*</label>
-              <input id="state" placeholder="New York City"/>
+              <input type="text" id="state" placeholder="New York City" required/>
             </div>
             <div>
               <label for="zip-code" >Zip Code*</label>
-              <input id="zip-code" placeholder="12345"/>
+              <input type="text" inputmod="numeric" id="zip-code" placeholder="12345" required/>
             </div>
           </div>
 
@@ -94,7 +94,7 @@ export async function Checkout(app, params) {
         
         <div class="checkout__summary line-break">
           <div>
-            <span clachess="checkout__title">Summary</span>
+            <span class="checkout__title">Summary</span>
             <p class="checkout__payment-description">Complete your purchase by providing your payment details.</p>
           </div>
           <hr />

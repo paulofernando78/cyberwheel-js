@@ -1,11 +1,11 @@
-.checkout__container {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  gap: 20px;
-}
-
 .checkout__title-description {
   margin-bottom: 48px;
+}
+
+.checkout__container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 15px;
 }
 
 .checkout__container span,
