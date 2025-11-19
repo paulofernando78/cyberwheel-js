@@ -3,7 +3,7 @@ export function Home(app) {
   app.innerHTML = `
   <div class="line-break">
   <!--  Introduction -->
-  <section class="home__introduction" aria-label="Introduction">
+  <article class="home__introduction" aria-label="Introduction">
     <div class="line-break">
       <h1 class="home__future">The <span id="future">future</span> of biking starts here</h1>
       <p>
@@ -15,46 +15,51 @@ export function Home(app) {
       </p>
       </div>
       <img src="/images/introduction-bikes-people.png" alt="Bicycle shop" class="home__people-riding"/>
-  </section>
+  </article>
 
   <!-- Stores -->
-  <section class="line-break" aria-label="Customization">
-    <h1 class="titles">Stores everywhere</h1>
+  <section class="line-break" aria-label="Stores">
+    <div class="content-margin">
+      <h1 class="">Stores everywhere</h1>
+    </div>
     <img src="/images/shop.png" alt="Bicycle shop" class="shop"/>
   </section>
 
   <!-- Technology -->
-  <section class="home__technology" aria-label="Technology">
-    <div class="line-break">
-      <h1>Advance technology</h1>
-      <p>
-        Our bicycles are equipped with the latest in battery technology,
-        providing more range, faster charging, and intelligent power management
-        to optimize every ride. Welcome to the future of transportation.
-      </p>
-    </div>
-    <div class="line-break">
+  <article aria-label="Technology">
+    <div class="content-margin home__technology">
       <div class="line-break">
-        <h2>Durability</h2>
+        <h1>Advance technology</h1>
         <p>
-          Cyber Wheel is designed with precision and built for durability, offering
-          a smooth and efficient ride. Engineered for long-distance performance,
-          our bikes are powered by advanced battery technology, ensuring
-          effortless speed and endurance.
+          Our bicycles are equipped with the latest in battery technology,
+          providing more range, faster charging, and intelligent power management
+          to optimize every ride. Welcome to the future of transportation.
         </p>
       </div>
       <div class="line-break">
-        <h2>Tracking</h2>
-        <p>
-          We know how precious your bike is, so we have added trackers and
-          anti-theft systems to ensure your peace of mind.
-        </p>
+        <div class="line-break">
+          <h2>Durability</h2>
+          <p>
+            Cyber Wheel is designed with precision and built for durability, offering
+            a smooth and efficient ride. Engineered for long-distance performance,
+            our bikes are powered by advanced battery technology, ensuring
+            effortless speed and endurance.
+          </p>
+        </div>
+        <div class="line-break">
+          <h2>Tracking</h2>
+          <p>
+            We know how precious your bike is, so we have added trackers and
+            anti-theft systems to ensure your peace of mind.
+          </p>
+        </div>
       </div>
     </div>
-  </section>
+    
+  </article>
 
   <!--  Review -->
-  <section class="home__review-container" aria-label="Review">
+  <article class="home__review-container" aria-label="Review">
     <img src="/images/review-woman.png" alt="A woman riding a bike" />
     <div class="home__review">
       <blockquote>
@@ -65,7 +70,7 @@ export function Home(app) {
       </blockquote>
       <span class="home__review-text_name">Heather Smith</span>
       </div>
-  </section>
+  </article>
 
   <!-- Our Partners -->
   <section aria-label="Our Partners">
@@ -96,7 +101,6 @@ export function Home(app) {
         </ul>
         
       </div>
-      
   </section>
 </div>
   `;

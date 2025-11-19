@@ -9,7 +9,7 @@ export async function Checkout(app, params) {
 
   /* html*/ 
   app.innerHTML = `
-    <div class="line-break">
+    <section class="line-break content-margin">
       <h1>Checkout</h1>
       <p class="checkout__title-description">Fill in the payment form.</p>
       <form id="checkoutForm" class="checkout__container">
@@ -94,11 +94,11 @@ export async function Checkout(app, params) {
         
         <div class="checkout__summary line-break">
           <div>
-            <span class="checkout__title">Summary</span>
+            <span clachess="checkout__title">Summary</span>
             <p class="checkout__payment-description">Complete your purchase by providing your payment details.</p>
           </div>
           <hr />
-          <img src="${bike.img}"/>
+          <img src="${bike.imgOne}"/>
           <div class="checkout__price">
             <div>
               <span>Bike: ${bike.title}</span>
@@ -122,8 +122,6 @@ export async function Checkout(app, params) {
           </div>
         </div>
       </form>
-    </div>
-
-    
+    </section>
   `
 }

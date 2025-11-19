@@ -31,8 +31,10 @@ export function Bikes(app) {
   /* html */
   app.innerHTML = `
     <section class="line-break">
+      <div class="content-margin">
       <h1>Our bikes</h1>
       <p class="bikes__description">Check out our cutting-edge bike models.</p>
+      </div>
         <ul class="bikes__carousel">
           ${carouselData
             .map(

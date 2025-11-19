@@ -51,16 +51,6 @@ main {
   /* padding: 5px; */
 }
 
-section {
-  margin-bottom: 50px;
-  /* padding-inline: 10px; */
-  height: max-content;
-}
-
-section:last-child {
-  margin-bottom: 0;
-}
-
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

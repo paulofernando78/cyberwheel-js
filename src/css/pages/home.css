@@ -1,5 +1,12 @@
 .home__introduction {
   position: relative;
+  margin-top: 0;
+}
+
+.home__future {
+  color: var(--slate-1);
+  text-shadow: 2px 2px 10px var(--slate-2);
+  -webkit-text-stroke: 1px var(--slate-2);
 }
 
 .home__people-riding {
@@ -13,7 +20,7 @@
   bottom: 0;
   left: 0;
   width: 290px;
-  padding: 5px 10px 7px 10px;
+  padding: 1rem 1rem 0.8rem 1rem;
 }
 
 #future {
