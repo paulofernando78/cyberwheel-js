@@ -22,7 +22,7 @@ const routes = [
   // /bikes/alguma-coisa
   {
     pattern: /^\/bikes\/([^\/]+)$/,
-    load: () => import("../pages/bikes/index.js"),
+    load: () => import("../pages/bikes/bikeDetail.js"),
     handler: (mod, app, params) => mod.handler(app, params)
     // params[1] => ID ou slug da bike
   },

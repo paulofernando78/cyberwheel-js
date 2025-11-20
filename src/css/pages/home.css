@@ -94,8 +94,30 @@
   margin-top: 50px;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
+.home__partners-slider::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to right, #18191F 0%, transparent 100%);
+  z-index: 1;
+}
+
+.home__partners-slider::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to left, #18191F 0%, transparent 100%);
+  z-index: 1;
+}
 .home__partners-slider__group {
   display: flex;
   align-items: center;

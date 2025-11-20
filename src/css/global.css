@@ -6,6 +6,8 @@
   --logo: invert(0);
   --heading-color: var(--slate-1);
   --heading-text-shadow-color: var(--slate-2);
+  --box-shadow-hover: 0 0 5px var(--slate-1);
+  --transition-box-shadow: box-shadow 0.2s ease-out;
   scrollbar-gutter: stable;
 }
 
@@ -46,6 +48,14 @@ hr {
   padding: 0 1rem 1rem 1rem;
 }
 
-.bike-brightness {
+.img-brightness {
   filter: brightness(50%)
+}
+
+.icon {
+  width: 1.2rem;
+}
+
+#invert {
+  filter: invert(1);
 }
