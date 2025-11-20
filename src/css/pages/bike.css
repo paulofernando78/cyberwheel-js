@@ -32,6 +32,36 @@
   transition: var(--transition-hover);
 }
 
+.zoom-in-icon::before {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("/images/icons/zoom-in.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  filter: invert(1);
+}
+
+.zoom-out-icon::before {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("/images/icons/zoom-out.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  filter: invert(1);
+}
+
 .bike__price {
   position: absolute;
   top: 0;
@@ -45,16 +75,14 @@
   font-weight: bold;
 }
 
-.bike__zoom-icon {
-  position: absolute;
-  top: 12px;
-  right: 13px;
-}
-
 .bike__img-angles {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+}
+
+.bike__img-angles div {
+  position: relative;
 }
 
 .bike__info,
@@ -166,5 +194,5 @@
   width: 100%;
   height: auto;
   border-radius: 8px;
-  border: 2px solid black;
+  border: var(--border-thicker);
 }

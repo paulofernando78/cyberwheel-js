@@ -46,19 +46,21 @@ class Bike extends HTMLElement {
         <p>${descriptionAttr}</p>
         <div class="bike__container__img-info">
           <div class="bike__imgs">
-            <img
-              src="${imgOneAttr}"
-              alt="${altOneAttr}" class="bike__img bike__img-main"/>
+            <div class="zoom-in-icon">
+              <img
+                src="${imgOneAttr}"
+                alt="${altOneAttr}" class="bike__img bike__img-main"
+              />
+            </div>
+           
             <span class="bike__price">${priceFormatted}</span>
-            <img src="/images/icons/zoom-in.svg" alt="zoom in icon" class="icon bike__zoom-icon" id="invert"/>
             <div class="bike__img-angles">
-                <img
-                src="${imgTwoAttr}"
-                alt="${altTwoAttr}" class="bike__img"/>
-
-                <img
-                src="${imgThreeAttr}"
-                alt="${altThreeAttr}" class="bike__img"/>
+                <div class="zoom-in-icon">
+                  <img src="${imgTwoAttr}" alt="${altTwoAttr}" class="bike__img"/>
+                </div>
+                <div class="zoom-in-icon">
+                  <img src="${imgThreeAttr}" alt="${altThreeAttr}" class="bike__img"/>
+                </div>
             </div>  
           </div>
             
@@ -131,32 +133,34 @@ class Bike extends HTMLElement {
       </section>
     `;
 
-    const enlargeImg = this.shadowRoot.querySelector(".bike__img");
+    this.shadowRoot.querySelectorAll(".bike__img").forEach((imgEl) => {
+      imgEl.addEventListener("click", () => {
+        const modal = document.createElement("div");
+        modal.className = "modal";
 
-    enlargeImg.addEventListener("click", () => {
-      const modal = document.createElement("div");
-      modal.className = "modal";
-
-      modal.innerHTML = /* html */ `
+        modal.innerHTML = /* html */ `
       <div class="modal__backdrop"></div>
-      <div class="modal__content">
-        <img src="${imgOneAttr}" alt="${altOneAttr}" />
+      <div class="modal__content zoom-out-icon">
+        <img src="${imgEl.src}" alt="${imgEl.alt}" />
       </div>
       `;
 
-      this.shadowRoot.appendChild(modal);
+        this.shadowRoot.appendChild(modal);
 
-      const close = () => modal.remove();
+        const close = () => modal.remove();
 
-      modal.querySelector(".modal__backdrop").addEventListener("click", close);
+        modal
+          .querySelector(".modal__backdrop")
+          .addEventListener("click", close);
 
-      const escHandler = (e) => {
-        if (e.key === "Escape") {
-          close();
-          document.removeEventListener("keydown", escHandler);
-        }
-      };
-      document.addEventListener("keydown", escHandler)
+        const escHandler = (e) => {
+          if (e.key === "Escape") {
+            close();
+            document.removeEventListener("keydown", escHandler);
+          }
+        };
+        document.addEventListener("keydown", escHandler);
+      });
     });
 
     const buyButton = this.shadowRoot.querySelector("wc-button");
