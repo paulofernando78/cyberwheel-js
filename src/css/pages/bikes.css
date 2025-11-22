@@ -2,8 +2,42 @@
   margin-bottom: 48px;
 }
 
+.bikes__carousel__button-left,
+.bikes__carousel__button-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  /* background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: grid;
+  place-items: center; */
+}
+
+.bikes__carousel__button-left {
+  left: 3px;
+}
+
+.bikes__carousel__button-right {
+  right: 3px;
+}
+
+button:disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+.bikes__carousel-wrapper {
+  position: relative;
+}
+
 .bikes__carousel {
   display: flex;
+  gap: 20px;
   overflow-x: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE e Edge antigos */
@@ -15,30 +49,39 @@
 }
 
 .bikes__carousel__img-wrapper {
-  /* position: relative; */
+  background-color: #000814;
+  position: relative;
+  overflow: hidden;
+  border: var(--border-thicker);
+  border-radius: 5px;
 }
 
 .bikes__carousel__card {
-  padding: 0px 150px;
-  flex: 0 0 100%;
+  flex: 0 0 50%;
   scroll-snap-align: start;
   overflow: hidden;
 }
 
-.bikes__carousel__card-img {
-  border-radius: 5px 5px 0 0;
-  border: 2px solid var(--slate-5);
+figure {
+  position: relative;
 }
 
-.bikes__carousel__info {
+figcaption {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
-  background-color: black;
-  border-radius: 0 0 5px 5px;
-  border-top: 0;
-  border-right: 2px solid var(--slate-5);
-  border-bottom: 2px solid var(--slate-5);
-  border-left: 2px solid var(--slate-5);
-  box-shadow: var(--box-shadow);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.bikes__carousel__img-wrapper img {
+
+}
+
+.bikes__carousel__card h3 {
+  margin-bottom: 10px;
 }
 
 .bikes__carousel__card h2,
@@ -53,18 +96,16 @@
 }
 
 .bikes__carousel__card h3 {
-  margin-bottom: 10px;
   font-size: 1.3rem;
 }
 
 .bikes__carousel__card h2,
-.bikes__carousel__card h3,
 .bikes__carousel__card p {
   text-align: justify;
 }
 
 .bikes__carousel__description {
-  margin-bottom: 20px;
+  flex-grow: 1;
 }
 
 .bikes__carousel__button-link {
@@ -91,43 +132,16 @@
   background-color: var(--slate-1);
 }
 
-.bikes__carousel__button-left,
-.bikes__carousel__button-right {
-  background-color: rgba(0, 0, 0, 1);
-  color: white;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  box-shadow: 0 0 7px var(--slate-5);
-  cursor: pointer;
-
-  display: grid;
-  place-items: center;
-  
-  font-size: 1rem;
-  line-height: 1;
-}
-
-.bikes__carousel__button-left::before {
-  content: "❮";
-}
-
-.bikes__carousel__button-right::before {
-  content: "❯";
-}
-
-button:disabled {
-  opacity: 0.3;
-  cursor: default;
-  pointer-events: none;
-}
-
 @media (max-width: 700px) {
   .bikes__carousel {
     margin-inline: 0px;
   }
-  
+
   .bikes__carousel__card {
-    padding: 0;
+    flex: 0 0 100%;
+  }
+
+  .bikes__carousel__img-wrapper img {
+  top: 80px;
   }
 }

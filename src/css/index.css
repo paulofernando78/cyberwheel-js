@@ -28,7 +28,8 @@ nav ul::before {
   background-color: var(--slate-6);
   position: relative;
   top: 1px;
-  left: 7px;
+  left: 0px;
+  margin-left: 23px;
 }
 
 nav ul li {

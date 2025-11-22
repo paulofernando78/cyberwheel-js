@@ -32,41 +32,42 @@ export function Bikes(app) {
   app.innerHTML = `
     <section class="line-break">
       <div class="content-margin">
-      <h1>Our bikes</h1>
-      <p class="bikes__description">Check out our cutting-edge bike models.</p>
+        <h1>Our bikes</h1>
+        <p class="bikes__description">Check out our cutting-edge bike models.</p>
       </div>
+      <div class="bikes__carousel-wrapper">
+        <button class="bikes__carousel__button-left">
+          <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#999999"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>
+        </button>
+        <button class="bikes__carousel__button-right">
+          <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#999999"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+        </button>
         <ul class="bikes__carousel">
-          ${carouselData
-            .map(
-              (bike) => /* html */ `
-            <li class="bikes__carousel__card">
-              <figure>
-                <div class="bikes__carousel__img-wrapper">
-                  <img src="${bike.img}" alt="${bike.alt}" class="bikes__carousel__card-img"/>
-                </div>
-                <figcaption>
-                  <div class="bikes__carousel__info">
-                    <h2>${bike.title}</h2>
-                    <h3>${bike.subtitle}</h3>
-                    <p class="bikes__carousel__description">${bike.description}</p>
-                    <wc-button label="DETAILS" class="bikes__carousel__button-link" ></wc-button>
-                </figcaption>
-              </figure> 
-            </li>
-                  `
-                )
-                .join("")}  
-                </ul>
-                <div class="bikes__carousel-dots">
-                  <button class="bikes__carousel__button-left"></button>
-                    <div>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  <button class="bikes__carousel__button-right"></button>
-                </div>
+        ${carouselData.map((bike) => /* html */ `
+          <li class="bikes__carousel__card">
+            <figure>
+              <div class="bikes__carousel__img-wrapper">
+                <img src="${bike.img}" alt="${bike.alt}" class="img-brightness"/>
               </div>
+              <figcaption>
+                <h2>${bike.title}</h2>
+                <h3>${bike.subtitle}</h3>
+                <p class="bikes__carousel__description">${bike.description}</p>
+                <wc-button label="DETAILS" class="bikes__carousel__button-link" ></wc-button>
+              </figcaption>
+            </figure> 
+          </li>
+            `
+          )
+          .join("")}  
+          </ul>
+          </div>
+          <div class="bikes__carousel-dots">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
     </section>
             `;
 

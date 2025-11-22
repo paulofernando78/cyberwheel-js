@@ -49,17 +49,17 @@ class Bike extends HTMLElement {
             <div class="zoom-in-icon">
               <img
                 src="${imgOneAttr}"
-                alt="${altOneAttr}" class="bike__img bike__img-main"
+                alt="${altOneAttr}" class="bike__img bike__img-main img-brightness"
               />
             </div>
            
             <span class="bike__price">${priceFormatted}</span>
             <div class="bike__img-angles">
                 <div class="zoom-in-icon">
-                  <img src="${imgTwoAttr}" alt="${altTwoAttr}" class="bike__img"/>
+                  <img src="${imgTwoAttr}" alt="${altTwoAttr}" class="bike__img img-brightness"/>
                 </div>
                 <div class="zoom-in-icon">
-                  <img src="${imgThreeAttr}" alt="${altThreeAttr}" class="bike__img"/>
+                  <img src="${imgThreeAttr}" alt="${altThreeAttr}" class="bike__img img-brightness"/>
                 </div>
             </div>  
           </div>
