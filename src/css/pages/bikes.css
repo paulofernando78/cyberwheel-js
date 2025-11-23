@@ -33,6 +33,7 @@ button:disabled {
 
 .bikes__carousel-wrapper {
   position: relative;
+  border: 1px solid red;
 }
 
 .bikes__carousel {
@@ -50,6 +51,7 @@ button:disabled {
 
 .bikes__carousel__img-wrapper {
   background-color: #000814;
+  /* background-color: red; */
   position: relative;
   overflow: hidden;
   border: var(--border-thicker);
@@ -57,9 +59,13 @@ button:disabled {
 }
 
 .bikes__carousel__card {
-  flex: 0 0 50%;
+  flex: 0 0 300px;
   scroll-snap-align: start;
   overflow: hidden;
+}
+
+.bikes__carousel__img-wrapper {
+  padding-top: 70px;
 }
 
 figure {
@@ -74,10 +80,6 @@ figcaption {
   top: 0;
   left: 0;
   height: 100%;
-}
-
-.bikes__carousel__img-wrapper img {
-
 }
 
 .bikes__carousel__card h3 {
@@ -137,9 +139,9 @@ figcaption {
     margin-inline: 0px;
   }
 
-  .bikes__carousel__card {
+  /* .bikes__carousel__card {
     flex: 0 0 100%;
-  }
+  } */
 
   .bikes__carousel__img-wrapper img {
   top: 80px;
