@@ -58,8 +58,7 @@ export function Bikes(app) {
             </figure> 
           </li>
             `
-          )
-          .join("")}  
+          ).join("")}  
           </ul>
           </div>
           <div class="bikes__carousel-dots">

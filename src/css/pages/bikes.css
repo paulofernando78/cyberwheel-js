@@ -33,7 +33,6 @@ button:disabled {
 
 .bikes__carousel-wrapper {
   position: relative;
-  border: 1px solid red;
 }
 
 .bikes__carousel {
@@ -51,7 +50,6 @@ button:disabled {
 
 .bikes__carousel__img-wrapper {
   background-color: #000814;
-  /* background-color: red; */
   position: relative;
   overflow: hidden;
   border: var(--border-thicker);
