@@ -37,13 +37,19 @@ export function Bikes(app) {
       </div>
       <div class="bikes__carousel-wrapper content-margin">
         <button class="bikes__carousel__button-left">
-          <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#999999"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+          </svg>
         </button>
         <button class="bikes__carousel__button-right">
-          <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#999999"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
         </button>
         <ul class="bikes__carousel">
-        ${carouselData.map((bike) => /* html */ `
+        ${carouselData
+          .map(
+            (bike) => /* html */ `
           <li class="bikes__carousel__card">
             <figure>
               <div class="bikes__carousel__img-wrapper">
@@ -58,7 +64,8 @@ export function Bikes(app) {
             </figure> 
           </li>
             `
-          ).join("")}  
+          )
+          .join("")}  
           </ul>
           </div>
           <div class="bikes__carousel-dots">

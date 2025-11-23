@@ -55,7 +55,6 @@ export function Home(app) {
         </div>
       </div>
     </div>
-    
   </article>
 
   <!--  Review -->

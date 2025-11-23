@@ -1,5 +1,5 @@
 :root {
-  --border-thicker: 2px solid var(--slate-4);
+  --border-thicker: 2px solid var(--slate-2);
   --padding-info-tech: 11px 17px 8px 15px;
 }
 
@@ -29,7 +29,7 @@
 
 .bike__img:hover {
   box-shadow: var(--box-shadow-hover);
-  transition: var(--transition-hover);
+  transition: var(--transition-box-shadow)
 }
 
 .zoom-in-icon::before {
@@ -45,6 +45,7 @@
   background-position: center;
   pointer-events: none;
   filter: invert(1);
+  z-index: 10;
 }
 
 .zoom-out-icon::before {
@@ -99,14 +100,12 @@
   background: black;
   padding: var(--padding-info-tech);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
 }
 
 .bike__tech-specs {
   background: black;
   padding: var(--padding-info-tech);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
 }
 
 .bike__tech-specs li {

@@ -76,7 +76,8 @@ footer a {
 
 footer span {
   display: inline-block;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
 }
 
 .footer__social-media svg {

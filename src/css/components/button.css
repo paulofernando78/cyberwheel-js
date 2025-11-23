@@ -42,7 +42,7 @@ svg {
 .btn--with-label:hover {
   box-shadow:
   0 0 5px var(--slate-1);
-  transition: box-shadow 0.2s ease-out;
+  transition: var(--transition-box-shadow)
 }
 
 @keyframes fadeIn {
