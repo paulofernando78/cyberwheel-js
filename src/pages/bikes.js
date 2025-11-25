@@ -14,7 +14,7 @@ export function Bikes(app) {
       img: "/images/bikes/urban-z3-1.png",
       alt: "",
       title: "Urban Z3",
-      subtitle: "Precision Meets Power",
+      subtitle: "Power with purpose",
       description:
         "Bridging elegance and performance, it is crafted for riders who crave more.",
     },
@@ -52,12 +52,12 @@ export function Bikes(app) {
             (bike) => /* html */ `
           <li class="bikes__carousel__card">
             <figure>
-              <div class="bikes__carousel__img-wrapper">
-                <img src="${bike.img}" alt="${bike.alt}" class="img-brightness"/>
-              </div>
+                <img src="${bike.img}" alt="${bike.alt}" class="bikes_img img-brightness"/>
               <figcaption>
-                <h2>${bike.title}</h2>
-                <h3>${bike.subtitle}</h3>
+                <div>
+                  <h2>${bike.title}</h2>
+                  <h3>${bike.subtitle}</h3>
+                </div>
                 <p class="bikes__carousel__description">${bike.description}</p>
                 <wc-button label="DETAILS" class="bikes__carousel__button-link" ></wc-button>
               </figcaption>

@@ -36,6 +36,12 @@
   gap: 20px;
 }
 
+.home__durability-tracking {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .home__review-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
