@@ -133,21 +133,27 @@ class Bike extends HTMLElement {
       </section>
     `;
 
-    this.shadowRoot.querySelectorAll(".bike__img").forEach((imgEl) => {
-      imgEl.addEventListener("click", () => {
+    this.shadowRoot.querySelectorAll(".zoom-in-icon").forEach((iconWrapper) => {
+      iconWrapper.addEventListener("click", () => {
+        const imgEl = iconWrapper.querySelector("img")
+
         const modal = document.createElement("div");
         modal.className = "modal";
 
         modal.innerHTML = /* html */ `
       <div class="modal__backdrop"></div>
-      <div class="modal__content zoom-out-icon">
-        <img src="${imgEl.src}" alt="${imgEl.alt}" />
+      <div class="modal__content">
+        <div class="zoom-out-icon">
+          <img src="${imgEl.src}" alt="${imgEl.alt}" />
+        </div>
       </div>
       `;
 
         this.shadowRoot.appendChild(modal);
 
         const close = () => modal.remove();
+
+        modal.querySelector(".zoom-out-icon").addEventListener("click", close)
 
         modal
           .querySelector(".modal__backdrop")

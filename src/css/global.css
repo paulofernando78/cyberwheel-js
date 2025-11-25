@@ -11,14 +11,14 @@
   scrollbar-gutter: stable;
 }
 
-[data-theme="light"] {
+/* [data-theme="light"] {
   --background-color: #e0e0e0;
   --color: var(--slate-10);
   --heading-color: var(--slate-10);
   --heading-text-shadow-color: var(--slate-10);
   --icon-color: #18191f;
   --logo: invert(1);
-}
+} */
 
 body {
   background-color: var(--background-color, #fff);

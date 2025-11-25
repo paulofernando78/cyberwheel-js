@@ -3,6 +3,7 @@ import { navigateTo } from "../js/router";
 export function Bikes(app) {
   const carouselData = [
     {
+      gradientBackground: "purple 100%", 
       img: "/images/bikes/rider-a1-1.png",
       alt: "Rider A1 model",
       title: "Rider A1",
@@ -11,14 +12,17 @@ export function Bikes(app) {
         "Designed for those who value comfort, balance, and effortless motion.",
     },
     {
+      gradientBackground: "blue 100%", 
       img: "/images/bikes/urban-z3-1.png",
       alt: "",
       title: "Urban Z3",
       subtitle: "Power with purpose",
       description:
-        "Bridging elegance and performance, it is crafted for riders who crave more.",
+        "Bridging elegance and performance. For riders who crave more.",
     },
     {
+      gradientBackground: "red 100%", 
+      position: "",
       img: "/images/bikes/ares-x10-1.png",
       alt: "",
       title: "Ares X10",
@@ -31,7 +35,7 @@ export function Bikes(app) {
   /* html */
   app.innerHTML = `
     <section class="line-break">
-      <div class="content-margin">
+      <div class="content-margin line-break">
         <h1>Our bikes</h1>
         <p class="bikes__description">Check out our cutting-edge bike models.</p>
       </div>
@@ -51,7 +55,7 @@ export function Bikes(app) {
           .map(
             (bike) => /* html */ `
           <li class="bikes__carousel__card">
-            <figure>
+            <figure style="background: radial-gradient(circle at bottom right, black 60%, ${bike.gradientBackground})">
                 <img src="${bike.img}" alt="${bike.alt}" class="bikes_img img-brightness"/>
               <figcaption>
                 <div>

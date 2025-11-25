@@ -23,13 +23,21 @@
 .bike__img {
   border: var(--border-thicker);
   border-radius: var(--border-radius);
-  cursor: pointer;
   /* clip-path: path("M Z"); */
 }
 
 .bike__img:hover {
   box-shadow: var(--box-shadow-hover);
   transition: var(--transition-box-shadow)
+}
+
+.zoom-in-icon,
+.zoom-out-icon {
+  pointer-events: none;
+}
+
+.bike__img {
+  pointer-events: none;
 }
 
 .zoom-in-icon::before {
@@ -43,9 +51,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  pointer-events: none;
   filter: invert(1);
   z-index: 10;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .zoom-out-icon::before {
@@ -59,8 +68,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  pointer-events: none;
   filter: invert(1);
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .bike__price {

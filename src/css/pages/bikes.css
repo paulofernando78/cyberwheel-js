@@ -32,13 +32,15 @@ button:disabled {
 }
 
 .bikes__carousel-wrapper {
+  position: relative;
   padding-inline: 30px;
 }
 
 .bikes__carousel {
+  padding: 13px;
+  overflow-x: auto;
   display: flex;
   gap: 20px;
-  overflow-x: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE e Edge antigos */
   scroll-snap-type: x mandatory;
@@ -52,25 +54,22 @@ button:disabled {
   flex: 0 0 250px;
   scroll-snap-align: start;
   overflow: hidden;
-}
-
-figure {
-  position: relative;
-  border: var(--border-thicker);
+  border: var(--border);
+  /* box-shadow: var(--box-shadow); */
   border-radius: 5px;
 }
 
-.bikes__carousel__img-wrapper {
-  border: 1px solid red;
+figure {
+  height: 250px;
+  position: relative;
+ 
 }
 
 .bikes_img {
-  background: linear-gradient(to top, black, #000714);
   padding-top: 100px;
   position: absolute;
-  z-index: -1;
   top: 0;
-  left: 0;
+  transform: translate(43%, 4%);
 }
 
 figcaption {
@@ -79,6 +78,8 @@ figcaption {
   grid-template-rows: auto 1fr auto;
   gap: 10px;
   padding: 20px;
+  position: absolute;
+  z-index: 10;
 }
 
 .bikes__carousel__card h2,
@@ -94,10 +95,6 @@ figcaption {
 
 .bikes__carousel__card h3 {
   font-size: 1.2rem;
-}
-
-.bikes__carousel__description {
-  align-self: end;
 }
 
 .bikes__carousel__button-link {
@@ -123,14 +120,4 @@ figcaption {
 
 .bikes__carousel-dots span.active {
   background-color: var(--slate-1);
-}
-
-@media (max-width: 700px) {
-  .bikes__carousel {
-    margin-inline: 0px;
-  }
-
-  /* .bikes__carousel__card {
-    flex: 0 0 100%;
-  } */
 }
