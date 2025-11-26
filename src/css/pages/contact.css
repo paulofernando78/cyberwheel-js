@@ -46,3 +46,9 @@
   align-items: center;
   gap: 10px;
 }
+
+@media (max-width: 740px) {
+  .contacts__map-wrapper {
+  grid-template-columns: 1fr;
+}
+}
