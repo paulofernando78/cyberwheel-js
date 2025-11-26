@@ -11,6 +11,12 @@ const routes = [
     handler: (mod, app) => mod.Home(app)
   },
 
+  {
+    pattern: /^\/contacts$/,
+    load: () => import("../pages/contacts.js"),
+    handler: (mod, app) => mod.Contacts(app)
+  },
+
   // Lista de bikes
   {
     pattern: /^\/bikes$/,

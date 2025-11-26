@@ -2,5 +2,4 @@
   --border: 1px solid var(--slate-8);
   --border-radius: 5px;
   --box-shadow: 0 0 12px var(--gray-7);
-  --box-shadow-inset: inset 0 0 12px var(--gray-7);
 }

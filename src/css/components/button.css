@@ -41,7 +41,7 @@ svg {
 
 .btn--with-label:hover {
   box-shadow:
-  0 0 5px var(--slate-1);
+  0 0 5px var(--slate-5);
   transition: var(--transition-box-shadow)
 }
 
