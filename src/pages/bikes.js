@@ -22,7 +22,7 @@ export function Bikes(app) {
     },
     {
       gradientBackground: "red 100%", 
-      position: "",
+      position: "1%",
       img: "/images/bikes/ares-x10-1.png",
       alt: "",
       title: "Ares X10",
@@ -56,7 +56,7 @@ export function Bikes(app) {
             (bike) => /* html */ `
           <li class="bikes__carousel__card">
             <figure style="background: radial-gradient(circle at bottom right, black 60%, ${bike.gradientBackground})">
-                <img src="${bike.img}" alt="${bike.alt}" class="bikes_img img-brightness"/>
+                <img src="${bike.img}" alt="${bike.alt}" class="bikes_img img-brightness" style="transform: translate(43%, ${bike.position})"/>
               <figcaption>
                 <div>
                   <h2>${bike.title}</h2>
