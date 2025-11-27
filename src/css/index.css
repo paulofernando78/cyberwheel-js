@@ -48,10 +48,6 @@ nav a {
   line-height: 1;
 }
 
-main {
-  /* padding: 5px; */
-}
-
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -61,6 +57,10 @@ footer {
   background-color: black;
   box-shadow: 0 0 15px var(--gray-8);
   margin-top: 50px;
+}
+
+footer address ul li {
+  font-style: normal;
 }
 
 footer a {

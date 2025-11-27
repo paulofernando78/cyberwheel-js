@@ -12,7 +12,7 @@ export async function Checkout(app, params) {
     <section class="line-break content-margin">
       <h1>Checkout</h1>
       <p class="checkout__title-description">Fill in the payment form.</p>
-      <form id="checkoutForm" class="checkout__container">
+      <form id="checkout-form" class="checkout__container">
         <div class="checkout__payment-details line-break">
           <div>
             <span class="checkout__title">Payment Details</span>

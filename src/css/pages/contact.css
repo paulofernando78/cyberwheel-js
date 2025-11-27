@@ -30,6 +30,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  font-style: normal;
+}
+
+.contacts__address a {
+  text-decoration: none;
 }
 
 .contacts__address__items span {
